@@ -606,16 +606,11 @@ def merge(ctx, inputa, inputb, output, criteria, copy_sourcelocation):
     )
 
 def runproc(desc, reportfile, configpath, *args):
-    newenv = dict(os.environ)
-    executeargs = [sys.executable] if getattr(sys, 'frozen', False) else [sys.executable, sys.argv[0]]
-    executeargs += ['-c', configpath]
-
-    newenv['PYTHONIOENCODING']='utf-8'
     proc = subprocess.run(
-        executeargs + list(args),
+        ['mvloc', '-c', configpath] + list(args),
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
-        env=newenv
+        env=dict(os.environ) | {'PYTHONIOENCODING': 'utf-8'}
     )
     result = proc.stdout.decode(encoding='utf-8', errors='replace').replace('\r', '')
     reportfile.write(

@@ -33,7 +33,7 @@ _XSLT_ADD_NAMESPACE_TEMPLATE = '''
 </xsl:stylesheet>
 '''
 
-_FTL_XML_NAMESPACES = ['mod']
+_FTL_XML_NAMESPACES = ['mod', 'mod-append']
 
 def parse_ftlxml(path):
     '''

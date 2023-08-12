@@ -918,8 +918,9 @@ def package(ctx, targetlang):
     '''
     Package translated XMLs into a full mod.
     Assumes "output-<TARGETLANG>/" and optionally "auxfiles-<TARGETLANG>/" directory to be present.
-    Creates "packages/FTL-Multiverse-<VERSION>-<TARGETLANG>+<GITCOMMITID>.zip" where,
+    Creates "packages/<PREFIX>-<VERSION>-<TARGETLANG>+<GITCOMMITID>.zip" where,
 
+    * `<PREFIX>` denotes the name of the packaged project as specified in configuration.
     * `<VERSION>` denotes the version of Multiverse as specified in configuration.
     * If `git` command is available, `<GITCOMMITID>` denotes the git commitid. Otherwise it's `xxxxxxx`.
     
@@ -963,6 +964,7 @@ def package(ctx, targetlang):
 
     config = ctx.obj['config']
     urls = config['packaging']['fullOriginal']
+    prefix = config['packaging']['prefix']
     version = config['packaging']['version']
 
     original_paths = []
@@ -981,7 +983,7 @@ def package(ctx, targetlang):
                 zipf.extractall(path=extracted_pathbase)
         
         translated_path = Path(
-            f'packages/FTL-Multiverse-{version}-{targetlang}+{get_gitcommitid()}.ftl'
+            f'packages/{prefix}-{version}-{targetlang}+{get_gitcommitid()}.ftl'
         )
         working_path = Path(f'{str(translated_path)}.working')
 

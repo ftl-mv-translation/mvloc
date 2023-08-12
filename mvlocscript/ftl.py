@@ -80,10 +80,11 @@ def write_ftlxml(path, tree):
     result = etree.tostring(tree, encoding='utf-8', pretty_print=True)
 
     # Note that `xmlns:mod="http://dummy/mod"` part is added by parse_ftlxml().
-    result = result.replace(
-        f'<{tree.getroot().tag} xmlns:mod="http://dummy/mod">'.encode(encoding='utf-8'),
-        f'<{tree.getroot().tag}>'.encode(encoding='utf-8')
-    )
+    for namespace in _FTL_XML_NAMESPACES:
+        result = result.replace(
+            f' xmlns:{namespace}="http://dummy/{namespace}"'.encode(encoding='utf-8'),
+            b''
+        )
 
     with open(path, 'wb') as f:
         f.write(result)

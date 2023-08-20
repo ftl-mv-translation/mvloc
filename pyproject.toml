@@ -10,7 +10,7 @@ mvloc = "mvlocscript.cli:main"
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"
 lxml = "^4.9.3"
-click = "^8.1.6"
+click = "^8.1.7"
 json5 = "^0.9.14"
 polib = "^1.2.0"
 loguru = "^0.7.0"

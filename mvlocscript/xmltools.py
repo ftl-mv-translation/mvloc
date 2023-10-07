@@ -79,7 +79,7 @@ class AttributeMatcher(MatcherBase):
         self._cache = defaultdict(int)
 
     def prepare(self, tree):
-        for element in tree.xpath(f'//*[@{self._attribute}]'):
+        for element in tree.xpath(f'//*[@{self._attribute}]', namespaces=tree.getroot().nsmap):
             tagname = get_tag_as_written(element)
             attrval = element.get(self._attribute)
             if '"' not in attrval:
@@ -122,7 +122,7 @@ class MultipleAttributeMatcher(MatcherBase):
 
     def prepare(self, tree):
         condition_expr = ' or '.join(f'@{attribute}' for attribute in self._attributes)
-        self._elementscache = tree.xpath(f'//*[{condition_expr}]')
+        self._elementscache = tree.xpath(f'//*[{condition_expr}]', namespaces=tree.getroot().nsmap)
 
     def _candidates(self, element):
         attrvals = _get_multiple_values_from_dict(element, self._attributes)

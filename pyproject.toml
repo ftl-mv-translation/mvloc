@@ -18,7 +18,7 @@ requests = "^2.31.0"
 rapidfuzz = "^3.2.0"
 
 [tool.poetry.dev-dependencies]
-pyinstaller = "^5.13.0"
+pyinstaller = "^6.2.0"
 snakeviz = "^2.2.0"
 
 [build-system]

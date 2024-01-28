@@ -1084,17 +1084,17 @@ def major_update(ctx, first_pass, second_pass):
 
     with open('report.txt', 'w', encoding='utf-8', newline='\n', buffering=1) as reportfile:
         if first_pass:
+            tm = {}
+            for lang in list_of_languages:
+                print(f'Generating TM for {lang}...')
+                tm[lang] = generate_translation_memory('locale/**/en.po', f'locale/**/{lang}.po')
+
             # Cleanup removed files if any
             for filepath_po in glob_posix('**/*.po', root_dir='locale'):
                 if Path(filepath_po).parent.as_posix() not in filepaths_xml:
                     print(f'Cleanup: removing locale/{filepath_po}...')
                     (Path('locale') / filepath_po).unlink()
 
-            tm = {}
-            for lang in list_of_languages:
-                print(f'Generating TM for {lang}...')
-                tm[lang] = generate_translation_memory('locale/**/en.po', f'locale/**/{lang}.po')
-            
             for filepath_xml in filepaths_xml:
                 print(f'Generating en.po.new for {filepath_xml}...')
 

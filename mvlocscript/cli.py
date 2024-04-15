@@ -367,6 +367,7 @@ def update(ctx, oldoriginal, neworiginal, target, new_original_xml, targetlang, 
 @click.argument('inputxml')
 @click.argument('originalpo')
 @click.argument('translatedpo')
+@click.argument('machinetranslatedpo')
 @click.argument('outputxml')
 @click.option(
     '--targetlang', '-t', default='',
@@ -374,11 +375,11 @@ def update(ctx, oldoriginal, neworiginal, target, new_original_xml, targetlang, 
          ' Some configuration will be applied only when this option is specified.'
 )
 @click.pass_context
-def apply(ctx, inputxml, originalpo, translatedpo, outputxml, targetlang):
+def apply(ctx, inputxml, originalpo, translatedpo, machinetranslatedpo, outputxml, targetlang):
     '''
     Apply locale to XML, generating a translated XML file.
 
-    Example: mvloc apply src-en/data/blueprints.xml.append locale/data/blueprints.xml.append/en.po locale/data/blueprints.xml.append/ko.po output-ko/data/blueprints.xml.append
+    Example: mvloc apply src-en/data/blueprints.xml.append locale/data/blueprints.xml.append/en.po locale/data/blueprints.xml.append/ko.po locale-machine/data/blueprints.xml.append/ko.po output-ko/data/blueprints.xml.append
     '''
 
     if targetlang:
@@ -394,18 +395,35 @@ def apply(ctx, inputxml, originalpo, translatedpo, outputxml, targetlang):
     tree = parse_ftlxml(inputxml)
 
     dict_original, _, _ = readpo(originalpo)
-    dict_translated, _, _ = readpo(translatedpo)
-    dict_translated = {key: entry for key, entry in dict_translated.items() if not entry.obsolete}
+    dict_translated = None
+    if Path(translatedpo).exists():
+        dict_translated, _, _ = readpo(translatedpo)
+        dict_translated = {key: entry for key, entry in dict_translated.items() if not entry.obsolete}
+    dict_machine = None
+    if Path(machinetranslatedpo).exists():
+        dict_machine, _, _ = readpo(machinetranslatedpo)
+        dict_machine = {key: entry for key, entry in dict_machine.items() if not entry.obsolete}
 
     # Use keys from the original locale
     for key in dict_original:
-        entry_translated = dict_translated.get(key, None)
-        if (not entry_translated) or ((not use_fuzzy) and entry_translated.fuzzy):
+        entry_translated = None
+        if dict_translated:
+            entry_translated = dict_translated.get(key, None)
+        entry_machine = None
+        if dict_machine:
+            entry_machine = dict_machine.get(key, None)
+        if ((not entry_translated) and (not entry_machine)):
             continue
-        string_translated = entry_translated.value
-        if not string_translated:
-            continue
-
+        try:
+            string_translated = entry_translated.value
+            assert ((string_translated != '') or (not use_fuzzy and entry_translated.fuzzy)) 
+        except (AttributeError, AssertionError):
+            try:
+                string_translated = entry_machine.value
+                assert string_translated != ''
+            except (AttributeError, AssertionError):
+                continue
+            
         _, xpathexpr = parsekey(key)
         entities = xpath(tree, xpathexpr)
 
@@ -809,8 +827,12 @@ def batch_generate(ctx, targetlang, diff, clean, update_mode, id_relocation_stra
 
 @main.command()
 @click.argument('targetlang')
+@click.option(
+    '--machine', '-m', is_flag=True, default=False,
+    help='Use machine translation to complement the gap of hand translation.'
+)
 @click.pass_context
-def batch_apply(ctx, targetlang):
+def batch_apply(ctx, targetlang, machine):
     '''
     Batch operation for applying translation.
     Assumes "src-en/" and "locale/" directory to be present.
@@ -829,13 +851,26 @@ def batch_apply(ctx, targetlang):
         Path(path).parent.as_posix()
         for path in glob_posix(f'**/{targetlang}.po', root_dir='locale')
     ]
-    locale_either = sorted(
-        set(locale_en) | set(locale_targetlang),
-        key=(locale_en + locale_targetlang).index
-    )
+    if machine:
+        print('Using MT mode...')
+        machine_targetlang = [
+            Path(path).parent.as_posix()
+            for path in glob_posix(f'**/{targetlang}.po', root_dir='locale-machine')
+        ]
+        locale_either = sorted(
+            set(locale_en) | set(locale_targetlang) | set(machine_targetlang),
+            key=(locale_en + locale_targetlang + machine_targetlang).index
+        )
+    else:
+        locale_either = sorted(
+            set(locale_en) | set(locale_targetlang),
+            key=(locale_en + locale_targetlang).index
+        )
 
     xmlbasepath_en = Path('src-en')
     localebasepath = Path('locale')
+    if machine:
+        machinebasepath = Path('locale-machine')
     outputbasepath = Path(f'output-{targetlang}')
 
     with open('report.txt', 'w', encoding='utf-8', newline='\n', buffering=1) as reportfile:
@@ -844,13 +879,16 @@ def batch_apply(ctx, targetlang):
 
             localepath_en = localebasepath / targetpath / 'en.po'
             localepath_targetlang = localebasepath / targetpath / f'{targetlang}.po'
+            machinepath_targetlang = None
+            if machine:
+                machinepath_targetlang = machinebasepath / targetpath / f'{targetlang}.po'
             xmlpath = xmlbasepath_en / targetpath
             outputpath = outputbasepath / targetpath
 
             if not localepath_en.exists():
                 print('=> skipped: en.po not found')
                 continue
-            if not localepath_targetlang.exists():
+            if (not localepath_targetlang.exists() and not machine) or (machine and not localepath_targetlang.exists() and not machinepath_targetlang.exists()):
                 print(f'=> skipped: {targetlang}.po not found')
                 continue
             if not xmlpath.exists():
@@ -860,7 +898,7 @@ def batch_apply(ctx, targetlang):
             runproc(
                 f'Applying translation: {targetpath}',
                 reportfile, configpath,
-                'apply', str(xmlpath), str(localepath_en), str(localepath_targetlang), str(outputpath),
+                'apply', str(xmlpath), str(localepath_en), str(localepath_targetlang), str(machinepath_targetlang),str(outputpath),
                 '-t', targetlang
             )
 
@@ -913,8 +951,12 @@ def stats(ctx, targetlang):
 
 @main.command()
 @click.argument('targetlang')
+@click.option(
+    '--machine', '-m', is_flag=True, default=False,
+    help='Use machine translation to complement the gap of hand translation.'
+)
 @click.pass_context
-def package(ctx, targetlang):
+def package(ctx, targetlang, machine):
     '''
     Package translated XMLs into a full mod.
     Assumes "output-<TARGETLANG>/" and optionally "auxfiles-<TARGETLANG>/" directory to be present.
@@ -981,10 +1023,14 @@ def package(ctx, targetlang):
         for original_path in original_paths:
             with zipfile.ZipFile(original_path) as zipf:
                 zipf.extractall(path=extracted_pathbase)
-        
-        translated_path = Path(
-            f'packages/{prefix}-{version}-{targetlang}+{get_gitcommitid()}.ftl'
-        )
+        if machine:
+            translated_path = Path(
+                f'packages/{prefix}-{version}-{targetlang}+{get_gitcommitid()}(Machine).ftl'
+            )
+        else:
+            translated_path = Path(
+                f'packages/{prefix}-{version}-{targetlang}+{get_gitcommitid()}.ftl'
+            )
         working_path = Path(f'{str(translated_path)}.working')
 
         ensureparent(working_path)

@@ -1025,7 +1025,7 @@ def package(ctx, targetlang, machine):
                 zipf.extractall(path=extracted_pathbase)
         if machine:
             translated_path = Path(
-                f'packages/{prefix}-{version}-{targetlang}_machine+{get_gitcommitid()}.ftl'
+                f'packages/{prefix}-{version}-{targetlang}\.machine+{get_gitcommitid()}.ftl'
             )
         else:
             translated_path = Path(

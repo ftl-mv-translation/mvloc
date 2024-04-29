@@ -22,6 +22,7 @@ from mvlocscript.xmltools import (
 )
 from mvlocscript.fstools import ensureparent, simulate_pythonioencoding_for_pyinstaller, glob_posix
 from mvlocscript.potools import parsekey, readpo, writepo, StringEntry
+from mvlocscript.machine import UpdateMT
 
 logger.remove()
 logger.add(sys.stderr, format=(
@@ -1199,6 +1200,9 @@ def major_update(ctx, first_pass, second_pass):
                 
                 print(f'Overwriting  {en_old_locale}...')
                 shutil.move(en_new_locale, en_old_locale)
+
+                print('updating MT...')
+                UpdateMT()
     
 if __name__ == '__main__':
     main()

@@ -158,9 +158,10 @@ def UpdateMT(do_translate=False):
     base_version = config['packaging']['version']
 
     for pathstr in getMTjson():
-        match = match.groupdict()
-        locale = match['locale']
-        version = match['version']
+        with open(pathstr) as f:
+            old_json = json.load(f)
+        locale = old_json['lang']
+        version = old_json['version']
         if version == base_version:
             print(f'locale: {locale} is up-to-date.')
             continue
@@ -169,8 +170,6 @@ def UpdateMT(do_translate=False):
         newpath = makeMTjson(locale, base_version)
 
         print(f'updating {locale}...')
-        with open(pathstr) as f:
-            old_json = json.load(f)
         with open(newpath) as f:
             new_json = json.load(f)
 

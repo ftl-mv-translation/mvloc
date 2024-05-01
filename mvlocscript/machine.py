@@ -11,14 +11,15 @@ from mvlocscript.potools import readpo, writepo, StringEntry
 
 #{target_lang: source_lang} use weblate translation for non English source language.
 EXCEPTLANG = {'pl': 'ru'}
-#Japanese font doesn't include special characters used in MV, so this replaces them with corresponded words.
+#Japanese font doesn't include special characters used in MV, so this replaces them with corresponding words.
 REPLACE_SPECIAL_CHARACTERS ={
     'ja': str.maketrans({
         "{":"燃料",  # fuel
         "|":"ドローン",  # drones
         "}":"ミサイル",  # missiles
         "~":"スクラップ",  # scrap
-})}
+    })
+}
         
 def makeMTjson(lang: str, version: str):
     data_dict = {}
@@ -273,4 +274,8 @@ def measure(MTjsonPath: str):
                 untranslated_len += 1
                 untranslated_chara_len += len(key)
             
-    print(f"language: {data['lang']}, version: {data['version']}\n\n*deepl*\nachievement: {deepl_length}/{all_length}({deepl_length / all_length * 100}%)\nleft: {all_length - deepl_length} texts ({deepl_chara_len} characters)\n\n*total*\nachievement: {all_length - untranslated_len}/{all_length}({(all_length -untranslated_len) / all_length * 100}%)\nleft: {untranslated_len} texts ({untranslated_chara_len} characters)")
+    print(f"language: {data['lang']}, version: {data['version']}\n\n*deepl*\nachievement: {deepl_length}/{all_length}({deepl_length / all_length * 100}%)\nleft: {all_length - deepl_length} texts ({deepl_chara_len} characters)\n\n*total*\nachievement: {all_length - untranslated_len}/{all_length}({(all_length -untranslated_len) / all_length * 100}%)\nleft: {untranslated_len} texts ({untranslated_chara_len} characters)\n\n")
+
+def MeasureAll():
+    for pathstr in getMTjson():
+        measure(pathstr)

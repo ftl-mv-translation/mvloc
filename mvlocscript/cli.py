@@ -1201,8 +1201,8 @@ def major_update(ctx, first_pass, second_pass):
                 print(f'Overwriting  {en_old_locale}...')
                 shutil.move(en_new_locale, en_old_locale)
 
-                print('updating MT...')
-                UpdateMT()
+            print('updating MT...')
+            UpdateMT()
     
 if __name__ == '__main__':
     main()

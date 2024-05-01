@@ -1062,8 +1062,12 @@ def package(ctx, targetlang, machine):
     '--second-pass', is_flag=True, default=False,
     help='Perform the second pass of the major update.'
 )
+@click.option(
+    '--do-mt', '-m', is_flag=True, default=False,
+    help='Take machine translation before apply MT to the new version.'
+)
 @click.pass_context
-def major_update(ctx, first_pass, second_pass):
+def major_update(ctx, first_pass, second_pass, do_mt):
     '''
     Perform a major update.
 
@@ -1202,7 +1206,7 @@ def major_update(ctx, first_pass, second_pass):
                 shutil.move(en_new_locale, en_old_locale)
 
             print('updating MT...')
-            UpdateMT()
+            UpdateMT(do_mt)
     
 if __name__ == '__main__':
     main()

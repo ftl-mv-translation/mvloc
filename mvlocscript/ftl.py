@@ -480,9 +480,35 @@ class ApplyPostProcessHullNumbersFontSubstitution(ApplyPostProcessBase):
         for attribute in attributes:
             attribute.value = str(self._type)
 
+class ApplyPostProcessEnemyHullNumbersXPositionSubstitution(ApplyPostProcessBase):
+    '''Change /FTL/hullNumbers/enemyText/@x for enemy hull hit point numbers.'''
+    def __init__(self, arg):
+        self._x = arg
+
+    def do(self, tree, path):
+        if 'data/hyperspace.xml' not in path:
+            return
+        attributes = xpath(tree, '/FTL/hullNumbers/enemyText/@x')
+        for attribute in attributes:
+            attribute.value = str(self._x)
+
+class ApplyPostProcessBossHullNumbersXPositionSubstitution(ApplyPostProcessBase):
+    '''Change /FTL/hullNumbers/bossText/@x for boss hull hit point numbers.'''
+    def __init__(self, arg):
+        self._x = arg
+
+    def do(self, tree, path):
+        if 'data/hyperspace.xml' not in path:
+            return
+        attributes = xpath(tree, '/FTL/hullNumbers/bossText/@x')
+        for attribute in attributes:
+            attribute.value = str(self._x)
+
 def apply_postprocess(tree, path, postprocess, arg):
     POSTPROCESS_FACTORIES = {
         'substitute-font-for-hull-numbers': (lambda: ApplyPostProcessHullNumbersFontSubstitution(arg)),
+        'substitute-xposition-for-enemy-hull-numbers': (lambda: ApplyPostProcessEnemyHullNumbersXPositionSubstitution(arg)),
+        'substitute-xposition-for-boss-hull-numbers': (lambda: ApplyPostProcessBossHullNumbersXPositionSubstitution(arg)),
     }
     factory = POSTPROCESS_FACTORIES.get(postprocess, None)
     if factory is None:

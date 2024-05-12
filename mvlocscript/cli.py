@@ -22,7 +22,7 @@ from mvlocscript.xmltools import (
 )
 from mvlocscript.fstools import ensureparent, simulate_pythonioencoding_for_pyinstaller, glob_posix
 from mvlocscript.potools import parsekey, readpo, writepo, StringEntry
-from mvlocscript.machine import UpdateAllMT, makeMTjson, updateMT, getMTjson, translate, makePOfromMTjson, measureMT
+from mvlocscript.machine import UpdateAllMT, makeMTjson, updateMT, getMTjson, translate, makePOfromMTjson, measureMT, deepltranslate
 
 logger.remove()
 logger.add(sys.stderr, format=(
@@ -1230,6 +1230,35 @@ def machine(ctx, targetlang):
     
     print('start translating...')
     translate(MTjosnPath)
+    print('making po files from MT...')
+    makePOfromMTjson(MTjosnPath)
+    print('all process successfully done.')
+    measureMT(MTjosnPath)
+
+@main.command()
+@click.option('--limit', '-l', type=int, default=-1)
+@click.argument('targetlang')
+@click.argument('api_key')
+@click.pass_context
+def deepl(ctx, api_key, targetlang, limit):
+    config = ctx.obj['config']
+    base_version = config['packaging']['version']
+    
+    MTjsonPathes = getMTjson(targetlang)
+    if len(MTjsonPathes) > 1:
+        print(f"find multiple files in machine-json/ whose lang code is {targetlang}. make sure put only one file per langage in machine-json/")
+        return
+    elif len(MTjsonPathes) == 1:
+        MTjosnPath = MTjsonPathes[0]
+        MTjosnPath = updateMT(MTjosnPath, base_version)
+    elif len(MTjsonPathes) == 0:
+        print(f'creating MT json for {targetlang}...')
+        MTjosnPath = makeMTjson(targetlang, base_version)
+    else:
+        return
+    
+    print('start translating...')
+    deepltranslate(api_key, MTjosnPath, limit)
     print('making po files from MT...')
     makePOfromMTjson(MTjosnPath)
     print('all process successfully done.')

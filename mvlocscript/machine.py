@@ -13,12 +13,12 @@ from mvlocscript.potools import readpo, writepo, StringEntry
 EXCEPTLANG = {'pl': 'ru'}
 #Japanese font doesn't include special characters used in MV, so this replaces them with corresponding words.
 REPLACE_SPECIAL_CHARACTERS ={
-    'ja': str.maketrans({
-        "{":"燃料",  # fuel
-        "|":"ドローン",  # drones
-        "}":"ミサイル",  # missiles
-        "~":"スクラップ",  # scrap
-    })
+    # 'ja': str.maketrans({
+    #     "{":"燃料",  # fuel
+    #     "|":"ドローン",  # drones
+    #     "}":"ミサイル",  # missiles
+    #     "~":"スクラップ",  # scrap
+    # })
 }
         
 def makeMTjson(lang: str, version: str):
@@ -56,12 +56,23 @@ def makeMapDict(lang: str):
             map_dict.update(tmp_dict)
     return map_dict
 
-def getMTjson():
+def getMTjson(lang: str = None, version: str = None):
     _MACHINE_FN_PATTERN = re.compile(
     r'^machine-(?P<locale>[a-zA-Z_]+)-(?P<version>v?[0-9\.]+(?:-.*)?)\.json$',
     re.IGNORECASE
     )
-    return [pathstr for pathstr in glob("machine-json/*") if _MACHINE_FN_PATTERN.match(Path(pathstr).name) is not None]
+    info_dict = {}
+    for pathstr in glob("machine-json/*"):
+        match = _MACHINE_FN_PATTERN.match(Path(pathstr).name)
+        if match is None:
+            continue
+        match = match.groupdict()
+        info_dict[pathstr] = {'locale': match['locale'], 'version': match['version']}
+    if lang is not None:
+        info_dict = {key: value for key, value in info_dict.items() if value['locale'] == lang}
+    if version is not None:
+        info_dict = {key: value for key, value in info_dict.items() if value['version'] == version}
+    return [key for key in info_dict.keys()]
 
 def translate(MTjsonPath: str):
     from googletrans import Translator
@@ -152,35 +163,40 @@ def TranslateAll():
         makePOfromMTjson(pathstr)
     print('All translation done.')
 
-def UpdateMT(do_translate=False):
+def updateMT(MTjsonPath: str, new_version: str):
+    with open(MTjsonPath) as f:
+        old_json = json.load(f)
+    locale = old_json['lang']
+    version = old_json['version']
+    if version == new_version:
+        print(f'locale: {locale} is up-to-date.')
+        return MTjsonPath
+
+    print(f'creating machine-{locale}-{new_version}.json')
+    newpath = makeMTjson(locale, new_version)
+
+    print(f'updating {locale}...')
+    with open(newpath) as f:
+        new_json = json.load(f)
+
+    for key in new_json['translation'].keys():
+        new_json['translation'][key] = old_json['translation'].get(key, {'deepl': '', 'machine': ''})
+
+    with open(newpath, 'wt') as f:
+        json.dump(new_json, f)
+
+    Path(MTjsonPath).unlink()
+
+    return newpath
+
+def UpdateAllMT(do_translate=False):
     with open('mvloc.config.jsonc') as f:
         config = json5.load(f)
 
     base_version = config['packaging']['version']
 
     for pathstr in getMTjson():
-        with open(pathstr) as f:
-            old_json = json.load(f)
-        locale = old_json['lang']
-        version = old_json['version']
-        if version == base_version:
-            print(f'locale: {locale} is up-to-date.')
-            continue
-
-        print(f'creating machine-{locale}-{base_version}.json')
-        newpath = makeMTjson(locale, base_version)
-
-        print(f'updating {locale}...')
-        with open(newpath) as f:
-            new_json = json.load(f)
-
-        for key in new_json['translation'].keys():
-            new_json['translation'][key] = old_json['translation'].get(key, {'deepl': '', 'machine': ''})
-
-        with open(newpath, 'wt') as f:
-            json.dump(new_json, f)
-
-        Path(pathstr).unlink()
+        newpath = updateMT(pathstr, base_version)
 
         if(do_translate):
             translate(newpath)
@@ -255,7 +271,7 @@ def deepltranslate(api_key: str, MTjsonPath: str, character_limit: int = -1):
     save(data)
     return
 
-def measure(MTjsonPath: str):
+def measureMT(MTjsonPath: str):
     with open(MTjsonPath) as f:
         data = json.load(f)
 
@@ -276,6 +292,6 @@ def measure(MTjsonPath: str):
             
     print(f"language: {data['lang']}, version: {data['version']}\n\n*deepl*\nachievement: {deepl_length}/{all_length}({deepl_length / all_length * 100}%)\nleft: {all_length - deepl_length} texts ({deepl_chara_len} characters)\n\n*total*\nachievement: {all_length - untranslated_len}/{all_length}({(all_length -untranslated_len) / all_length * 100}%)\nleft: {untranslated_len} texts ({untranslated_chara_len} characters)\n\n")
 
-def MeasureAll():
+def MeasureAllMT():
     for pathstr in getMTjson():
-        measure(pathstr)
+        measureMT(pathstr)

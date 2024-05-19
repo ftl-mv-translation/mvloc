@@ -1051,7 +1051,26 @@ def package(ctx, targetlang, machine):
         except:
             working_path.unlink(missing_ok=True)
             raise
-
+        
+def relocate_strings(dict_neworiginal, dict_oldtranslated, tm: TranslationMemory, is_original):
+        dict_newtranslated = {}
+        for key, entry_neworiginal in dict_neworiginal.items():
+            match_result = tm.match(entry_neworiginal.value, key)
+            if match_result:
+                value_translated, fuzzy = match_result
+            else:
+                entry_oldtranslated = dict_oldtranslated.get(key, None)
+                if entry_oldtranslated:
+                    value_translated = entry_oldtranslated.value
+                    fuzzy = entry_oldtranslated.fuzzy
+                else:
+                    value_translated = entry_neworiginal.value if is_original else ''
+                    fuzzy = False
+            dict_newtranslated[key] = entry_neworiginal._replace(
+                value=value_translated,
+                fuzzy=fuzzy and (not is_original)
+            )
+        return dict_newtranslated
 
 @main.command()
 @click.option(
@@ -1095,28 +1114,6 @@ def major_update(ctx, first_pass, second_pass, do_mt):
 
     Example: mvloc major-update --first-pass
     '''
-
-    def relocate_strings(dict_neworiginal, dict_oldtranslated, tm: TranslationMemory, is_original):
-        dict_newtranslated = {}
-        for key, entry_neworiginal in dict_neworiginal.items():
-            match_result = tm.match(entry_neworiginal.value, key)
-            if match_result:
-                value_translated, fuzzy = match_result
-            else:
-                entry_oldtranslated = dict_oldtranslated.get(key, None)
-                if entry_oldtranslated:
-                    value_translated = entry_oldtranslated.value
-                    fuzzy = entry_oldtranslated.fuzzy
-                else:
-                    value_translated = entry_neworiginal.value if is_original else ''
-                    fuzzy = False
-            dict_newtranslated[key] = entry_neworiginal._replace(
-                value=value_translated,
-                fuzzy=fuzzy and (not is_original)
-            )
-        return dict_newtranslated
-
-    # -------------
 
     if first_pass == second_pass:
         raise RuntimeError('Must be call with exactly one of the --first_pass or --second-pass.')
@@ -1263,7 +1260,71 @@ def deepl(ctx, api_key, targetlang, limit):
     makePOfromMTjson(MTjosnPath)
     print('all process successfully done.')
     measureMT(MTjosnPath)
+
+@main.command()
+@click.pass_context
+def extract(ctx):
+    config = ctx.obj['config']
+    prefix = config['packaging']['prefix']
+    version = config['packaging']['version']
     
+    list_of_languages = set(Path(path).stem for path in glob_posix('locale/**/*.po'))
+    tm = {}
+    for lang in list_of_languages:
+        print(f'Generating TM for {lang}...')
+        tm[lang] = generate_translation_memory('locale/**/en.po', f'locale/**/{lang}.po')
+    
+    with open(f'{prefix}-{version}.memory', 'wb') as f:
+        pickle.dump(tm, f)
+
+@main.command()
+@click.pass_context
+def open_project(ctx):
+    configpath = ctx.obj['configpath']
+    config = ctx.obj['config']
+    filePatterns = config.get('filePatterns', [])
+    
+    with open('tm/FTL-Multiverse-5.4.6.memory', 'rb') as f:
+        tm =pickle.load(f)
+    list_of_languages = tm.keys()
+    
+    filepaths_xml = [
+        path
+        for file_pattern in filePatterns
+        for path in glob_posix(file_pattern, root_dir='src-en')
+    ]
+
+    with open('report.txt', 'w', encoding='utf-8', newline='\n', buffering=1) as reportfile:
+        for filepath_xml in filepaths_xml:
+            print(f'Generating en.po.new for {filepath_xml}...')
+
+            # Generate en.po
+            success = runproc(
+                f'Generating locale: {filepath_xml}, en',
+                reportfile, configpath,
+                'generate', f'src-en/{filepath_xml}', f'locale/{filepath_xml}/en.po',
+                '-p', f'{filepath_xml}$', '-l', f'src-en/{filepath_xml}', '-r'
+            )
+            if not success:
+                continue
+            
+            dict_neworiginal, _, sourcelocation = readpo(f'locale/{filepath_xml}/en.po')
+            assert sourcelocation
+            
+            for lang in list_of_languages:
+                if lang == 'en':
+                    continue
+                print(f'Relocating strings for {filepath_xml}, {lang}...')
+
+                filepath_po = f'locale/{filepath_xml}/{lang}.po'
+
+                dict_emptytranslated = {
+                    entry_neworiginal.key: entry_neworiginal._replace(value='', fuzzy=False)
+                    for entry_neworiginal in dict_neworiginal.values()
+                }
+                dict_newtranslated = relocate_strings(dict_neworiginal, dict_emptytranslated, tm[lang], False)
+                entries_newtranslated = sorted(dict_newtranslated.values(), key=lambda entry: entry.lineno)
+                writepo(filepath_po, entries_newtranslated, sourcelocation)
     
 if __name__ == '__main__':
     main()

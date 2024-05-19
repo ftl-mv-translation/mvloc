@@ -126,9 +126,10 @@ class TranslationMemoryEntry:
         return self._dominant_translation_global
     
 class TranslationMemory:
-    def __init__(self):
+    def __init__(self, minimal_similarity=_FUZZY_MATCH_MINIMAL_SCORE):
         self.tm: dict[str, TranslationMemoryEntry] = defaultdict(TranslationMemoryEntry)
         self._fuzz = None
+        self._cutoff = minimal_similarity
         
     def add(self, dict_original, dict_translated):
         for key, entry_original in dict_original.items():
@@ -143,7 +144,7 @@ class TranslationMemory:
     def prepare_match(self):
         for tme in self.tm.values():
             tme.prepare_match()
-        self._fuzz = BlazeFuzz(self.tm.keys())
+        self._fuzz = BlazeFuzz(self.tm.keys(), self._cutoff)
 
     def match(self, value, key) -> Optional[tuple[str, bool]]:
         # Returns (value_translated, fuzzy)
@@ -162,7 +163,7 @@ class TranslationMemory:
         
         return (value_translated, fuzzy)
 
-def generate_translation_memory(globpattern_original, globpattern_translated):
+def generate_translation_memory(globpattern_original, globpattern_translated, exact_match=False):
     logger.info('Reading original strings for generating TM...')
     dict_original_all = {}
     for filepath_original in glob_posix(globpattern_original):
@@ -176,7 +177,7 @@ def generate_translation_memory(globpattern_original, globpattern_translated):
         dict_translated_all.update(dict_translated)
     
     logger.info('Generating TM...')
-    tm = TranslationMemory()
+    tm = TranslationMemory(100) if exact_match else TranslationMemory()
     tm.add(dict_original_all, dict_translated_all)
 
     logger.info('Preprocessing matches...')

@@ -1262,19 +1262,14 @@ def deepl(ctx, api_key, targetlang, limit):
     measureMT(MTjosnPath)
 
 @main.command()
-@click.pass_context
-def extract(ctx):
-    config = ctx.obj['config']
-    prefix = config['packaging']['prefix']
-    version = config['packaging']['version']
-    
+def extract():
     list_of_languages = set(Path(path).stem for path in glob_posix('locale/**/*.po'))
     tm = {}
     for lang in list_of_languages:
         print(f'Generating TM for {lang}...')
-        tm[lang] = generate_translation_memory('locale/**/en.po', f'locale/**/{lang}.po')
+        tm[lang] = generate_translation_memory('locale/**/en.po', f'locale/**/{lang}.po', True)
     
-    with open(f'{prefix}-{version}.memory', 'wb') as f:
+    with open('translation_memory.pickle', 'wb') as f:
         pickle.dump(tm, f)
 
 @main.command()
@@ -1284,7 +1279,7 @@ def open_project(ctx):
     config = ctx.obj['config']
     filePatterns = config.get('filePatterns', [])
     
-    with open('tm/FTL-Multiverse-5.4.6.memory', 'rb') as f:
+    with open('translation_memory.pickle', 'rb') as f:
         tm =pickle.load(f)
     list_of_languages = tm.keys()
     

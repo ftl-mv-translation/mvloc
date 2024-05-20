@@ -48,7 +48,11 @@ def parse_ftlxml(path):
     (*) Note: FTL cannot parse xmlns definitions at all, so this "well-formed" XML is actually invalid in FTL when
         it's directly serialized. Instead it MUST be serialized with the write_ftlxml() to make it readable from FTL.
     '''
-    tree = etree.parse(path, etree.XMLParser(recover=True))
+    with open(path, 'rt', encoding='utf8') as f:
+        xmlstring = f.read()
+    newstring = f'<dummyroot>{xmlstring}</dummyroot>'
+    
+    tree = etree.parse(BytesIO(newstring.encode('utf8')), etree.XMLParser(recover=True))
 
     # Apply XSLT multiple times to add namespace definitions
     for namespace in _FTL_XML_NAMESPACES:
@@ -85,6 +89,8 @@ def write_ftlxml(path, tree):
             f' xmlns:{namespace}="http://dummy/{namespace}"'.encode(encoding='utf-8'),
             b''
         )
+    result = result.replace('<dummyroot>', b'')
+    result = result.replace('</dummyroot>', b'')
 
     with open(path, 'wb') as f:
         f.write(result)

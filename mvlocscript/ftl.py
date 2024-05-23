@@ -89,8 +89,8 @@ def write_ftlxml(path, tree):
             f' xmlns:{namespace}="http://dummy/{namespace}"'.encode(encoding='utf-8'),
             b''
         )
-    result = result.replace('<dummyroot>', b'')
-    result = result.replace('</dummyroot>', b'')
+    result = result.replace('<dummyroot>'.encode(encoding='utf-8'), b'')
+    result = result.replace('</dummyroot>'.encode(encoding='utf-8'), b'')
 
     with open(path, 'wb') as f:
         f.write(result)

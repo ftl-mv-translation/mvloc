@@ -35,7 +35,7 @@ _XSLT_ADD_NAMESPACE_TEMPLATE = '''
 
 _FTL_XML_NAMESPACES = ['mod', 'mod-append', 'mod-overwrite']
 
-def parse_ftlxml(path):
+def parse_ftlxml(path, use_dummyroot=False):
     '''
     FTL Multiverse XMLs are actually written in a dialect of XML:
     - Uses undefined namespaces (`mod:` without xmlns definition)
@@ -48,11 +48,14 @@ def parse_ftlxml(path):
     (*) Note: FTL cannot parse xmlns definitions at all, so this "well-formed" XML is actually invalid in FTL when
         it's directly serialized. Instead it MUST be serialized with the write_ftlxml() to make it readable from FTL.
     '''
-    with open(path, 'rt', encoding='utf8') as f:
-        xmlstring = f.read()
-    newstring = f'<dummyroot>{xmlstring}</dummyroot>'
-    
-    tree = etree.parse(BytesIO(newstring.encode('utf8')), etree.XMLParser(recover=True))
+    if use_dummyroot:
+        with open(path, 'rt', encoding='utf8') as f:
+            xmlstring = f.read()
+        newstring = f'<dummyroot>{xmlstring}</dummyroot>'
+        
+        tree = etree.parse(BytesIO(newstring.encode('utf8')), etree.XMLParser(recover=True))
+    else:
+        tree = etree.parse(path, etree.XMLParser(recover=True))
 
     # Apply XSLT multiple times to add namespace definitions
     for namespace in _FTL_XML_NAMESPACES:

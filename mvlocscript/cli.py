@@ -62,9 +62,10 @@ def unhandled(ctx, a, b, mismatch):
 
     config = ctx.obj['config']
     stringSelectionXPath = config.get('stringSelectionXPath', [])
+    use_dummyroot = config.get('useDummyRoot', False)
 
-    atree = parse_ftlxml(a)
-    btree = parse_ftlxml(b)
+    atree = parse_ftlxml(a, use_dummyroot)
+    btree = parse_ftlxml(b, use_dummyroot)
 
     checker = XPathInclusionChecker(atree, stringSelectionXPath)
 
@@ -116,7 +117,7 @@ def generate(ctx, xml, output, prefix, location, prune_empty_strings, delete_ide
     stringSelectionXPath = config.get('stringSelectionXPath', [])
 
     print(f'Reading {xml}...')
-    tree = parse_ftlxml(xml)
+    tree = parse_ftlxml(xml, config.get('useDummyRoot', False))
     entities = reduce(
         lambda s1, s2: s1 | s2,
         (set(xpath(tree, xpathexpr)) for xpathexpr in stringSelectionXPath)
@@ -218,7 +219,7 @@ def sanitize(ctx, target, original_xml, original_po, targetlang):
 
         if not xmlpath:
             raise RuntimeError('copySourceTemplate detected but --original-xml is not specified.')
-        return XPathInclusionChecker(parse_ftlxml(xmlpath), template)
+        return XPathInclusionChecker(parse_ftlxml(xmlpath, config.get('useDummyRoot', False)), template)
 
     config = ctx.obj['config']
     copy_source_checker = get_copy_source_checker(config, targetlang, original_xml)
@@ -393,7 +394,7 @@ def apply(ctx, inputxml, originalpo, translatedpo, machinetranslatedpo, outputxm
     use_fuzzy = perLanguageSettings.get('applyUseFuzzy', False)
 
     print(f'Reading {inputxml}...')
-    tree = parse_ftlxml(inputxml)
+    tree = parse_ftlxml(inputxml, config.get('useDummyRoot', False))
 
     dict_original, _, _ = readpo(originalpo)
     dict_translated = None

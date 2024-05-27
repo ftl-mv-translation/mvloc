@@ -1,5 +1,5 @@
 from itertools import zip_longest
-from re import A
+from re import sub
 from loguru import logger
 from collections import defaultdict, namedtuple
 from lxml import etree
@@ -51,7 +51,7 @@ def parse_ftlxml(path, use_dummyroot=False):
     if use_dummyroot:
         with open(path, 'rt', encoding='utf8') as f:
             xmlstring = f.read()
-        newstring = f'<dummyroot>{xmlstring}</dummyroot>'
+        newstring = sub(r'(^(<\?xml.*?\?>)?)', r'\1<dummyroot>', xmlstring) + '</dummyroot>'
         
         tree = etree.parse(BytesIO(newstring.encode('utf8')), etree.XMLParser(recover=True))
     else:

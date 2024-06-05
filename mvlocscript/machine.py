@@ -186,7 +186,7 @@ def updateMT(MTjsonPath: str, new_version: str, force=False):
     with open(newpath, 'wt') as f:
         json.dump(new_json, f)
 
-    if MTjsonPath != newpath:
+    if Path(MTjsonPath).name != Path(newpath).name:
         Path(MTjsonPath).unlink()
 
     return newpath

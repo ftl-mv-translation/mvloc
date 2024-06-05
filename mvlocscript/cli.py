@@ -1207,24 +1207,26 @@ def major_update(ctx, first_pass, second_pass, do_mt):
             UpdateAllMT(do_mt)
 
 @main.command()
+@click.option(
+    '--force', '-f', is_flag=True, default=False,
+    help='Perform update even if the json file is up-to-date.'
+)
 @click.argument('targetlang')
 @click.pass_context
-def machine(ctx, targetlang):
+def machine(ctx, targetlang, force):
     config = ctx.obj['config']
     base_version = config['packaging']['version']
     
     MTjsonPathes = getMTjson(targetlang)
     if len(MTjsonPathes) > 1:
-        print(f"find multiple files in machine-json/ whose lang code is {targetlang}. make sure put only one file per langage in machine-json/")
+        print(f"found multiple files in machine-json/ whose lang code is {targetlang}. make sure put only one file per langage in machine-json/")
         return
     elif len(MTjsonPathes) == 1:
         MTjosnPath = MTjsonPathes[0]
-        MTjosnPath = updateMT(MTjosnPath, base_version)
+        MTjosnPath = updateMT(MTjosnPath, base_version, force)
     elif len(MTjsonPathes) == 0:
         print(f'creating MT json for {targetlang}...')
         MTjosnPath = makeMTjson(targetlang, base_version)
-    else:
-        return
     
     print('start translating...')
     translate(MTjosnPath)
@@ -1234,26 +1236,28 @@ def machine(ctx, targetlang):
     measureMT(MTjosnPath)
 
 @main.command()
+@click.option(
+    '--force', '-f', is_flag=True, default=False,
+    help='Perform update even if the json file is up-to-date.'
+)
 @click.option('--limit', '-l', type=int, default=-1)
 @click.argument('targetlang')
 @click.argument('api_key')
 @click.pass_context
-def deepl(ctx, api_key, targetlang, limit):
+def deepl(ctx, api_key, targetlang, limit, force):
     config = ctx.obj['config']
     base_version = config['packaging']['version']
     
     MTjsonPathes = getMTjson(targetlang)
     if len(MTjsonPathes) > 1:
-        print(f"find multiple files in machine-json/ whose lang code is {targetlang}. make sure put only one file per langage in machine-json/")
+        print(f"found multiple files in machine-json/ whose lang code is {targetlang}. make sure put only one file per langage in machine-json/")
         return
     elif len(MTjsonPathes) == 1:
         MTjosnPath = MTjsonPathes[0]
-        MTjosnPath = updateMT(MTjosnPath, base_version)
+        MTjosnPath = updateMT(MTjosnPath, base_version, force)
     elif len(MTjsonPathes) == 0:
         print(f'creating MT json for {targetlang}...')
         MTjosnPath = makeMTjson(targetlang, base_version)
-    else:
-        return
     
     print('start translating...')
     deepltranslate(api_key, MTjosnPath, limit)

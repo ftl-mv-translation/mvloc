@@ -97,12 +97,13 @@ def translate(MTjsonPath: str):
             json.dump(data_dict, f)
     
     def _translate(original):
-        for i in range(10):
+        for i in range(5):
             try:
                 translation = translator.translate(original, target_lang, source_lang).text
                 return translation, True
             except:
-                pass
+                sleep((2 ** i) + random())
+                continue
         return original, False
     
     if source_lang != 'en':
@@ -163,12 +164,12 @@ def TranslateAll():
         makePOfromMTjson(pathstr)
     print('All translation done.')
 
-def updateMT(MTjsonPath: str, new_version: str):
+def updateMT(MTjsonPath: str, new_version: str, force=False):
     with open(MTjsonPath) as f:
         old_json = json.load(f)
     locale = old_json['lang']
     version = old_json['version']
-    if version == new_version:
+    if version == new_version and not force:
         print(f'locale: {locale} is up-to-date.')
         return MTjsonPath
 
@@ -185,18 +186,19 @@ def updateMT(MTjsonPath: str, new_version: str):
     with open(newpath, 'wt') as f:
         json.dump(new_json, f)
 
-    Path(MTjsonPath).unlink()
+    if MTjsonPath != newpath:
+        Path(MTjsonPath).unlink()
 
     return newpath
 
-def UpdateAllMT(do_translate=False):
+def UpdateAllMT(do_translate=False, force=False):
     with open('mvloc.config.jsonc') as f:
         config = json5.load(f)
 
     base_version = config['packaging']['version']
 
     for pathstr in getMTjson():
-        newpath = updateMT(pathstr, base_version)
+        newpath = updateMT(pathstr, base_version, force)
 
         if(do_translate):
             translate(newpath)

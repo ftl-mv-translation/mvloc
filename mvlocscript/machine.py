@@ -102,7 +102,6 @@ def translate(MTjsonPath: str):
                 translation = translator.translate(original, target_lang, source_lang).text
                 return translation, True
             except:
-                sleep((2 ** i) + random())
                 continue
         return original, False
     

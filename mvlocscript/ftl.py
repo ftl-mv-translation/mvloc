@@ -489,6 +489,18 @@ class ApplyPostProcessHullNumbersFontSubstitution(ApplyPostProcessBase):
         for attribute in attributes:
             attribute.value = str(self._type)
 
+class ApplyPostProcessHullNumbersXPositionSubstitution(ApplyPostProcessBase):
+    '''Change /FTL/hullNumbers/playerText/@x for hull hit point numbers.'''
+    def __init__(self, arg):
+        self._x = arg
+
+    def do(self, tree, path):
+        if 'data/hyperspace.xml' not in path:
+            return
+        attributes = xpath(tree, '/FTL/hullNumbers/playerText/@x')
+        for attribute in attributes:
+            attribute.value = str(self._x)
+
 class ApplyPostProcessEnemyHullNumbersXPositionSubstitution(ApplyPostProcessBase):
     '''Change /FTL/hullNumbers/enemyText/@x for enemy hull hit point numbers.'''
     def __init__(self, arg):
@@ -516,6 +528,7 @@ class ApplyPostProcessBossHullNumbersXPositionSubstitution(ApplyPostProcessBase)
 def apply_postprocess(tree, path, postprocess, arg):
     POSTPROCESS_FACTORIES = {
         'substitute-font-for-hull-numbers': (lambda: ApplyPostProcessHullNumbersFontSubstitution(arg)),
+        'substitute-xposition-for-hull-numbers': (lambda: ApplyPostProcessHullNumbersXPositionSubstitution(arg)),
         'substitute-xposition-for-enemy-hull-numbers': (lambda: ApplyPostProcessEnemyHullNumbersXPositionSubstitution(arg)),
         'substitute-xposition-for-boss-hull-numbers': (lambda: ApplyPostProcessBossHullNumbersXPositionSubstitution(arg)),
     }

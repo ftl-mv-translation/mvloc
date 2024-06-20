@@ -986,7 +986,9 @@ def package(ctx, targetlang, machine):
                 path: pathbase / path
                 for path in glob_posix('**', root_dir=pathbase)
             })
-
+        testlist = {str(key): str(value) for key, value in writelist.items()}
+        with open('writelist.json', 'w') as f:
+            json5.dump(testlist, f, indent=2)
         for arcname, path in writelist.items():
             zipf.write(path, arcname=arcname)
 

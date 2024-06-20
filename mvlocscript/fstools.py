@@ -46,7 +46,7 @@ def glob_posix(pattern, *args, **kwargs):
     
     root_dir = Path(kwargs.get('root_dir', '.'))
 
-    results = glob(pattern, *args, **new_kwargs)
+    results = list(map(os.path.normpath, glob(pattern, *args, **new_kwargs)))
     return list(filter(
         lambda p: (root_dir / p).is_file(),
         (Path(result).as_posix() for result in results)

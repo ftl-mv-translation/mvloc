@@ -983,7 +983,7 @@ def package(ctx, targetlang, machine):
         for pathbase in target_directories:
             pathbase = Path(pathbase)
             writelist.update({
-                os.path.normpath(path): pathbase / path
+                path.replace('\\', '/'): pathbase / path
                 for path in glob_posix('**', root_dir=pathbase)
             })
         testlist = {str(key): str(value) for key, value in writelist.items()}

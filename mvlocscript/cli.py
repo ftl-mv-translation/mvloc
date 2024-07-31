@@ -983,9 +983,8 @@ def package(ctx, targetlang, machine):
         for pathbase in target_directories:
             pathbase = Path(pathbase)
             writelist.update({
-                path.replace('\\', '/'): pathbase / path
+                path: pathbase / path
                 for path in glob_posix('**', root_dir=pathbase)
-                if path.replace('\\', '/')[-1] != '/'#exclued directory(writelist sometimes includes directories somehow)
             })
         testlist = {str(key): str(value) for key, value in writelist.items()}
         with open('writelist.json', 'w') as f:

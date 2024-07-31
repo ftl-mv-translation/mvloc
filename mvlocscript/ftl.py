@@ -51,7 +51,7 @@ def parse_ftlxml(path, use_dummyroot=False):
     if use_dummyroot:
         with open(path, 'rt', encoding='utf8') as f:
             xmlstring = f.read()
-        newstring = sub(r'(^(<\?xml.*?\?>)?)', r'\1<dummyroot>', xmlstring) + '</dummyroot>'
+        newstring = sub(r'(^\s*)((<\?xml.*?\?>)?)', r'\2<dummyroot>\1', xmlstring) + '</dummyroot>'
         
         tree = etree.parse(BytesIO(newstring.encode('utf8')), etree.XMLParser(recover=True))
     else:

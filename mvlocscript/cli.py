@@ -1056,6 +1056,12 @@ def package(ctx, targetlang, machine):
             
             translated_path.unlink(missing_ok=True)
             working_path.rename(translated_path)
+            
+            shutil.unpack_archive(str(translated_path), 'tmp_package_dir', 'zip')
+            translated_path.unlink()
+            shutil.make_archive('packages/' + str(translated_path.stem), 'zip', 'tmp_package_dir')
+            shutil.rmtree('tmp_package_dir')
+            os.rename(str(translated_path.with_suffix('.zip')), str(translated_path))
         except:
             working_path.unlink(missing_ok=True)
             raise

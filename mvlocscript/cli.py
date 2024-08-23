@@ -979,6 +979,23 @@ def package(ctx, targetlang, machine):
             return 'xxxxxxx'
 
     def write_directories_into_zip(zipf, target_directories):
+        def merge_xmls():
+            mergexmls_pathbase = Path(f'mergexmls-{targetlang}')
+            if not mergexmls_pathbase.is_dir():
+                return
+            
+            for path in glob_posix('**', root_dir=mergexmls_pathbase):
+                fullpath = mergexmls_pathbase / path
+                assert '.xml' in fullpath.suffixes
+                
+                basefile_path = writelist[path]
+                tree_target = parse_ftlxml(basefile_path, config.get('useDummyRoot', False))
+                tree_addition = parse_ftlxml(fullpath)
+                tree_target.getroot().extend([element for element in tree_addition.getroot().iterchildren()])
+                output_path = Path(target_directories[0]) / path #use tmp dir
+                write_ftlxml(output_path, tree_target)
+                writelist[path] = str(output_path)
+            
         writelist = {}
         for pathbase in target_directories:
             pathbase = Path(pathbase)
@@ -987,6 +1004,7 @@ def package(ctx, targetlang, machine):
                 for path in glob_posix('**', root_dir=pathbase)
                 if path.replace('\\', '/')[-1] != '/'#exclued directory(writelist sometimes includes directories somehow)
             })
+        merge_xmls()
         testlist = {str(key): str(value) for key, value in writelist.items()}
         with open('writelist.json', 'w') as f:
             json5.dump(testlist, f, indent=2)

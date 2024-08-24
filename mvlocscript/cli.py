@@ -1058,7 +1058,7 @@ def package(ctx, targetlang, machine):
 
         ensureparent(working_path)
         try:
-            with zipfile.ZipFile(working_path, 'w') as zipf:
+            with zipfile.ZipFile(working_path, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=6) as zipf:
                 print(f'Assembling {translated_path}...')
                 
                 target_directories = [extracted_pathbase, f'output-{targetlang}']

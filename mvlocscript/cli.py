@@ -707,17 +707,18 @@ def batch_generate(ctx, targetlang, diff, clean, update_mode, id_relocation_stra
     mvloc batch-generate --update en
     '''
 
-    if update_mode and (targetlang != 'en'):
-        raise RuntimeError('--update can only be used when TARGETLANG is "en".')
-
     configpath = ctx.obj['configpath']
     config = ctx.obj['config']
     filePatterns = config.get('filePatterns', [])
+    originalLang = config.get('originalLanguage', 'en')
+    
+    if update_mode and (targetlang != originalLang):
+        raise RuntimeError(f'--update can only be used when TARGETLANG is "{originalLang}".')
 
     filepaths_xml_en = [
         path
         for file_pattern in filePatterns
-        for path in glob_posix(file_pattern, root_dir='src-en')
+        for path in glob_posix(file_pattern, root_dir=f'src-{originalLang}')
     ]
     filepaths_xml_targetlang = [
         path
@@ -744,10 +745,10 @@ def batch_generate(ctx, targetlang, diff, clean, update_mode, id_relocation_stra
             for filepath in filepaths_xml_targetlang:
                 print(f'Processing {filepath}...')
 
-                en_locale = f'locale/{filepath}/en.po'
+                en_locale = f'locale/{filepath}/{originalLang}.po'
 
                 # Generate locale
-                if targetlang == 'en':
+                if targetlang == originalLang:
                     generate_postprocess_args = ['-r']
                 elif Path(en_locale).exists():
                     generate_postprocess_args = ['-d', en_locale]
@@ -757,17 +758,17 @@ def batch_generate(ctx, targetlang, diff, clean, update_mode, id_relocation_stra
                     f'Generating locale: {filepath}, {targetlang}',
                     reportfile, configpath,
                     'generate', f'src-{targetlang}/{filepath}', f'locale/{filepath}/{targetlang}.po',
-                    '-p', f'{filepath}$', '-l', f'src-en/{filepath}', *generate_postprocess_args
+                    '-p', f'{filepath}$', '-l', f'src-{originalLang}/{filepath}', *generate_postprocess_args
                 )
                 if not success:
                     continue
 
                 # Sync phase: sanitize / update
                 if Path(en_locale).exists():
-                    en_old_locale = f'locale/{filepath}/en.po.old'
+                    en_old_locale = f'locale/{filepath}/{originalLang}.po.old'
                     en_xml_missing_warning_shown = False
 
-                    if targetlang == 'en':
+                    if targetlang == originalLang:
                         # Sync every other translation
                         command_targets = glob_posix(f'locale/{filepath}/*.po')
                         command_targets.remove(en_locale)
@@ -781,7 +782,7 @@ def batch_generate(ctx, targetlang, diff, clean, update_mode, id_relocation_stra
                             command_args = [
                                 'update', en_old_locale, en_locale, command_target, '-i', id_relocation_strategy
                             ]
-                            assert targetlang == 'en'
+                            assert targetlang == originalLang
                         else:
                             command_title = 'Sanitizing locale: %s'
                             command_args = ['sanitize', command_target, '-p', en_locale]
@@ -790,12 +791,12 @@ def batch_generate(ctx, targetlang, diff, clean, update_mode, id_relocation_stra
                         if filepath not in filepaths_xml_en:
                             if not en_xml_missing_warning_shown:
                                 print(
-                                    f'WARNING: {filepath}: en.po exists but the XML file is missing from src-en/.'
+                                    f'WARNING: {filepath}: {originalLang}.po exists but the XML file is missing from src-{originalLang}/.'
                                     ' copySourceTemplate settings will NOT be applied.'
                                 )
                                 en_xml_missing_warning_shown = True
                         else:
-                            command_args += ['-x', f'src-en/{filepath}', '-t', Path(command_target).stem]
+                            command_args += ['-x', f'src-{originalLang}/{filepath}', '-t', Path(command_target).stem]
 
                         runproc(
                             command_title % command_target,
@@ -809,7 +810,7 @@ def batch_generate(ctx, targetlang, diff, clean, update_mode, id_relocation_stra
                     runproc(
                         f'Diff report: {filepath}',
                         reportfile, configpath,
-                        'unhandled', f'src-en/{filepath}', f'src-{targetlang}/{filepath}', '-m', '20'
+                        'unhandled', f'src-{originalLang}/{filepath}', f'src-{targetlang}/{filepath}', '-m', '20'
                     )
     finally:
         if update_mode:
@@ -844,10 +845,12 @@ def batch_apply(ctx, targetlang, machine):
     '''
 
     configpath = ctx.obj['configpath']
+    config = ctx.obj['config']
+    originalLang = config.get('originalLanguage', 'en')
 
     locale_en = [
         Path(path).parent.as_posix()
-        for path in glob_posix('**/en.po', root_dir='locale')
+        for path in glob_posix(f'**/{originalLang}.po', root_dir='locale')
     ]
     locale_targetlang = [
         Path(path).parent.as_posix()
@@ -869,7 +872,7 @@ def batch_apply(ctx, targetlang, machine):
             key=(locale_en + locale_targetlang).index
         )
 
-    xmlbasepath_en = Path('src-en')
+    xmlbasepath_en = Path(f'src-{originalLang}')
     localebasepath = Path('locale')
     if machine:
         machinebasepath = Path('locale-machine')
@@ -879,7 +882,7 @@ def batch_apply(ctx, targetlang, machine):
         for targetpath in locale_either:
             print(f'Processing {targetpath}...')
 
-            localepath_en = localebasepath / targetpath / 'en.po'
+            localepath_en = localebasepath / targetpath / f'{originalLang}.po'
             localepath_targetlang = localebasepath / targetpath / f'{targetlang}.po'
             machinepath_targetlang = None
             if machine:
@@ -888,7 +891,7 @@ def batch_apply(ctx, targetlang, machine):
             outputpath = outputbasepath / targetpath
 
             if not localepath_en.exists():
-                print('=> skipped: en.po not found')
+                print(f'=> skipped: {originalLang}.po not found')
                 continue
             if (not localepath_targetlang.exists() and not machine) or (machine and not localepath_targetlang.exists() and not machinepath_targetlang.exists()):
                 print(f'=> skipped: {targetlang}.po not found')
@@ -914,9 +917,12 @@ def stats(ctx, targetlang):
     Example: mvloc stats ko
     '''
 
+    config = ctx.obj['config']
+    originalLang = config.get('originalLanguage', 'en')
+
     locale_en = [
         Path(path).parent.as_posix()
-        for path in glob_posix('**/en.po', root_dir='locale')
+        for path in glob_posix(f'**/{originalLang}.po', root_dir='locale')
     ]
     locale_targetlang = [
         Path(path).parent.as_posix()
@@ -1143,11 +1149,12 @@ def major_update(ctx, first_pass, second_pass, do_mt):
     configpath = ctx.obj['configpath']
     config = ctx.obj['config']
     filePatterns = config.get('filePatterns', [])
+    originalLang = config.get('originalLanguage', 'en')
 
     filepaths_xml = [
         path
         for file_pattern in filePatterns
-        for path in glob_posix(file_pattern, root_dir='src-en')
+        for path in glob_posix(file_pattern, root_dir=f'src-{originalLang}')
     ]
     
     list_of_languages = set(Path(path).stem for path in glob_posix('locale/**/*.po'))
@@ -1157,7 +1164,7 @@ def major_update(ctx, first_pass, second_pass, do_mt):
             tm = {}
             for lang in list_of_languages:
                 print(f'Generating TM for {lang}...')
-                tm[lang] = generate_translation_memory('locale/**/en.po', f'locale/**/{lang}.po')
+                tm[lang] = generate_translation_memory(f'locale/**/{originalLang}.po', f'locale/**/{lang}.po')
 
             # Cleanup removed files if any
             for filepath_po in glob_posix('**/*.po', root_dir='locale'):
@@ -1166,19 +1173,19 @@ def major_update(ctx, first_pass, second_pass, do_mt):
                     (Path('locale') / filepath_po).unlink()
 
             for filepath_xml in filepaths_xml:
-                print(f'Generating en.po.new for {filepath_xml}...')
+                print(f'Generating {originalLang}.po.new for {filepath_xml}...')
 
                 # Generate en.po.new
                 success = runproc(
-                    f'Generating locale: {filepath_xml}, en',
+                    f'Generating locale: {filepath_xml}, {originalLang}',
                     reportfile, configpath,
-                    'generate', f'src-en/{filepath_xml}', f'locale/{filepath_xml}/en.po.new',
-                    '-p', f'{filepath_xml}$', '-l', f'src-en/{filepath_xml}', '-r'
+                    'generate', f'src-{originalLang}/{filepath_xml}', f'locale/{filepath_xml}/{originalLang}.po.new',
+                    '-p', f'{filepath_xml}$', '-l', f'src-{originalLang}/{filepath_xml}', '-r'
                 )
                 if not success:
                     continue
 
-                dict_neworiginal, _, sourcelocation = readpo(f'locale/{filepath_xml}/en.po.new')
+                dict_neworiginal, _, sourcelocation = readpo(f'locale/{filepath_xml}/{originalLang}.po.new')
                 assert sourcelocation
 
                 for lang in list_of_languages:
@@ -1188,21 +1195,21 @@ def major_update(ctx, first_pass, second_pass, do_mt):
 
                     if Path(filepath_po).exists():
                         dict_oldtranslated, _, _ = readpo(filepath_po)
-                    elif lang == 'en':
+                    elif lang == originalLang:
                         dict_oldtranslated = dict(dict_neworiginal)
                     else:
                         dict_oldtranslated = {
                             entry_neworiginal.key: entry_neworiginal._replace(value='', fuzzy=False)
                             for entry_neworiginal in dict_neworiginal.values()
                         }
-                    dict_newtranslated = relocate_strings(dict_neworiginal, dict_oldtranslated, tm[lang], lang == 'en')
+                    dict_newtranslated = relocate_strings(dict_neworiginal, dict_oldtranslated, tm[lang], lang == originalLang)
                     entries_newtranslated = sorted(dict_newtranslated.values(), key=lambda entry: entry.lineno)
                     writepo(filepath_po, entries_newtranslated, sourcelocation)
 
         elif second_pass:
             for filepath_xml in filepaths_xml:
-                en_old_locale = f'locale/{filepath_xml}/en.po'
-                en_new_locale = f'locale/{filepath_xml}/en.po.new'
+                en_old_locale = f'locale/{filepath_xml}/{originalLang}.po'
+                en_new_locale = f'locale/{filepath_xml}/{originalLang}.po.new'
                 assert Path(en_old_locale).exists() and Path(en_new_locale).exists()
 
                 other_locales = glob_posix(f'locale/{filepath_xml}/*.po')
@@ -1217,7 +1224,7 @@ def major_update(ctx, first_pass, second_pass, do_mt):
                         f'Updating locale: {other_locale}',
                         reportfile, configpath,
                         'update', en_old_locale, en_new_locale, other_locale,
-                        '-x', f'src-en/{filepath_xml}',
+                        '-x', f'src-{originalLang}/{filepath_xml}',
                         '-t', Path(other_locale).stem
                     )
                 
@@ -1237,6 +1244,7 @@ def major_update(ctx, first_pass, second_pass, do_mt):
 def machine(ctx, targetlang, force):
     config = ctx.obj['config']
     base_version = config['packaging']['version']
+    originalLang = config.get('originalLanguage', 'en')
     
     MTjsonPathes = getMTjson(targetlang)
     if len(MTjsonPathes) > 1:
@@ -1247,7 +1255,7 @@ def machine(ctx, targetlang, force):
         MTjosnPath = updateMT(MTjosnPath, base_version, force)
     elif len(MTjsonPathes) == 0:
         print(f'creating MT json for {targetlang}...')
-        MTjosnPath = makeMTjson(targetlang, base_version)
+        MTjosnPath = makeMTjson(targetlang, base_version, originalLang)
     
     print('start translating...')
     translate(MTjosnPath)
@@ -1268,6 +1276,7 @@ def machine(ctx, targetlang, force):
 def deepl(ctx, api_key, targetlang, limit, force):
     config = ctx.obj['config']
     base_version = config['packaging']['version']
+    originalLang = config.get('originalLanguage', 'en')
     
     MTjsonPathes = getMTjson(targetlang)
     if len(MTjsonPathes) > 1:
@@ -1278,7 +1287,7 @@ def deepl(ctx, api_key, targetlang, limit, force):
         MTjosnPath = updateMT(MTjosnPath, base_version, force)
     elif len(MTjsonPathes) == 0:
         print(f'creating MT json for {targetlang}...')
-        MTjosnPath = makeMTjson(targetlang, base_version)
+        MTjosnPath = makeMTjson(targetlang, base_version, originalLang)
     
     print('start translating...')
     deepltranslate(api_key, MTjosnPath, limit)
@@ -1288,12 +1297,15 @@ def deepl(ctx, api_key, targetlang, limit, force):
     measureMT(MTjosnPath)
 
 @main.command()
-def extract():
+def extract(ctx):
+    config = ctx.obj['config']
+    originalLang = config.get('originalLanguage', 'en')
+
     list_of_languages = set(Path(path).stem for path in glob_posix('locale/**/*.po'))
     tm = {}
     for lang in list_of_languages:
         print(f'Generating TM for {lang}...')
-        tm[lang] = generate_translation_memory('locale/**/en.po', f'locale/**/{lang}.po', True)
+        tm[lang] = generate_translation_memory(f'locale/**/{originalLang}.po', f'locale/**/{lang}.po', True)
     
     with open('translation_memory.pickle', 'wb') as f:
         pickle.dump(tm, f)
@@ -1304,6 +1316,7 @@ def open_project(ctx):
     configpath = ctx.obj['configpath']
     config = ctx.obj['config']
     filePatterns = config.get('filePatterns', [])
+    originalLang = config.get('originalLanguage', 'en')
     
     with open('translation_memory.pickle', 'rb') as f:
         tm =pickle.load(f)
@@ -1312,28 +1325,28 @@ def open_project(ctx):
     filepaths_xml = [
         path
         for file_pattern in filePatterns
-        for path in glob_posix(file_pattern, root_dir='src-en')
+        for path in glob_posix(file_pattern, root_dir=f'src-{originalLang}')
     ]
 
     with open('report.txt', 'w', encoding='utf-8', newline='\n', buffering=1) as reportfile:
         for filepath_xml in filepaths_xml:
-            print(f'Generating en.po.new for {filepath_xml}...')
+            print(f'Generating {originalLang}.po.new for {filepath_xml}...')
 
             # Generate en.po
             success = runproc(
-                f'Generating locale: {filepath_xml}, en',
+                f'Generating locale: {filepath_xml}, {originalLang}',
                 reportfile, configpath,
-                'generate', f'src-en/{filepath_xml}', f'locale/{filepath_xml}/en.po',
-                '-p', f'{filepath_xml}$', '-l', f'src-en/{filepath_xml}', '-r'
+                'generate', f'src-{originalLang}/{filepath_xml}', f'locale/{filepath_xml}/{originalLang}.po',
+                '-p', f'{filepath_xml}$', '-l', f'src-{originalLang}/{filepath_xml}', '-r'
             )
             if not success:
                 continue
             
-            dict_neworiginal, _, sourcelocation = readpo(f'locale/{filepath_xml}/en.po')
+            dict_neworiginal, _, sourcelocation = readpo(f'locale/{filepath_xml}/{originalLang}.po')
             assert sourcelocation
             
             for lang in list_of_languages:
-                if lang == 'en':
+                if lang == originalLang:
                     continue
                 print(f'Relocating strings for {filepath_xml}, {lang}...')
 

@@ -20,24 +20,9 @@ REPLACE_SPECIAL_CHARACTERS ={
     #     "~":"スクラップ",  # scrap
     # })
 }
-        
-def makeMTjson(lang: str, version: str):
-    data_dict = {}
-    data_dict['lang'] = lang
-    data_dict['version'] = version
-    data_dict['translation'] = {
-        en: {'deepl': hand, 'machine': ''}
-        for en, hand in makeMapDict(lang).items()
-    }
-    
-    path = f'machine-json/machine-{lang}-{version}.json'
-    with open(path, 'wt') as f:
-        json.dump(data_dict, f)
-        
-    return path
 
-def makeMapDict(lang: str):
-    globpattern_original = 'locale/**/en.po'
+def makeMapDict(lang: str, originalLang: str='en'):
+    globpattern_original = f'locale/**/{originalLang}.po'
     
     map_dict = {}
     for filepath_original in glob_posix(globpattern_original):
@@ -55,6 +40,22 @@ def makeMapDict(lang: str):
                  tmp_dict = {entry.value: '' for entry in dict_original.values()}
             map_dict.update(tmp_dict)
     return map_dict
+        
+def makeMTjson(lang: str, version: str, originalLang: str='en'):
+    data_dict = {}
+    data_dict['lang'] = lang
+    data_dict['originalLang'] = originalLang
+    data_dict['version'] = version
+    data_dict['translation'] = {
+        en: {'deepl': hand, 'machine': ''}
+        for en, hand in makeMapDict(lang, originalLang).items()
+    }
+    
+    path = f'machine-json/machine-{lang}-{version}.json'
+    with open(path, 'wt') as f:
+        json.dump(data_dict, f)
+        
+    return path
 
 def getMTjson(lang: str = None, version: str = None):
     _MACHINE_FN_PATTERN = re.compile(
@@ -82,8 +83,9 @@ def translate(MTjsonPath: str):
     with open(MTjsonPath) as f:
         data_dict = json.load(f)
     
+    originalLang = data_dict.get('originalLang', 'en')
     target_lang = data_dict['lang']
-    source_lang = EXCEPTLANG.get(target_lang, 'en')
+    source_lang = EXCEPTLANG.get(target_lang, originalLang)
     special_char_transtable_decode = REPLACE_SPECIAL_CHARACTERS.get(target_lang)
     
     all_length = len(data_dict['translation'])
@@ -105,14 +107,14 @@ def translate(MTjsonPath: str):
                 continue
         return original, False
     
-    if source_lang != 'en':
-        map_dict = makeMapDict(source_lang)
+    if source_lang != originalLang:
+        map_dict = makeMapDict(source_lang, originalLang)
     for key, text_dict in data_dict['translation'].items():
         count += 1
         if text_dict['machine'] != '' or text_dict['deepl'] != '':
             print(f'{count} done')
             continue
-        if source_lang == 'en':
+        if source_lang == originalLang:
             target_text = key
         else:
             target_text = map_dict.get(key, '')
@@ -136,12 +138,13 @@ def translate(MTjsonPath: str):
     save(data_dict)
 
 def makePOfromMTjson(MTjsonPath: str):
-    globpattern_original = 'locale/**/en.po'
-
     with open(MTjsonPath) as f:
         data_dict = json.load(f)
     
     lang = data_dict['lang']
+    originalLang = data_dict.get('originalLang', 'en')
+    
+    globpattern_original = f'locale/**/{originalLang}.po'
     
     map_dict = {}
     for key, text_dict in data_dict['translation'].items():
@@ -155,7 +158,7 @@ def makePOfromMTjson(MTjsonPath: str):
         new_entries = []
         for entry in dict_original.values():
             new_entries.append(StringEntry(entry.key, map_dict.get(entry.value, ''), entry.lineno, False, False))
-        writepo(f'locale-machine/{Path(filepath_original).parent.parent.name}/{Path(filepath_original).parent.name}/{lang}.po', new_entries, f'src-en/{Path(filepath_original).parent.parent.name}/{Path(filepath_original).parent.name}')
+        writepo(f'locale-machine/{Path(filepath_original).parent.parent.name}/{Path(filepath_original).parent.name}/{lang}.po', new_entries, f'src-{originalLang}/{Path(filepath_original).parent.parent.name}/{Path(filepath_original).parent.name}')
 
 def TranslateAll():
     for pathstr in getMTjson():
@@ -167,13 +170,14 @@ def updateMT(MTjsonPath: str, new_version: str, force=False):
     with open(MTjsonPath) as f:
         old_json = json.load(f)
     locale = old_json['lang']
+    originalLang = old_json.get('originalLang', 'en')
     version = old_json['version']
     if version == new_version and not force:
         print(f'locale: {locale} is up-to-date.')
         return MTjsonPath
 
     print(f'creating machine-{locale}-{new_version}.json')
-    newpath = makeMTjson(locale, new_version)
+    newpath = makeMTjson(locale, new_version, originalLang)
 
     print(f'updating {locale}...')
     with open(newpath) as f:
@@ -209,7 +213,11 @@ def deepltranslate(api_key: str, MTjsonPath: str, character_limit: int = -1):
     #url = "https://api.deepl.com/v2/translate"
     #character_limit = -1 #Limit on number of characters to translate. -1 means unlimited
     retry_number = 5 #Number of retries if translation fails.
-    AUTOSAVE_INTERVAL = 50 #Auto save interval for each number of translations. 
+    AUTOSAVE_INTERVAL = 50 #Auto save interval for each number of translations.
+    DEEPL_LANG_TABLE = {
+        'en': 'EN-US',
+        'ru': 'RU'
+    }
     
     def save(data):
         with open(MTjsonPath, 'wt') as f:
@@ -219,6 +227,7 @@ def deepltranslate(api_key: str, MTjsonPath: str, character_limit: int = -1):
         data = json.load(f)
     
     target_lang = data['lang']
+    original_lang = DEEPL_LANG_TABLE.get(data.get('originalLang', 'en'))
     special_char_transtable_decode = REPLACE_SPECIAL_CHARACTERS.get(target_lang)
     
     translation_number = 0
@@ -237,9 +246,10 @@ def deepltranslate(api_key: str, MTjsonPath: str, character_limit: int = -1):
             params = {
                     'auth_key' : api_key,
                     'text' : key,
-                    'source_lang' : 'EN',
                     'target_lang' : target_lang,
                 }
+            if original_lang:
+                params['source_lang': original_lang]
             try:
                 response = requests.post(url, data=params)
                 status = response.status_code

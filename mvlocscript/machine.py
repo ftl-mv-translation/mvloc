@@ -107,6 +107,7 @@ def translate(MTjsonPath: str):
                 continue
         return original, False
     
+    print(f'translating from {source_lang} to {target_lang}...')
     if source_lang != originalLang:
         map_dict = makeMapDict(source_lang, originalLang)
     for key, text_dict in data_dict['translation'].items():
@@ -230,6 +231,7 @@ def deepltranslate(api_key: str, MTjsonPath: str, character_limit: int = -1):
     original_lang = DEEPL_LANG_TABLE.get(data.get('originalLang', 'en'))
     special_char_transtable_decode = REPLACE_SPECIAL_CHARACTERS.get(target_lang)
     
+    print(f'deepl translating from {original_lang} to {target_lang}...')
     translation_number = 0
     count_in_total = 0
     for key, text_dict in data['translation'].items():

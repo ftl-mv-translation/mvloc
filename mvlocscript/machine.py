@@ -6,7 +6,7 @@ import re
 from random import random
 from time import sleep
 import requests
-from mvlocscript.fstools import glob_posix
+from mvlocscript.fstools import glob_posix, ensureparent
 from mvlocscript.potools import readpo, writepo, StringEntry
 
 #{target_lang: source_lang} use weblate translation for non English source language.
@@ -107,6 +107,20 @@ def translate(MTjsonPath: str):
                 continue
         return original, False
     
+    def try_line_by_line_translate(original: str):
+        line_list = original.split('\n')
+        ret_list = []
+        for line in line_list:
+            split_list = re.split('\S', line)
+            left_space = split_list[0]
+            right_space = split_list[-1]
+            translated_text, is_success = _translate(line.strip())
+            if not is_success:
+                return original, False
+
+            ret_list.append(left_space + translated_text + right_space)
+        return '\n'.join(ret_list), True
+    
     print(f'translating from {source_lang} to {target_lang}...')
     if source_lang != originalLang:
         map_dict = makeMapDict(source_lang, originalLang)
@@ -123,8 +137,10 @@ def translate(MTjsonPath: str):
             continue
         translated_text, is_success = _translate(target_text)
         if not is_success:
-            print(f'translation failed: {translated_text}')
-            continue
+            translated_text, is_success = try_line_by_line_translate(target_text)
+            if not is_success:
+                print(f'translation failed: {translated_text}')
+                continue
         translated_text = translated_text.replace('\\ ', '\\')
         if not special_char_transtable_decode is None:
             translated_text = translated_text.translate(special_char_transtable_decode)
@@ -159,7 +175,9 @@ def makePOfromMTjson(MTjsonPath: str):
         new_entries = []
         for entry in dict_original.values():
             new_entries.append(StringEntry(entry.key, map_dict.get(entry.value, ''), entry.lineno, False, False))
-        writepo(f'locale-machine/{Path(filepath_original).parent.parent.name}/{Path(filepath_original).parent.name}/{lang}.po', new_entries, f'src-{originalLang}/{Path(filepath_original).parent.parent.name}/{Path(filepath_original).parent.name}')
+        target_path = f'locale-machine/{Path(filepath_original).parent.parent.name}/{Path(filepath_original).parent.name}/{lang}.po'
+        ensureparent(target_path)
+        writepo(target_path, new_entries, f'src-{originalLang}/{Path(filepath_original).parent.parent.name}/{Path(filepath_original).parent.name}')
 
 def TranslateAll():
     for pathstr in getMTjson():

@@ -995,9 +995,24 @@ def package(ctx, targetlang, machine):
                 assert '.xml' in fullpath.suffixes
                 
                 basefile_path = writelist[path]
-                tree_target = parse_ftlxml(basefile_path, config.get('useDummyRoot', False))
+                tree_target = parse_ftlxml(basefile_path)
                 tree_addition = parse_ftlxml(fullpath)
-                tree_target.getroot().extend([element for element in tree_addition.getroot().iterchildren()])
+                name_map_target = {}
+                for element in tree_target.iter():
+                    name = element.get('name')
+                    if name:
+                        name_map_target[name] = element
+                
+                root_target = tree_target.getroot()
+                root_addition = tree_addition.getroot()
+                
+                for child in root_addition.iterchildren():
+                    name = child.get('name')
+                    if name and name_map_target.get(name) is not None:
+                        root_target.replace(name_map_target[name], child)
+                    else:
+                        root_target.append(child)
+                
                 output_path = Path(target_directories[0]) / path #use tmp dir
                 write_ftlxml(output_path, tree_target)
                 writelist[path] = str(output_path)

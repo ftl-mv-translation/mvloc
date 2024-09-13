@@ -20,6 +20,23 @@ REPLACE_SPECIAL_CHARACTERS ={
     #     "~":"スクラップ",  # scrap
     # })
 }
+MT_REPLACE_MAPS ={
+    'ja': {
+        '多元宇宙': 'マルチバース',
+        'マルチヴァース': 'マルチバース',
+        'レネゲード': 'レネゲイド',
+        '無料カマキリ': 'フリー・マンティス',
+        '無料マンティス': 'フリー・マンティス',
+        '無料のカマキリ': 'フリー・マンティス',
+        '無料のマンティス': 'フリー・マンティス',
+        '無料 マンティス': 'フリー・マンティス',
+        '無料 カマキリ': 'フリー・マンティス',
+        'ナメクジ': 'スラッグ',
+        'カマキリ': 'マンティス',
+        '蘭': 'オーキッド',
+
+    }
+}
 
 def makeMapDict(lang: str, originalLang: str='en'):
     globpattern_original = f'locale/**/{originalLang}.po'
@@ -52,8 +69,8 @@ def makeMTjson(lang: str, version: str, originalLang: str='en'):
     }
     
     path = f'machine-json/machine-{lang}-{version}.json'
-    with open(path, 'wt') as f:
-        json.dump(data_dict, f)
+    with open(path, 'wt', encoding='utf8') as f:
+        json.dump(data_dict, f, ensure_ascii=False, indent=2)
         
     return path
 
@@ -80,7 +97,7 @@ def translate(MTjsonPath: str):
     
     AUTOSAVE_INTERVAL = 100
     
-    with open(MTjsonPath) as f:
+    with open(MTjsonPath, encoding='utf8') as f:
         data_dict = json.load(f)
     
     originalLang = data_dict.get('originalLang', 'en')
@@ -95,8 +112,8 @@ def translate(MTjsonPath: str):
     translator = Translator()
     
     def save(data_dict):
-        with open(MTjsonPath, 'wt') as f:
-            json.dump(data_dict, f)
+        with open(MTjsonPath, 'wt', encoding='utf8') as f:
+            json.dump(data_dict, f, ensure_ascii=False, indent=2)
     
     def _translate(original):
         for i in range(5):
@@ -155,7 +172,14 @@ def translate(MTjsonPath: str):
     save(data_dict)
 
 def makePOfromMTjson(MTjsonPath: str):
-    with open(MTjsonPath) as f:
+    def replace_from_map(text, replace_map):
+        if replace_map is None or not text:
+            return text
+        
+        for before, after in replace_map.items():
+            text = text.replace(before, after)
+        return text
+    with open(MTjsonPath, encoding='utf8') as f:
         data_dict = json.load(f)
     
     lang = data_dict['lang']
@@ -169,12 +193,14 @@ def makePOfromMTjson(MTjsonPath: str):
             map_dict[key] = text_dict['deepl']
         elif text_dict['machine'] != '':
             map_dict[key] = text_dict['machine']
+    
+    replace_map = MT_REPLACE_MAPS.get(lang)
             
     for filepath_original in glob_posix(globpattern_original):
         dict_original, _, _ = readpo(filepath_original)
         new_entries = []
         for entry in dict_original.values():
-            new_entries.append(StringEntry(entry.key, map_dict.get(entry.value, ''), entry.lineno, False, False))
+            new_entries.append(StringEntry(entry.key, replace_from_map(map_dict.get(entry.value, ''), replace_map), entry.lineno, False, False))
         target_path = f'locale-machine/{Path(filepath_original).parent.parent.name}/{Path(filepath_original).parent.name}/{lang}.po'
         ensureparent(target_path)
         writepo(target_path, new_entries, f'src-{originalLang}/{Path(filepath_original).parent.parent.name}/{Path(filepath_original).parent.name}')
@@ -186,7 +212,7 @@ def TranslateAll():
     print('All translation done.')
 
 def updateMT(MTjsonPath: str, new_version: str, force=False):
-    with open(MTjsonPath) as f:
+    with open(MTjsonPath, encoding='utf8') as f:
         old_json = json.load(f)
     locale = old_json['lang']
     originalLang = old_json.get('originalLang', 'en')
@@ -199,14 +225,14 @@ def updateMT(MTjsonPath: str, new_version: str, force=False):
     newpath = makeMTjson(locale, new_version, originalLang)
 
     print(f'updating {locale}...')
-    with open(newpath) as f:
+    with open(newpath, encoding='utf8') as f:
         new_json = json.load(f)
 
     for key in new_json['translation'].keys():
         new_json['translation'][key] = old_json['translation'].get(key, {'deepl': '', 'machine': ''})
 
-    with open(newpath, 'wt') as f:
-        json.dump(new_json, f)
+    with open(newpath, 'wt', encoding='utf8') as f:
+        json.dump(new_json, f, ensure_ascii=False, indent=2)
 
     if Path(MTjsonPath).name != Path(newpath).name:
         Path(MTjsonPath).unlink()
@@ -214,7 +240,7 @@ def updateMT(MTjsonPath: str, new_version: str, force=False):
     return newpath
 
 def UpdateAllMT(do_translate=False, force=False):
-    with open('mvloc.config.jsonc') as f:
+    with open('mvloc.config.jsonc', encoding='utf8') as f:
         config = json5.load(f)
 
     base_version = config['packaging']['version']
@@ -239,10 +265,10 @@ def deepltranslate(api_key: str, MTjsonPath: str, character_limit: int = -1):
     }
     
     def save(data):
-        with open(MTjsonPath, 'wt') as f:
-            json.dump(data, f)
+        with open(MTjsonPath, 'wt', encoding='utf8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
 
-    with open(MTjsonPath) as f:
+    with open(MTjsonPath, encoding='utf8') as f:
         data = json.load(f)
     
     target_lang = data['lang']
@@ -303,7 +329,7 @@ def deepltranslate(api_key: str, MTjsonPath: str, character_limit: int = -1):
     return
 
 def measureMT(MTjsonPath: str):
-    with open(MTjsonPath) as f:
+    with open(MTjsonPath, encoding='utf8') as f:
         data = json.load(f)
 
     all_length = len(data['translation'])

@@ -1257,6 +1257,8 @@ def major_update(ctx, first_pass, second_pass, do_mt):
 @click.argument('targetlang')
 @click.pass_context
 def machine(ctx, targetlang, force):
+    '''Perform machine translation (free, unlimited but low-quality.) It may take hours to finish translation, depending on the scale of the project.'''
+    
     config = ctx.obj['config']
     base_version = config['packaging']['version']
     originalLang = config.get('originalLanguage', 'en')
@@ -1289,6 +1291,8 @@ def machine(ctx, targetlang, force):
 @click.argument('api_key')
 @click.pass_context
 def deepl(ctx, api_key, targetlang, limit, force):
+    '''Perform machine(deepl) translation (use deepl free api, but high-quality.) It may take hours to finish translation, depending on the scale of the project.'''
+    
     config = ctx.obj['config']
     base_version = config['packaging']['version']
     originalLang = config.get('originalLanguage', 'en')
@@ -1312,7 +1316,10 @@ def deepl(ctx, api_key, targetlang, limit, force):
     measureMT(MTjosnPath)
 
 @main.command()
+@click.pass_context
 def extract(ctx):
+    '''Extract translation memory and generate translation_memory.pickle. Bring the file to new project directory so that mvloc open-project works.'''
+    
     config = ctx.obj['config']
     originalLang = config.get('originalLanguage', 'en')
 
@@ -1328,6 +1335,8 @@ def extract(ctx):
 @main.command()
 @click.pass_context
 def open_project(ctx):
+    '''Assuming translation_memory.pickle exists in the current directory, This opens a new translatin project using the tm.'''
+    
     configpath = ctx.obj['configpath']
     config = ctx.obj['config']
     filePatterns = config.get('filePatterns', [])
@@ -1374,6 +1383,42 @@ def open_project(ctx):
                 dict_newtranslated = relocate_strings(dict_neworiginal, dict_emptytranslated, tm[lang], False)
                 entries_newtranslated = sorted(dict_newtranslated.values(), key=lambda entry: entry.lineno)
                 writepo(filepath_po, entries_newtranslated, sourcelocation)
+
+@main.command()
+@click.argument('newlang')
+@click.option(
+    '--force', '-f', is_flag=True, default=False,
+    help='Force to add a new language, even if the language already exists. This option overwrites existing translation of the language.'
+)
+@click.option('--dictionary', '-d', type=str, help='Path to the .json file that contains translation as a series of "original text": "translation".')
+@click.pass_context
+def add_lang(ctx, newlang, force, translation_dict):
+    '''Add a new language.'''
+    
+    list_of_languages = set(Path(path).stem for path in glob_posix('locale/**/*.po'))
+    
+    if newlang in list_of_languages and not force:
+        print(f"The language you are about to add already exists. Please retry with -f option. Lang: {newlang}")
+        return
+    
+    config = ctx.obj['config']
+    originalLang = config.get('originalLanguage', 'en')
+    globpattern_original = f'locale/**/{originalLang}.po'
+    
+    if translation_dict is not None:
+        translation_dict = json5.load(translation_dict)
+    
+    for filepath_original in glob_posix(globpattern_original):
+        dict_original, _, _ = readpo(filepath_original)
+        new_entries = []
+        for entry in dict_original.values():
+            if translation_dict is not None:
+                new_entries.append(StringEntry(entry.key, translation_dict.get(entry.value, ''), entry.lineno, entry.fuzzy, entry.obsolete))
+            else:
+                new_entries.append(StringEntry(entry.key, '', entry.lineno, entry.fuzzy, entry.obsolete))
+        target_path = f'locale/{Path(filepath_original).parent.parent.name}/{Path(filepath_original).parent.name}/{newlang}.po'
+        ensureparent(target_path)
+        writepo(target_path, new_entries, f'src-{originalLang}/{Path(filepath_original).parent.parent.name}/{Path(filepath_original).parent.name}')
     
 if __name__ == '__main__':
     main()

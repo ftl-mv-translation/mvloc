@@ -1392,7 +1392,7 @@ def open_project(ctx):
 )
 @click.option('--dictionary', '-d', type=str, help='Path to the .json file that contains translation as a series of "original text": "translation".')
 @click.pass_context
-def add_lang(ctx, newlang, force, translation_dict):
+def add_lang(ctx, newlang, force, dictionary):
     '''Add a new language.'''
     
     list_of_languages = set(Path(path).stem for path in glob_posix('locale/**/*.po'))
@@ -1405,15 +1405,16 @@ def add_lang(ctx, newlang, force, translation_dict):
     originalLang = config.get('originalLanguage', 'en')
     globpattern_original = f'locale/**/{originalLang}.po'
     
-    if translation_dict is not None:
-        translation_dict = json5.load(translation_dict)
+    if dictionary is not None:
+        with open(dictionary, encoding='utf8') as f:
+            dictionary = json5.load(f)
     
     for filepath_original in glob_posix(globpattern_original):
         dict_original, _, _ = readpo(filepath_original)
         new_entries = []
         for entry in dict_original.values():
-            if translation_dict is not None:
-                new_entries.append(StringEntry(entry.key, translation_dict.get(entry.value, ''), entry.lineno, entry.fuzzy, entry.obsolete))
+            if dictionary is not None:
+                new_entries.append(StringEntry(entry.key, dictionary.get(entry.value, ''), entry.lineno, entry.fuzzy, entry.obsolete))
             else:
                 new_entries.append(StringEntry(entry.key, '', entry.lineno, entry.fuzzy, entry.obsolete))
         target_path = f'locale/{Path(filepath_original).parent.parent.name}/{Path(filepath_original).parent.name}/{newlang}.po'

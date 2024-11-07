@@ -525,12 +525,24 @@ class ApplyPostProcessBossHullNumbersXPositionSubstitution(ApplyPostProcessBase)
         for attribute in attributes:
             attribute.value = str(self._x)
 
+class ApplyPostProcessAddLeadingSpaceToText(ApplyPostProcessBase):
+    '''Add one space to the beginning of the text. mvloc strips white spaces when converting texts from xmls to po files, and weblate does not allow to add a leading space to translation since original's one is stripped. Use this post process if you need a leading space.'''
+    def __init__(self, arg):
+        self._xpathList = arg
+    
+    def do(self, tree, path):
+        for xpathExp in self._xpathList:
+            elements = xpath(tree, xpathExp)
+            for element in elements:
+                element.text = ' ' + element.text
+
 def apply_postprocess(tree, path, postprocess, arg):
     POSTPROCESS_FACTORIES = {
         'substitute-font-for-hull-numbers': (lambda: ApplyPostProcessHullNumbersFontSubstitution(arg)),
         'substitute-xposition-for-hull-numbers': (lambda: ApplyPostProcessHullNumbersXPositionSubstitution(arg)),
         'substitute-xposition-for-enemy-hull-numbers': (lambda: ApplyPostProcessEnemyHullNumbersXPositionSubstitution(arg)),
         'substitute-xposition-for-boss-hull-numbers': (lambda: ApplyPostProcessBossHullNumbersXPositionSubstitution(arg)),
+        'add-leading-space': (lambda: ApplyPostProcessAddLeadingSpaceToText(arg)),
     }
     factory = POSTPROCESS_FACTORIES.get(postprocess, None)
     if factory is None:

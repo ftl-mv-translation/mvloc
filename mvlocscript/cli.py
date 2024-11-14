@@ -1026,9 +1026,9 @@ def package(ctx, targetlang, machine):
                 if path.replace('\\', '/')[-1] != '/'#exclued directory(writelist sometimes includes directories somehow)
             })
         merge_xmls()
-        testlist = {str(key): str(value) for key, value in writelist.items()}
-        with open('writelist.json', 'w') as f:
-            json5.dump(testlist, f, indent=2)
+        # testlist = {str(key): str(value) for key, value in writelist.items()}
+        # with open('writelist.json', 'w') as f:
+        #     json5.dump(testlist, f, indent=2)
         for arcname, path in writelist.items():
             zipf.write(path, arcname=arcname)
 

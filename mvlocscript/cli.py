@@ -9,7 +9,7 @@ import click
 import zipfile
 import json5
 import requests
-from collections import defaultdict
+from collections import defaultdict, Counter
 from functools import reduce
 from pathlib import Path
 from loguru import logger
@@ -30,6 +30,17 @@ logger.add(sys.stderr, format=(
     ' <cyan>{name}</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> - <level>{message}</level>'
 ))
 
+def validate_config(configDict):
+    filePatterns = configDict.get('filePatterns', [])
+    duplicatedPatterns = [pattern for pattern, count in Counter(filePatterns).items() if count > 1]
+    if duplicatedPatterns:
+        raise RuntimeError(f'Duplicated file patterns: {duplicatedPatterns}')
+    
+    stringSelectionXPath = configDict.get('stringSelectionXPath', [])
+    duplicatedXpaths = [xpath for xpath, count in Counter(stringSelectionXPath).items() if count > 1]
+    if duplicatedXpaths:
+        raise RuntimeError(f'Duplicated xpaths: {duplicatedXpaths}')
+
 @click.group()
 @click.option('--config', '-c', default='mvloc.config.jsonc', show_default=True, help='config file')
 @click.pass_context
@@ -39,7 +50,9 @@ def main(ctx, config):
     ctx.ensure_object(dict)
     with open(config, encoding='utf-8') as f:
         ctx.obj['configpath'] = config
-        ctx.obj['config'] = json5.load(f)
+        configDict = json5.load(f)
+        validate_config(configDict)
+        ctx.obj['config'] = configDict
 
 @main.command()
 @click.argument('a')

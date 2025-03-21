@@ -58,17 +58,18 @@ def makeMapDict(lang: str, originalLang: str='en'):
             map_dict.update(tmp_dict)
     return map_dict
         
-def makeMTjson(lang: str, version: str, originalLang: str='en'):
+def makeMTjson(lang: str, version: str, originalLang: str='en', tmpName: bool=False):
     data_dict = {}
     data_dict['lang'] = lang
     data_dict['originalLang'] = originalLang
     data_dict['version'] = version
     data_dict['translation'] = {
-        en: {'deepl': hand, 'machine': ''}
+        en: {'deepl': '', 'machine': '', 'done': hand != ''}
         for en, hand in makeMapDict(lang, originalLang).items()
     }
     
-    path = f'machine-json/machine-{lang}-{version}.json'
+    tmpEscape = '_' if tmpName else ''
+    path = f'machine-json/{tmpEscape}machine-{lang}-{version}.json'
     with open(path, 'wt', encoding='utf8') as f:
         json.dump(data_dict, f, ensure_ascii=False, indent=2)
         
@@ -143,7 +144,7 @@ def translate(MTjsonPath: str):
         map_dict = makeMapDict(source_lang, originalLang)
     for key, text_dict in data_dict['translation'].items():
         count += 1
-        if text_dict['machine'] != '' or text_dict['deepl'] != '':
+        if text_dict['done'] or text_dict['machine'] != '' or text_dict['deepl'] != '':
             print(f'{count} done')
             continue
         if source_lang == originalLang:
@@ -216,28 +217,32 @@ def updateMT(MTjsonPath: str, new_version: str, force=False):
         old_json = json.load(f)
     locale = old_json['lang']
     originalLang = old_json.get('originalLang', 'en')
-    version = old_json['version']
-    if version == new_version and not force:
-        print(f'locale: {locale} is up-to-date.')
-        return MTjsonPath
 
     print(f'creating machine-{locale}-{new_version}.json')
-    newpath = makeMTjson(locale, new_version, originalLang)
+    newpath = makeMTjson(locale, new_version, originalLang, True)
 
     print(f'updating {locale}...')
     with open(newpath, encoding='utf8') as f:
         new_json = json.load(f)
 
     for key in new_json['translation'].keys():
-        new_json['translation'][key] = old_json['translation'].get(key, {'deepl': '', 'machine': ''})
+        old = old_json['translation'].get(key, None)
+        if old is not None:
+            new_json['translation'][key]['deepl'] = old['deepl']
+            new_json['translation'][key]['machine'] = old['machine']
+            new_json['translation'][key]['done'] = new_json['translation'][key]['done'] or old.get('done', False)
 
     with open(newpath, 'wt', encoding='utf8') as f:
         json.dump(new_json, f, ensure_ascii=False, indent=2)
 
-    if Path(MTjsonPath).name != Path(newpath).name:
-        Path(MTjsonPath).unlink()
+    newpath_Path = Path(newpath)
+    oldpath_Path = Path(MTjsonPath)
+    if oldpath_Path.name != newpath_Path.name:
+        oldpath_Path.unlink()
+    
+    newpath_Path = newpath_Path.rename(newpath_Path.with_name(newpath_Path.name[1:]))
 
-    return newpath
+    return f'machine-json/{newpath_Path.name}'
 
 def UpdateAllMT(do_translate=False, force=False):
     with open('mvloc.config.jsonc', encoding='utf8') as f:
@@ -279,7 +284,7 @@ def deepltranslate(api_key: str, MTjsonPath: str, character_limit: int = -1):
     translation_number = 0
     count_in_total = 0
     for key, text_dict in data['translation'].items():
-        if text_dict['deepl'] != '':
+        if text_dict['done'] or text_dict['deepl'] != '':
             continue
         
         for i in range(retry_number):
@@ -339,7 +344,7 @@ def measureMT(MTjsonPath: str):
     untranslated_chara_len = 0
 
     for key, textdata in data['translation'].items():
-        if textdata['deepl'] != '':
+        if textdata['done'] or textdata['deepl'] != '':
             deepl_length += 1
         else:
             deepl_chara_len += len(key)
@@ -347,7 +352,7 @@ def measureMT(MTjsonPath: str):
                 untranslated_len += 1
                 untranslated_chara_len += len(key)
             
-    print(f"language: {data['lang']}, version: {data['version']}\n\n*deepl*\nachievement: {deepl_length}/{all_length}({deepl_length / all_length * 100}%)\nleft: {all_length - deepl_length} texts ({deepl_chara_len} characters)\n\n*total*\nachievement: {all_length - untranslated_len}/{all_length}({(all_length -untranslated_len) / all_length * 100}%)\nleft: {untranslated_len} texts ({untranslated_chara_len} characters)\n\n")
+    print(f"language: {data['lang']}, version: {data['version']}\n\n*hand or deepl*\nachievement: {deepl_length}/{all_length}({deepl_length / all_length * 100}%)\nleft: {all_length - deepl_length} texts ({deepl_chara_len} characters)\n\n*total*\nachievement: {all_length - untranslated_len}/{all_length}({(all_length -untranslated_len) / all_length * 100}%)\nleft: {untranslated_len} texts ({untranslated_chara_len} characters)\n\n")
 
 def MeasureAllMT():
     for pathstr in getMTjson():

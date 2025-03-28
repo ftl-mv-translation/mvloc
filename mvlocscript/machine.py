@@ -277,7 +277,7 @@ def deepltranslate(api_key: str, MTjsonPath: str, character_limit: int = -1):
     with open(MTjsonPath, encoding='utf8') as f:
         data = json.load(f)
     
-    target_lang = data['lang']
+    target_lang = DEEPL_LANG_TABLE.get(data['lang'], data['lang'])
     original_lang = DEEPL_LANG_TABLE.get(data.get('originalLang', 'en'))
     special_char_transtable_decode = REPLACE_SPECIAL_CHARACTERS.get(target_lang)
     

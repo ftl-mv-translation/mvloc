@@ -266,7 +266,8 @@ def deepltranslate(api_key: str, MTjsonPath: str, character_limit: int = -1):
     AUTOSAVE_INTERVAL = 50 #Auto save interval for each number of translations.
     DEEPL_LANG_TABLE = {
         'en': 'EN-US',
-        'ru': 'RU'
+        'ru': 'RU',
+        'pt_BR': 'PT-BR',
     }
     
     def save(data):
@@ -299,8 +300,8 @@ def deepltranslate(api_key: str, MTjsonPath: str, character_limit: int = -1):
                     'text' : key,
                     'target_lang' : target_lang,
                 }
-            if original_lang:
-                params['source_lang'] = original_lang
+            # if original_lang:
+            #     params['source_lang'] = original_lang
             try:
                 response = requests.post(url, data=params)
                 status = response.status_code

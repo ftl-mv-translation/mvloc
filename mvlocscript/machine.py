@@ -300,7 +300,7 @@ def deepltranslate(api_key: str, MTjsonPath: str, character_limit: int = -1):
                     'target_lang' : target_lang,
                 }
             if original_lang:
-                params['source_lang': original_lang]
+                params['source_lang'] = original_lang
             try:
                 response = requests.post(url, data=params)
                 status = response.status_code

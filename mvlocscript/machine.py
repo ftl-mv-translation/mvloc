@@ -70,6 +70,7 @@ def makeMTjson(lang: str, version: str, originalLang: str='en', tmpName: bool=Fa
     
     tmpEscape = '_' if tmpName else ''
     path = f'machine-json/{tmpEscape}machine-{lang}-{version}.json'
+    ensureparent(path)
     with open(path, 'wt', encoding='utf8') as f:
         json.dump(data_dict, f, ensure_ascii=False, indent=2)
         

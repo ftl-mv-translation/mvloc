@@ -64,7 +64,7 @@ def makeMTjson(lang: str, version: str, originalLang: str='en', tmpName: bool=Fa
     data_dict['originalLang'] = originalLang
     data_dict['version'] = version
     data_dict['translation'] = {
-        en: {'deepl': '', 'machine': '', 'done': hand != ''}
+        en: {'advanced': {}, 'deepl': '', 'machine': '', 'done': hand != ''}
         for en, hand in makeMapDict(lang, originalLang).items()
     }
     
@@ -145,7 +145,7 @@ def translate(MTjsonPath: str):
         map_dict = makeMapDict(source_lang, originalLang)
     for key, text_dict in data_dict['translation'].items():
         count += 1
-        if text_dict['done'] or text_dict['machine'] != '' or text_dict['deepl'] != '':
+        if text_dict['done'] or text_dict['machine'] != '' or text_dict['deepl'] != '' or text_dict['advanced'] != {}:
             print(f'{count} done')
             continue
         if source_lang == originalLang:
@@ -191,7 +191,10 @@ def makePOfromMTjson(MTjsonPath: str):
     
     map_dict = {}
     for key, text_dict in data_dict['translation'].items():
-        if text_dict['deepl'] != '':
+        if text_dict['advanced'] != {}:
+            list_priorities = [int(i) for i in text_dict['advanced'].keys()]
+            map_dict[key] = text_dict['advanced'][str(max(list_priorities))]['text']
+        elif text_dict['deepl'] != '':
             map_dict[key] = text_dict['deepl']
         elif text_dict['machine'] != '':
             map_dict[key] = text_dict['machine']
@@ -229,6 +232,7 @@ def updateMT(MTjsonPath: str, new_version: str, force=False):
     for key in new_json['translation'].keys():
         old = old_json['translation'].get(key, None)
         if old is not None:
+            new_json['translation'][key]['advanced'] = old.get('advanced', {})
             new_json['translation'][key]['deepl'] = old['deepl']
             new_json['translation'][key]['machine'] = old['machine']
             new_json['translation'][key]['done'] = new_json['translation'][key]['done'] or old.get('done', False)
@@ -346,7 +350,7 @@ def measureMT(MTjsonPath: str):
     untranslated_chara_len = 0
 
     for key, textdata in data['translation'].items():
-        if textdata['done'] or textdata['deepl'] != '':
+        if textdata['done'] or textdata['deepl'] != '' or textdata['advanced'] != {}:
             deepl_length += 1
         else:
             deepl_chara_len += len(key)

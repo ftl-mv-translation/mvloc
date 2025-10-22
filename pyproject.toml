@@ -16,7 +16,7 @@ polib = "^1.2.0"
 loguru = "^0.7.0"
 requests = "^2.31.0"
 rapidfuzz = "^3.2.0"
-googletrans = "4.0.0rc1"
+google-genai = "^1.46.0"
 
 [tool.poetry.dev-dependencies]
 pyinstaller = "^5.13.0"

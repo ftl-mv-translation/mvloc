@@ -103,15 +103,19 @@ def translate(MTjsonPath: str):
     target_lang = data_dict['lang']
     
     queryFilePath = Path(f"machine-json/tmp_query/{target_lang}-{gemini.ID}.json")
-    if not queryFilePath.parent.exists():
+    if not queryFilePath.exists():
         ensureparent(queryFilePath)
         out = {}
         for key, text_dict in data_dict['translation'].items():
             if text_dict['done'] or (text_dict['advanced'] != {} and max([int(i) for i in text_dict['advanced'].keys()]) >= gemini.ID):
                 continue
             out[key] = ''
-            with open(queryFilePath, 'wt', encoding='utf8') as f:
-                json.dump(out, f, ensure_ascii=False, indent=2)
+        
+        if out == {}:
+            print('all texts are already translated!')
+            return
+        with open(queryFilePath, 'wt', encoding='utf8') as f:
+            json.dump(out, f, ensure_ascii=False, indent=2)
 
     gemini.translate_file(str(queryFilePath), str(queryFilePath), target_lang)
     

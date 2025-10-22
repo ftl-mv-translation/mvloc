@@ -233,6 +233,9 @@ def translate_file(infile: str,
                    batch_size: int = BATCH_SIZE):
     # load
     data_full = load_json_ordered(infile)
+    if len(data_full) == 0:
+        print(f"No entries found in {infile}, exiting.")
+        return
     data = {k: v for k, v in data_full.items() if not v}  # Only translate entries with empty values
     keys = list(data.keys())
     total = len(keys)

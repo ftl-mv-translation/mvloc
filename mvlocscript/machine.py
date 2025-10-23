@@ -95,6 +95,44 @@ def getMTjson(lang: str = None, version: str = None):
     return [key for key in info_dict.keys()]
 
 def translate(MTjsonPath: str):
+    from mvlocscript.aitranslation import gemini
+    
+    with open(MTjsonPath, encoding='utf8') as f:
+        data_dict = json.load(f)
+    
+    target_lang = data_dict['lang']
+    
+    queryFilePath = Path(f"machine-json/tmp_query/{target_lang}-{gemini.ID}.json")
+    if not queryFilePath.exists():
+        ensureparent(queryFilePath)
+        out = {}
+        for key, text_dict in data_dict['translation'].items():
+            if text_dict['done'] or (text_dict['advanced'] != {} and max([int(i) for i in text_dict['advanced'].keys()]) >= gemini.ID):
+                continue
+            out[key] = ''
+        
+        if out == {}:
+            print('all texts are already translated!')
+            return
+        with open(queryFilePath, 'wt', encoding='utf8') as f:
+            json.dump(out, f, ensure_ascii=False, indent=2)
+
+    gemini.translate_file(str(queryFilePath), str(queryFilePath), target_lang)
+    
+    with open(queryFilePath, encoding='utf8') as f:
+        result_dict = json.load(f)
+    
+    for key, translated_text in result_dict.items():
+        data_dict['translation'][key]['advanced'][str(gemini.ID)] = {'model': gemini.MODEL_NAME, 'text': translated_text}
+
+    with open(MTjsonPath, 'wt', encoding='utf8') as f:
+        json.dump(data_dict, f, ensure_ascii=False, indent=2)
+    
+    print('translation done. cleaning up temporary files...')
+    queryFilePath.unlink()
+
+def _translate_old(MTjsonPath: str):
+    "DEPRECATED"
     from googletrans import Translator
     
     AUTOSAVE_INTERVAL = 100

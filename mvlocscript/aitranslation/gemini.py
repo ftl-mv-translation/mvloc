@@ -27,20 +27,36 @@ from difflib import SequenceMatcher
 from google import genai
 from google.genai import types
 
-ID = 10
 
 # ---- Configuration ----
-MODEL_NAME = os.environ.get("GEMINI_MODEL", "gemini-2.5-pro")
+current_model = os.environ.get("GEMINI_MODEL", "gemini-2.5-pro")
 API_KEY = os.environ.get("GEMINI_API_KEY", None)  # Recommended to set via environment variable
 BATCH_SIZE = 600          # Initial batch size
 MAX_RETRIES = 10          # Maximum retry attempts when a single batch fails
 RETRY_DELAY = 2           # Retry wait time in seconds
 
-MAX_INPUT_TOKENS = 31000
+MAX_INPUT_OUTPUT_TOKENS_RATIO = 0.48  # Max input tokens as a ratio of max output tokens for the model
 DYNAMIC_BATCH_SIZING = True  # If true, dynamically adjust batch size based on input token limit
 
 input_token_limit = None
 output_token_limit = None
+
+MODEL_IDS = {
+    "gemini-2.5-pro": 10,
+    "gemini-2.5-flash": 9,
+}
+
+def set_model(model_name: str):
+    if model_name not in MODEL_IDS:
+        raise ValueError(f"Unknown model name: {model_name}. Available models: {list(MODEL_IDS.keys())}")
+    global current_model
+    current_model = model_name
+
+def get_model_id():
+    id = MODEL_IDS.get(current_model, None)
+    if id is None:
+        raise ValueError(f"Unknown model name: {current_model}")
+    return id
 
 # ---- Helper Functions ----
 def load_json_ordered(path: str) -> OrderedDict:
@@ -95,6 +111,8 @@ def calculate_optimal_batch_size(client, model: str, remaining_pairs: List[tuple
     if not DYNAMIC_BATCH_SIZING or not remaining_pairs:
         return min(BATCH_SIZE, len(remaining_pairs))
     
+    assert output_token_limit is not None, "Output token limit must be known for dynamic batch sizing."
+    
     current_batch_size = min(BATCH_SIZE, len(remaining_pairs))
     
     print(f"[INFO] Calculating optimal batch size for {len(remaining_pairs)} remaining items, starting from {current_batch_size}...")
@@ -102,8 +120,8 @@ def calculate_optimal_batch_size(client, model: str, remaining_pairs: List[tuple
     count = 0
     while current_batch_size > 0:
         count += 1
-        if count > 20:
-            raise RuntimeError("Failed to determine optimal batch size after 20 iterations.")
+        if count > 50:
+            raise RuntimeError("Failed to determine optimal batch size after 50 iterations.")
         # Test current batch size
         test_pairs = remaining_pairs[:current_batch_size]
         test_prompt = build_prompt_for_batch(test_pairs)
@@ -116,12 +134,12 @@ def calculate_optimal_batch_size(client, model: str, remaining_pairs: List[tuple
             token_count = token_count_response.total_tokens
             # print(f"[DEBUG] Batch size {current_batch_size}: {token_count} tokens")
             
-            if token_count > MAX_INPUT_TOKENS:
+            if token_count > output_token_limit * MAX_INPUT_OUTPUT_TOKENS_RATIO:
                 # Too many tokens, decrease batch size
-                current_batch_size = max(1, int(current_batch_size * 0.8))
-            elif token_count < MAX_INPUT_TOKENS * 0.9:  # If we're using less than 90% of limit
+                current_batch_size = max(1, int(current_batch_size * 0.9))
+            elif token_count < output_token_limit * MAX_INPUT_OUTPUT_TOKENS_RATIO * 0.9:  # If we're using less than 90% of limit
                 # Try to increase batch size
-                new_batch_size = min(len(remaining_pairs), int(current_batch_size * 1.2))
+                new_batch_size = min(len(remaining_pairs), int(current_batch_size * 1.1))
                 if new_batch_size == current_batch_size:
                     # Can't increase further, we've found optimal size
                     break
@@ -132,7 +150,7 @@ def calculate_optimal_batch_size(client, model: str, remaining_pairs: List[tuple
                 
         except Exception as e:
             print(f"[WARN] Error counting tokens for batch size {current_batch_size}: {e}")
-            current_batch_size = max(1, int(current_batch_size * 0.8))
+            current_batch_size = max(1, int(current_batch_size * 0.9))
     
     print(f"[INFO] Optimal batch size determined: {current_batch_size}")
     return current_batch_size
@@ -242,11 +260,11 @@ def translate_file(infile: str,
     print(f"Loading {infile}: total {total} entries. initial batch_size={batch_size}")
 
     client = make_client()
-    MODEL_INFO = client.models.get(model=MODEL_NAME)
+    MODEL_INFO = client.models.get(model=current_model)
     global input_token_limit, output_token_limit
     input_token_limit = MODEL_INFO.input_token_limit
     output_token_limit = MODEL_INFO.output_token_limit
-    print(f"Using model: {MODEL_NAME}, input token limit: {MODEL_INFO.input_token_limit}, output token limit: {MODEL_INFO.output_token_limit}")
+    print(f"Using model: {current_model}, input token limit: {MODEL_INFO.input_token_limit}, output token limit: {MODEL_INFO.output_token_limit}")
 
     translated = OrderedDict()
     processed = 0
@@ -261,14 +279,14 @@ def translate_file(infile: str,
         remaining_pairs = [(k, data[k]) for k in remaining_keys]
         
         # Calculate optimal batch size for current remaining items
-        optimal_batch_size = calculate_optimal_batch_size(client, MODEL_NAME, remaining_pairs)
+        optimal_batch_size = calculate_optimal_batch_size(client, current_model, remaining_pairs)
         
         # Take the batch
         current_batch_keys = remaining_keys[:optimal_batch_size]
         
         batch_pairs = [(k, data[k]) for k in current_batch_keys]
         print(f"\n[INFO] Translating batch {batch_idx}: {len(batch_pairs)} entries ({processed+1} - {processed+len(batch_pairs)})...")
-        out_pairs = translate_batch(client, MODEL_NAME, batch_pairs, lang)
+        out_pairs = translate_batch(client, current_model, batch_pairs, lang)
         
         output_batch_size = len(out_pairs)
         print(f"[INFO] Translated {output_batch_size} entries. Initial batch size was {optimal_batch_size}. Missing {optimal_batch_size - output_batch_size} entries.")

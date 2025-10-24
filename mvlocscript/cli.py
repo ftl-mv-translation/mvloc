@@ -1264,12 +1264,16 @@ def major_update(ctx, first_pass, second_pass, do_mt):
 
 @main.command()
 @click.option(
+    '--model', '-m', default=None,
+    help='Model name to use for translation. If not specified, the default model will be used.'
+)
+@click.option(
     '--force', '-f', is_flag=True, default=False,
     help='Perform update even if the json file is up-to-date.'
 )
 @click.argument('targetlang')
 @click.pass_context
-def machine(ctx, targetlang, force):
+def machine(ctx, targetlang, force, model):
     '''Perform machine translation (free, unlimited but low-quality.) It may take hours to finish translation, depending on the scale of the project.'''
     
     config = ctx.obj['config']
@@ -1288,7 +1292,7 @@ def machine(ctx, targetlang, force):
         MTjosnPath = makeMTjson(targetlang, base_version, originalLang)
     
     print('start translating...')
-    translate(MTjosnPath)
+    translate(MTjosnPath, model)
     print('making po files from MT...')
     makePOfromMTjson(MTjosnPath)
     print('all process successfully done.')

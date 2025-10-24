@@ -94,20 +94,23 @@ def getMTjson(lang: str = None, version: str = None):
         info_dict = {key: value for key, value in info_dict.items() if value['version'] == version}
     return [key for key in info_dict.keys()]
 
-def translate(MTjsonPath: str):
+def translate(MTjsonPath: str, model = None):
     from mvlocscript.aitranslation import gemini
+    
+    if model is not None:
+        gemini.set_model(model)
     
     with open(MTjsonPath, encoding='utf8') as f:
         data_dict = json.load(f)
     
     target_lang = data_dict['lang']
     
-    queryFilePath = Path(f"machine-json/tmp_query/{target_lang}-{gemini.ID}.json")
+    queryFilePath = Path(f"machine-json/tmp_query/{target_lang}-{gemini.get_model_id()}.json")
     if not queryFilePath.exists():
         ensureparent(queryFilePath)
         out = {}
         for key, text_dict in data_dict['translation'].items():
-            if text_dict['done'] or (text_dict['advanced'] != {} and max([int(i) for i in text_dict['advanced'].keys()]) >= gemini.ID):
+            if text_dict['done'] or (text_dict['advanced'] != {} and max([int(i) for i in text_dict['advanced'].keys()]) >= gemini.get_model_id()):
                 continue
             out[key] = ''
         
@@ -123,7 +126,7 @@ def translate(MTjsonPath: str):
         result_dict = json.load(f)
     
     for key, translated_text in result_dict.items():
-        data_dict['translation'][key]['advanced'][str(gemini.ID)] = {'model': gemini.MODEL_NAME, 'text': translated_text}
+        data_dict['translation'][key]['advanced'][str(gemini.get_model_id())] = {'model': gemini.current_model, 'text': translated_text}
 
     with open(MTjsonPath, 'wt', encoding='utf8') as f:
         json.dump(data_dict, f, ensure_ascii=False, indent=2)

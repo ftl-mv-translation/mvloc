@@ -6,6 +6,7 @@ import re
 from random import random
 from time import sleep
 import requests
+from collections import defaultdict
 from mvlocscript.fstools import glob_posix, ensureparent
 from mvlocscript.potools import readpo, writepo, StringEntry
 
@@ -384,23 +385,47 @@ def measureMT(MTjsonPath: str):
     with open(MTjsonPath, encoding='utf8') as f:
         data = json.load(f)
 
-    all_length = len(data['translation'])
-    deepl_length = 0
-    deepl_chara_len = 0
-    untranslated_len = 0
+    all_count = len(data['translation'])
+    hand_count = 0
+    deepl_count = 0
+    googletrans_count = 0
+    untranslated_count = 0
     untranslated_chara_len = 0
+    advanced_counts = defaultdict(int)
+    advanced_names = {}
 
     for key, textdata in data['translation'].items():
-        if textdata['done'] or textdata['deepl'] != '' or textdata['advanced'] != {}:
-            deepl_length += 1
+        if textdata['done']:
+            hand_count += 1
+        elif textdata['advanced'] != {}:
+            list_priorities = [int(i) for i in textdata['advanced'].keys()]
+            max_priority = max(list_priorities)
+            advanced_counts[max_priority] += 1
+            if not max_priority in advanced_names:
+                advanced_names[max_priority] = textdata['advanced'][str(max_priority)]['model']
+        elif textdata['deepl'] != '':
+            deepl_count += 1
+        elif textdata['machine'] != '':
+            googletrans_count += 1
         else:
-            deepl_chara_len += len(key)
-            if textdata['machine'] == '':
-                untranslated_len += 1
-                untranslated_chara_len += len(key)
-            
-    print(f"language: {data['lang']}, version: {data['version']}\n\n*hand or deepl*\nachievement: {deepl_length}/{all_length}({deepl_length / all_length * 100}%)\nleft: {all_length - deepl_length} texts ({deepl_chara_len} characters)\n\n*total*\nachievement: {all_length - untranslated_len}/{all_length}({(all_length -untranslated_len) / all_length * 100}%)\nleft: {untranslated_len} texts ({untranslated_chara_len} characters)\n\n")
+            untranslated_count += 1
+            untranslated_chara_len += len(key)
+
+    advanced_string = '\n'.join([f"{advanced_names[priority]}: {count / all_count * 100:.2f}% ({count}/{all_count})" for priority, count in sorted(advanced_counts.items(), reverse=True)])
+    if advanced_string != '':
+        advanced_string += '\n'
+
+    print(f"language: {data['lang']}, version: {data['version']}\n\n"
+          "*overall achievement*\n"
+          f"achievement: {(all_count - untranslated_count) / all_count * 100:.2f}% ({all_count - untranslated_count}/{all_count})\n"
+          f"left: {untranslated_count} texts ({untranslated_chara_len} characters)\n\n"
+          "*translation methods composition (in order of high to low quality in general)*\n"
+          f"hand: {hand_count / all_count * 100:.2f}% ({hand_count}/{all_count})\n"
+          f"{advanced_string}"
+          f"deepl: {deepl_count / all_count * 100:.2f}% ({deepl_count}/{all_count})\n"
+          f"googletrans: {googletrans_count / all_count * 100:.2f}% ({googletrans_count}/{all_count})\n")
 
 def MeasureAllMT():
     for pathstr in getMTjson():
+        print("\n")
         measureMT(pathstr)

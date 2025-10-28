@@ -120,8 +120,10 @@ def calculate_optimal_batch_size(client, model: str, remaining_pairs: List[tuple
     count = 0
     while current_batch_size > 0:
         count += 1
-        if count > 50:
-            raise RuntimeError("Failed to determine optimal batch size after 50 iterations.")
+        if count > 100:
+            raise RuntimeError("Failed to determine optimal batch size after 100 iterations.")
+        elif count > 50:
+            current_batch_size = min(BATCH_SIZE * 2, len(remaining_pairs))  # Reset to larger size to escape potential local minima
         # Test current batch size
         test_pairs = remaining_pairs[:current_batch_size]
         test_prompt = build_prompt_for_batch(test_pairs)

@@ -98,7 +98,8 @@ def make_client():
 # ---- Dynamic batch sizing ----
 def calculate_optimal_batch_size(client, model: str, remaining_pairs: List[tuple]) -> int:
     """
-    Calculate optimal batch size by iteratively adjusting based on token count.
+    Calculate optimal batch size using binary search to find the largest batch
+    that stays within the token limit.
     
     Args:
         client: GenAI client
@@ -106,56 +107,78 @@ def calculate_optimal_batch_size(client, model: str, remaining_pairs: List[tuple
         remaining_pairs: Remaining pairs to test with
     
     Returns:
-        Optimal batch size that stays near MAX_INPUT_TOKENS
+        Optimal batch size that stays within MAX_INPUT_TOKENS
     """
     if not DYNAMIC_BATCH_SIZING or not remaining_pairs:
         return min(BATCH_SIZE, len(remaining_pairs))
     
     assert output_token_limit is not None, "Output token limit must be known for dynamic batch sizing."
     
-    current_batch_size = min(BATCH_SIZE, len(remaining_pairs))
+    max_tokens = int(output_token_limit * MAX_INPUT_OUTPUT_TOKENS_RATIO)
+    max_possible_size = len(remaining_pairs)
     
-    print(f"[INFO] Calculating optimal batch size for {len(remaining_pairs)} remaining items, starting from {current_batch_size}...")
+    print(f"[INFO] Calculating optimal batch size for {max_possible_size} remaining items using binary search...")
+    print(f"[INFO] Target token limit: {max_tokens} tokens")
     
-    count = 0
-    while current_batch_size > 0:
-        count += 1
-        if count > 100:
-            raise RuntimeError("Failed to determine optimal batch size after 100 iterations.")
-        elif count > 50:
-            current_batch_size = min(BATCH_SIZE * 2, len(remaining_pairs))  # Reset to larger size to escape potential local minima
-        # Test current batch size
-        test_pairs = remaining_pairs[:current_batch_size]
-        test_prompt = build_prompt_for_batch(test_pairs)
-        
+    def get_token_count(batch_size: int) -> int:
+        """Get token count for a given batch size, with error handling."""
         try:
+            test_pairs = remaining_pairs[:batch_size]
+            test_prompt = build_prompt_for_batch(test_pairs)
             token_count_response = client.models.count_tokens(
                 model=model,
                 contents=test_prompt
             )
-            token_count = token_count_response.total_tokens
-            # print(f"[DEBUG] Batch size {current_batch_size}: {token_count} tokens")
-            
-            if token_count > output_token_limit * MAX_INPUT_OUTPUT_TOKENS_RATIO:
-                # Too many tokens, decrease batch size
-                current_batch_size = max(1, int(current_batch_size * 0.9))
-            elif token_count < output_token_limit * MAX_INPUT_OUTPUT_TOKENS_RATIO * 0.9:  # If we're using less than 90% of limit
-                # Try to increase batch size
-                new_batch_size = min(len(remaining_pairs), int(current_batch_size * 1.1))
-                if new_batch_size == current_batch_size:
-                    # Can't increase further, we've found optimal size
-                    break
-                current_batch_size = new_batch_size
-            else:
-                # We're in the sweet spot (90-100% of MAX_INPUT_TOKENS)
-                break
-                
+            return token_count_response.total_tokens
         except Exception as e:
-            print(f"[WARN] Error counting tokens for batch size {current_batch_size}: {e}")
-            current_batch_size = max(1, int(current_batch_size * 0.9))
+            print(f"[WARN] Error counting tokens for batch size {batch_size}: {e}")
+            return float('inf')  # Treat as invalid/too large
     
-    print(f"[INFO] Optimal batch size determined: {current_batch_size}")
-    return current_batch_size
+    # Start with a more aggressive upper bound - use the full available data
+    left = 1
+    right = max_possible_size
+    best_size = 1
+    
+    # First check if even the maximum possible size fits
+    max_tokens_count = get_token_count(right)
+    if max_tokens_count <= max_tokens:
+        print(f"[INFO] All {right} items fit within token limit ({max_tokens_count} tokens)")
+        return right
+    
+    # print(f"[DEBUG] Max batch size {right}: {max_tokens_count} tokens (exceeds limit)")
+    
+    # Binary search for the maximum valid batch size
+    iteration = 0
+    while left <= right and iteration < 25:  # Slightly more iterations for larger search space
+        iteration += 1
+        mid = (left + right) // 2
+        token_count = get_token_count(mid)
+        
+        # print(f"[DEBUG] Batch size {mid}: {token_count} tokens (iteration {iteration})")
+        
+        if token_count <= max_tokens:
+            best_size = mid
+            left = mid + 1  # Try larger batch size - be more aggressive
+        else:
+            right = mid - 1  # Try smaller batch size
+    
+    # Additional refinement: try a few sizes above best_size to ensure we found the true maximum
+    if best_size < max_possible_size:
+        for test_size in range(best_size + 1, min(best_size + 10, max_possible_size + 1)):
+            token_count = get_token_count(test_size)
+            # print(f"[DEBUG] Refinement batch size {test_size}: {token_count} tokens")
+            if token_count <= max_tokens:
+                best_size = test_size
+            else:
+                break
+    
+    final_size = min(best_size, max_possible_size)
+    final_tokens = get_token_count(final_size)
+    utilization = (final_tokens / max_tokens) * 100
+    
+    print(f"[INFO] Optimal batch size determined: {final_size} (converged in {iteration} iterations)")
+    print(f"[INFO] Token utilization: {final_tokens}/{max_tokens} ({utilization:.1f}%)")
+    return final_size
 
 # ---- Generate prompt ----
 def build_prompt_for_batch(pairs: List[tuple]) -> str:

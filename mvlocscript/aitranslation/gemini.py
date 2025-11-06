@@ -46,6 +46,8 @@ MODEL_IDS = {
     "gemini-2.5-flash": 9,
 }
 
+PLACEHOLDERTEXT = "[[TRANSLATE_ME_LATER]]"
+
 def set_model(model_name: str):
     if model_name not in MODEL_IDS:
         raise ValueError(f"Unknown model name: {model_name}. Available models: {list(MODEL_IDS.keys())}")
@@ -230,18 +232,25 @@ def translate_batch(client, model: str, batch_pairs: List[tuple], lang: str) -> 
                 orig_keys = orig_keys[:len(out_keys)]  # Allow for some missing keys, but not extra keys
             assert len(out_keys) == len(orig_keys), f"Returned keys count {len(out_keys)} doesn't match input {len(orig_keys)}"
             if out_keys != orig_keys:
-                mismatched = [(o, i) for o, i in zip(out_keys, orig_keys) if o != i]
-                if all(two_text_is_enoughly_equal(o, i) for o, i in mismatched):
-                    # print(f"[WARN] Minor key mismatches detected but considered 'enoughly equal': {mismatched}")
-                    out_values = list(out.values())
-                    out = OrderedDict()
-                    for i, k in enumerate(orig_keys):
+                mismatched = [i for o, i in zip(out_keys, orig_keys) if o != i and not two_text_is_enoughly_equal(o, i)]
+                out_values = list(out.values())
+                out = OrderedDict()
+                for i, k in enumerate(orig_keys):
+                    if k in mismatched:
+                        out[k] = PLACEHOLDERTEXT
+                    else:
                         out[k] = out_values[i]
-                else:
-                    # If order or keys don't match, consider this return invalid, throw exception to trigger retry
-                    with open("last_invalid_response.log", "w", encoding="utf-8") as f:
-                        f.write(text)
-                    raise ValueError(f"Returned keys don't match input.\nMismatched keys: {mismatched}")
+                # if all(two_text_is_enoughly_equal(o, i) for o, i in mismatched):
+                #     # print(f"[WARN] Minor key mismatches detected but considered 'enoughly equal': {mismatched}")
+                #     out_values = list(out.values())
+                #     out = OrderedDict()
+                #     for i, k in enumerate(orig_keys):
+                #         out[k] = out_values[i]
+                # else:
+                #     # If order or keys don't match, consider this return invalid, throw exception to trigger retry
+                #     with open("last_invalid_response.log", "w", encoding="utf-8") as f:
+                #         f.write(text)
+                #     raise ValueError(f"Returned keys don't match input.\nMismatched keys: {mismatched}")
             
             # Log token usage if available
             metadata = getattr(resp, "usage_metadata", None)
@@ -274,12 +283,59 @@ def translate_file(infile: str,
                    outfile: str,
                    lang: str,
                    batch_size: int = BATCH_SIZE):
-    # load
+    
     data_full = load_json_ordered(infile)
     if len(data_full) == 0:
         print(f"No entries found in {infile}, exiting.")
         return
+
+    def proceed_translation(remaining_keys: List[str], translated: OrderedDict):
+        processed = 0
+        batch_idx = 0
+        # Process batches with dynamic sizing
+        while remaining_keys:
+            batch_idx += 1
+            
+            # Create remaining pairs for batch size calculation
+            remaining_pairs = [(k, data[k]) for k in remaining_keys]
+            
+            # Calculate optimal batch size for current remaining items
+            optimal_batch_size = calculate_optimal_batch_size(client, current_model, remaining_pairs)
+            
+            # Take the batch
+            current_batch_keys = remaining_keys[:optimal_batch_size]
+            
+            batch_pairs = [(k, data[k]) for k in current_batch_keys]
+            print(f"\n[INFO] Translating batch {batch_idx}: {len(batch_pairs)} entries ({processed+1} - {processed+len(batch_pairs)})...")
+            out_pairs = translate_batch(client, current_model, batch_pairs, lang)
+            
+            output_batch_size = len(out_pairs)
+            print(f"[INFO] Translated {output_batch_size} entries. Initial batch size was {optimal_batch_size}. Missing {optimal_batch_size - output_batch_size} entries.")
+            remaining_keys = remaining_keys[output_batch_size:]
+            
+            # append results preserving order
+            for k in out_pairs.keys():
+                translated[k] = out_pairs[k]
+            processed += output_batch_size
+
+            # Periodic validation: confirm current cumulative translated keys match original order
+            cur_keys = list(translated.keys())
+            orig_prefix = keys[:len(cur_keys)]
+            if cur_keys != orig_prefix:
+                raise RuntimeError(f"Cumulative validation failed: translated keys order doesn't match original at {processed}")
+            print(f"[OK] Cumulative validation passed (translated {processed}/{total} entries)")
+            data_full.update(translated)
+            save_json_ordered(data_full, outfile)
+
+            time.sleep(0.2)  # Small interval to prevent too fast requests (can be adjusted/removed as needed)
+
     data = {k: v for k, v in data_full.items() if not v}  # Only translate entries with empty values
+    if len(data) == 0:
+        data = {k: v for k, v in data_full.items() if v == PLACEHOLDERTEXT}  # Also consider placeholder entries
+        if len(data) == 0:
+            print(f"All entries in {infile} are already translated, nothing to do.")
+            return
+
     keys = list(data.keys())
     total = len(keys)
     print(f"Loading {infile}: total {total} entries. initial batch_size={batch_size}")
@@ -292,47 +348,19 @@ def translate_file(infile: str,
     print(f"Using model: {current_model}, input token limit: {MODEL_INFO.input_token_limit}, output token limit: {MODEL_INFO.output_token_limit}")
 
     translated = OrderedDict()
-    processed = 0
-    batch_idx = 0
     remaining_keys = keys.copy()
-
-    # Process batches with dynamic sizing
-    while remaining_keys:
-        batch_idx += 1
-        
-        # Create remaining pairs for batch size calculation
-        remaining_pairs = [(k, data[k]) for k in remaining_keys]
-        
-        # Calculate optimal batch size for current remaining items
-        optimal_batch_size = calculate_optimal_batch_size(client, current_model, remaining_pairs)
-        
-        # Take the batch
-        current_batch_keys = remaining_keys[:optimal_batch_size]
-        
-        batch_pairs = [(k, data[k]) for k in current_batch_keys]
-        print(f"\n[INFO] Translating batch {batch_idx}: {len(batch_pairs)} entries ({processed+1} - {processed+len(batch_pairs)})...")
-        out_pairs = translate_batch(client, current_model, batch_pairs, lang)
-        
-        output_batch_size = len(out_pairs)
-        print(f"[INFO] Translated {output_batch_size} entries. Initial batch size was {optimal_batch_size}. Missing {optimal_batch_size - output_batch_size} entries.")
-        remaining_keys = remaining_keys[output_batch_size:]
-        
-        # append results preserving order
-        for k in out_pairs.keys():
-            translated[k] = out_pairs[k]
-        processed += output_batch_size
-
-        # Periodic validation: confirm current cumulative translated keys match original order
-        cur_keys = list(translated.keys())
-        orig_prefix = keys[:len(cur_keys)]
-        if cur_keys != orig_prefix:
-            raise RuntimeError(f"Cumulative validation failed: translated keys order doesn't match original at {processed}")
-        print(f"[OK] Cumulative validation passed (translated {processed}/{total} entries)")
-        data_full.update(translated)
-        save_json_ordered(data_full, outfile)
-
-        time.sleep(0.2)  # Small interval to prevent too fast requests (can be adjusted/removed as needed)
-
+    
+    proceed_translation(remaining_keys, translated)
+    
+    data = {k: v for k, v in data_full.items() if v == PLACEHOLDERTEXT}
+    while len(data) > 0:
+        print(f"\n[INFO] Re-translating {len(data)} entries with placeholder text...")
+        keys = list(data.keys())
+        remaining_keys = keys.copy()
+        translated = OrderedDict()
+        proceed_translation(remaining_keys, translated)
+        data = {k: v for k, v in data_full.items() if v == PLACEHOLDERTEXT}
+    
     # Final save
     data_full.update(translated)
     save_json_ordered(data_full, outfile)

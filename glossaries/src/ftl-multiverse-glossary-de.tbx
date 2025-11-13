@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE martif PUBLIC "ISO 12200:1999A//DTD MARTIF core (DXFcdV04)//EN" "TBXcdv04.dtd">
+<martif type="TBX" xml:lang="en">
+    <martifHeader>
+        <fileDesc>
+            <sourceDesc>
+                <p>Translate Toolkit</p>
+            </sourceDesc>
+        </fileDesc>
+    </martifHeader>
+    <text>
+        <body>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Jerry) "Hello!"</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>(Jerry) "Hallo!"</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Forged ID) Try to trick the Elite.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>(Gefälschte Ausweise) Du versuchst das Elite-Schiff auszutricksen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Continue...</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Fortfahren...</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Adv. Engines) Try to escape the Elite.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>(Erw. Triebwerke) Du versuchst dem Elite-Schiff zu entkommen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Do something onboard the ship.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Tue etwas an Bord des Schiffs.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Do nothing.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Nichts tun.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Attack, we can steal their Mine Launcher tech!</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Angriff, wir können ihre Minenwerfer Technologie stehlen!</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You've taken the risky choice of fighting the ship. Hopefully, you can protect yourself from their salvo long enough.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du hast das Risiko auf dich genommen gegen das Schiff zu kämpfen. Hoffentlich kannst du dich lange genug vor ihren Salven schützen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Avoid the Trapper.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Gehe dem Trapper aus dem Weg.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Messing with a Trapper is a bad idea.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Mit dem Trapper Streit anzufangen ist eine schlechte Idee.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>"A great purchase. May they serve you well, captain..."</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>"Ein großartiger Kauf. Mögen sie dir gute Dienste leisten, Kapitän..."</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Federation Database] What is Tiiikaka?</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Förderation Datenbank] Was ist Tiiikaka?</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Decline.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ablehnen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Board the ship.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Betrete das Schiff.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ignore it.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ignoriere es.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Do not intervene.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Mische dich nicht ein.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Accept their offer.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Nimm ihr Angebot an.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Charge FTL drive.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>FTL-Antrieb aufladen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Attack!</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Angriff!</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ignore the station.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ignoriere die Station.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>There likely isn't anything good to come out of exploring this place. Let's move on.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Diesen Ort zu erkunden wird nichts gutes mit sich bringen. Lass uns weiter gehen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Leave.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Gehe wieder.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Agree.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Zustimmen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Human</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Mensch</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Human</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Mensch</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Prepare to fight.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Mache dich zum Kampf bereit.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Contact the outpost.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Kontaktiere den Außenposten.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Request fuel.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Frage Treibstoff an.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Request ammunition.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Frage Munition an.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>A shipment of ammunition is delivered to your ship.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Eine Ladung von Munition wird auf dein Schiff gebracht.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Request droneparts.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Frage Drohnenteile an.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Attack the outpost!</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Greife den Außenposten an!</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You've decided, instead of receiving help, to attack this outpost full of friendlies...</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du entscheidest, anstatt Hilfe zu erhalten, greifst du lieber den Außenposten voller Freunde an...</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>A shipment of droneparts is delivered to your ship.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Eine Ladung von Drohnenteile wird auf dein Schiff gebracht.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Request repairs.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Frage Reparaturen an.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You've discovered a Federation outpost!</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du hast einen Föderationsaußenposten gefunden!</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>What do you want to do?</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Was willst du machen?</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Federation Database]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Föderationsdatenbank]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Talk to your crew.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Rede mit deiner Crew.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Check the mission report.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Überprüfe den Missionsbericht.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Perform a task.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Erfülle eine Aufgabe.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Install an internal upgrade.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Installiere ein internes Upgrade.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Return.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Zurück.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Which weapon would you like to configure?</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Welche Waffe möchtest du konfigurieren?</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Nevermind.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Doch nicht.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Configure your Laser</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Konfiguriere deinen Laser</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Anti-Bio Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Anti-Bio Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Cooldown Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Abkühlungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Lockdown Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Einschließungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Pierce Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Durchdringungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Stun Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Betäubungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Accuracy Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Genauigkeits Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Accuracy Module, Anti-Bio Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Genauigkeits Modul, Anti-Bio Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Accuracy Module, Cooldown Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Genauigkeits Modul, Abkühlungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Accuracy Module, Lockdown Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Genauigkeits Modul, Einschließungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Accuracy Module, Pierce Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Genauigkeits Modul, Durchdringungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Accuracy Module, Stun Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Genauigkeits Modul, Betäubungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Configure your Laser [Firestarter Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Brandstarter Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Firestarter Module, Anti-Bio Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Brandstarter Modul, Anti-Bio Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Firestarter Module, Cooldown Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Brandstarter Modul, Abkühlungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Firestarter Module, Lockdown Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Brandstarter Modul, Einschließungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Firestarter Module, Pierce Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Brandstarter Modul, Durchdringungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Firestarter Module, Stun Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Brandstarter Modul, Betäubungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Hullbuster Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Hüllenzerbrecher Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Hullbuster Module, Anti-Bio Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Hüllenzerbrecher Modul, Anti-Bio Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Hullbuster Module, Cooldown Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Hüllenzerbrecher Modul, Abkühlungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Hullbuster Module, Lockdown Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Hüllenzerbrecher Modul, Einschließungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Approach.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Gehe näher.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Hullbuster Module, Pierce Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Hüllenzerbrecher Modul, Durchdringungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Hullbuster Module, Stun Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Hüllenzerbrecher Modul, Betäubungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Power Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Kraft Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Power Module, Anti-Bio Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Kraft Modul, Anti-Bio Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Power Module, Cooldown Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Kraft Modul, Abkühlungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Power Module, Lockdown Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Kraft Modul, Einschließungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Power Module, Pierce Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Kraft Modul, Durchdringungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Power Module, Stun Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Kraft Modul, Betäubungs Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>...</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>...</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Currently configuring Modular Laser.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du konfigurierst gerade Modularlaser.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Install the Anti-Bio Module.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Installiere das Anti-Bio Modul.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Install the Cooldown Module.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Installiere das Abkühlungs Modul.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Install the Lockdown Module.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Installiere das Einschließungs Modul.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Install the Pierce Module.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Installiere das Durchdringungs Modul.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Install the Neural Module.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Installiere das Neural Modul.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Install the Accuracy Module.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Installiere das Genauigkeits Modul.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Install the Firestarter Module.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Installiere das Brandstarter Modul.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Install the Hullbuster Module.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Installiere das Hüllenzerbrecher Modul.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Install the Power Module.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Installiere das Kraft Modul.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Detach the modules.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Entferne die Module.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You should never see this.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du solltest das niemals sehen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Jerry</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Jerry</term></tig></langSet>
+                <descrip>叛军军官，万斯上将侄子</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ignore them.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ignoriere sie.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Firestarter Module]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Brandstarter Modul]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Configure your Beam [No Modules]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Konfiguriere deine Strahlenwaffe [Keine Module]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Configure your Beam</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Konfiguriere deine Strahlenwaffe</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Configure your Ion</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Konfiguriere deine Ionenkannone</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Currently configuring Modular Beam.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du konfigurierst gerade Modularstrahlenwaffe.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Configure your Modular Missile Launcher</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Konfiguriere deinen Modularraketenwerfer</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Currently configuring Modular Missile.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du konfigurierst gerade Modularraketenwerfer.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Currently configuring Modular Ion.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du konfigurierst gerade Modularionenkannone.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>???</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>???</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Refuse.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ablehnen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Inflicts 1.5x damage in combat</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Richtet 1,5x Schaden im Kampf an</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You are viewing the lab menu for:</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du schaust dir das Labor Menü an für:</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cruiser</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Kreuzer</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>An unvisited location.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ein unbesuchter Ort.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>They stay outside your weapons range, and eventually jump away.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Sie bleiben außer Reichweite deiner Waffen und springen letztendlich weg.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>The crew is dead, leaving you with the ship. Its cargo is yours for the taking. Aboard is the special tech you expected, which you bring back to your ship.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Die Crew ist tot und lässt dich mit dem Schiff alleine. Die Cargo gehört dir. An Bord ist die spezielle Technologie, wie erwartet, welche du an Bord bringst.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>They look like they don't want to fight. They are trying to escape.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Es scheint nicht, als ob sie kämpfen wollen. Sie versuchen zu fliehen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Demand the surrender of their goods.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Verlange, dass sie dir ihre Güter geben.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You prepare to secure their cargo by force.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du bereitest dich vor, die Cargo mit Gewalt zu sichern.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Avoid the ship.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Weiche dem Schiff aus.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Space</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Raum</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Colonies</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Kolonien</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Territory</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Territorium</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>District</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Distrikt</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Regions</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Regionen</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Settlements</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Gebiete</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Turf</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Gelände</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Precinct</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Bezirk</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Domain</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Domain</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Prospector</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Prospektor</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Frontier</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Grenzraum</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dominion</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Herrschaftsraum</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Outreaches</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Gemeinde</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Union</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Unions</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sector</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Sektor</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rimworlds</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Randwelten</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Parts</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Teile</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Quarter</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Quartier</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[!]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[!]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Federation</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Föderations</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Harmony Sector]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Harmony Sektor]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ministry</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ministry</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Realm</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Reich</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shire</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Grafschaft</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Gathering</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Gathering</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Confederate</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Confederate</term></tig></langSet>
+                <descrip>セクター名、Federation（連邦）との混同を避ける</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Free Mantis</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Free Mantis</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Imperial</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Imperial</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Outcast</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Outcast</term></tig></langSet>
+                <descrip>Outcast can be translated as both exile or pariah. Maybe pariah is better?</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lanius</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Lanius</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Automated</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Automatisiert</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lawless Sector</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Gesetzlos</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Depot</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Depot</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lawless</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Gesetzloser</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Zone</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Zone</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hive</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Hive</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rebel</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Rebellen</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Theocracy</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Theocracy</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Duskbringer</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Duskbringer</term></tig></langSet>
+                <descrip>Chose not to translate. In Portuguese, some words are borrowed from English, which is called as "anglicism". Duskbringer sound way cooler than 'Crepúsculo' = Twilight (the book series, by the way).</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Abandoned</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Verlassener</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Region</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Region</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wrecked</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Zerstörter</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ruined</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ruinierter</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Uncharted</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Unerforscht</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Unmapped</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ungelistet</term></tig></langSet>
+                <descrip>星区类别</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Sale!]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>[Verkauf!]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Eargen</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Eargen</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kleptocracy</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Kleptocracy</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vagabond</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Vagabond</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Spectral</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Spectral</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Coalition</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Koalition</term></tig></langSet>
+                <descrip>派閥、Federation（連邦）との混同を避ける</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shell</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Shell</term></tig></langSet>
+                <descrip>раса</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pirate</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Piraten</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You hasten to contact the civilian ship.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du beeilst dich das Zivilistenschiff zu kontaktieren.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Active Ability:</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Aktive Fähigkeit:</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>C.U.R.A.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>H.E.L.P.</term></tig></langSet>
+                <note from="translator">Hilfreiches Elektronisches Lebensunterstützungs-Programm (I think it is funny)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>C.I.C.A.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Z.I.K.A.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>GREAT EYE</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>GROßARTIGES AUGE</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>STORE</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>GESCHÄFT</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Attack the pirate.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Greife den Piraten an.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Avoid the conflict.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Gehe dem Konflikt aus dem Weg.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Do something on-board the ship.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Tue etwas an Bord des Schiffs.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Leave quickly.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Gehe schnell wieder.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>C.D.E.G.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Z.V.E.W.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Will function until destroyed or until you jump away.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Funktioniert, bis sie zerstört wird oder du wegspringst.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Can be shut down by damaging the enemy ship's drone system.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Kann deaktiviert werden, indem du das feindliche Drohnensystem beschädigst.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>PHEROMONE</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>PHEROMONE</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>LOCKDOWN</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>EINSCHLIEßUNG</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>BOMB</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>BOMBE</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ready: Deploy a Breach, Ion, and Lockdown bomb. (30 crew damage, 2 system damage, 5s stun, 3 ion damage. No friendly fire, but can Ion your systems.)</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Bereit: Platziert eine Hüllenbruch-, Ionen, und Einschließungsbombe. (30 Crew Schaden, 2 Systemschaden, 5s Betäubung, 3 Ionenschaden. Kein Schaden für befreundete Crew Mitglieder, kann aber Systeme ionisieren.)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ready: Increase movement speed to 3.5x and crew damage to 3x for 7 seconds. Also increases damage taken from hazards by 4x.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Bereit: Erhöht Bewegungsgeschwindigkeit um 3.5x und Crew Schaden um 3x für 7 Sekunden. Außerdem erhält er 4x mehr Schaden durch Gefahren.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>CORRODE</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>KORRODIEREN</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>SHOCK</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>SCHOCK</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>CONTROL</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>KONTROLLIEREN</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>The location of a Haunt.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Die Position eines Haunts.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Explored location. Location of a Haunt.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Erkundeter Ort. Position eines Haunts.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>WEAPONS OF THE DAY [25% OFF]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>WAFFEN DES TAGES [25% GÜNSTIGER]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>DRONES OF THE DAY [25% OFF]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>DROHNEN DES TAGES [25% GÜNSTIGER]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>AUGMENTS OF THE DAY [25% OFF]</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>AUGMENTE DES TAGES [25% GÜNSTIGER]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>\1 ????? Ending</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>\1 ????? Ende</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Defeat the Slug C Renegade and get the Big Ion.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Besiege den Slug C Renegade und erhalte die Große Ionenkannone.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Defeat the ??? Renegade and get its loot.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Besiege den ??? Renegade und erhalte seine Beute.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Bring the cargo back to the Fed ship.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Bringe die Cargo zurück zum Fed Schiff.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wait.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Warte.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You have encountered a refugee ship drifting in space. It looks as if it was fleeing the Rebel advance and ran out of fuel. Its distress beacon is active, but you're not sure anyone is on board.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du triffst ein Flüchtlingsschiff, welches im Weltraum herumtreibt. Es sieht so aus als sei es vor dem Rebellenvormarsch geflüchtet und ist außer Treibstoff. Der Notfall-Signalpunkt des Schiffs ist aktiviert, jedoch bist du nicht sicher ob sich jemand an Bord befindet.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ignore the refugees.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ignoriere die Flüchtlinge.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You've entered hyperspeed.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du hast Lichtgeschwindigkeit betreten.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You deploy the buoys.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du verteilst die Boyen.</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Uncharted</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Unerobert</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Attack the ship!</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Greife das Schiff an!</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You prepare for battle.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du machst dich zum Kampf bereit.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You pull away from the supply depot.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du entfernst dich von dem Güter-Depot.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Neeeiiiigh</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Neeeiiiigh</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Your crew speaks to the transport's captain, explaining the importance of your mission. The transport's captain seems to understand, but also mentions the cargo they're carrying is vital to that same mission. If you're willing to pay in compensation, they're willing to make an exception.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Deine Crew redet mit dem Transporter Kapitän, wobei die Wichtigkeit deiner Mission erklärt wird. Der Transporter Kapitän scheint zu verstehen, aber erwähnt auch, dass ihre Cargo für ihre Mission essentiell ist. Wenn du sie bezahlst, können sie eine Ausnahme machen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Buy the cargo.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Kaufe die Cargo.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>The transaction is done. With the looks of it, this piece of equipment might prove useful.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Deine Transaktion ist beendet. Es sieht so aus, als ob die Ausrüstung nützlich sein wird.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Refuse and attack the transport.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Lehne ab und greife den Transporter an.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>The transport captain shrugs and continues on their way.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Der Transporter Kapitän hebt die Schultern und geht auf seinem Weg weiter.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Madness</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Wahnsinn</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>C.E.L.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>K.V.L.</term></tig></langSet>
+                <descrip>Ligue de l'Application de la Continuité</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cluster</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Bündel</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hail.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Rufe.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>We'll just go.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Wir gehen einfach wieder.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Time for plan B - attack!</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Zeit für Plan B - Angriff!</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Before you can finish exiting Hyperspeed, you're greeted by the same advertisement as before. Looks like this is yet another Hektar market sector.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Bevor du richtig Lichtgeschwindigkeit verlassen kannst, wirst du von der gleichen Werbung wie vorher brgrüßt. Es scheint, dass es ein weiterer Hektar Markt Sektor ist.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You cannot reroute during this jump.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du kannst während dieses Sprungs keinen neuen Kurs wählen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du machst dich bereit, zu den neuen Koordinaten zu springen und richtest deine Flugbahn dem entsprechend neu aus.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You are about to reroute. Below is the Atlas entry for this sector.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du bist kurz davor einen neuen Kurs einzuschlagen. Hier drunter ist der Eintrag im Atlas, für diesen Sektor.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>At the bottom of your Atlas, you notice a small "H" logo... a sponsorship? It reads "Come visit the local Hektar Industries Market Places!" Huh...</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Am Boden deines Atlas bemerkst du ein kleines "H" Logo... eine Partnerschaft? Du kannst dort lesen "Komm und besuche den lokalen Hektar Industries Markt Platz!" Huh...</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pirate space is no safe spot for any ship. Fortunately, you should have little guilt picking off this sector's inhabitants, considering they'd be just as willing to do the same to you.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Piraten Raum ist kein sicherer Ort, für egal welches Schiff. Glücklicherweise, wirst du nicht viele Probleme haben die Bewohner dieses Sektors zu besiegen, da sie ebenso kampflustig sind.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Before you can finish exiting Hyperspeed, you're greeted by an unusual advertisement; "Greetingsss valued Hektar customer! Thiss isss Billy Hektar, CEO of the Hektar Corporation speaking to you. Asss part of our new cussstomer loyalty program, I am proud to introduce our new 'Unwavering Wage Utility Points!' Each time you vissit a Hektar(tm) brand ssstore, our friendly cussstomer support vesssselss will add an extra U.W.U. point to your account! Collect enough, and you'll be able to enter our reward program! Happy ssshopping!" The advertisement concludes, and a cheerful jingle plays over your computer, followed by the motto "Satisfaction guaranteed, because you aren't getting your money back!"</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Noch bevor du Lichtgeschwindigkeit verlassen kannst, wirst du von einer ungewöhnlichen Werbebotschaft begrüßt: "Sei gegrüßßßßt geschätzter Hektar-Kunde! Hier spricht Billy Hektar, CEO der Hektar Corporation, zu dir. Alssss Teil unseres neuen Kundenbindungsprogramms bin ich stolz darauf, dir unssssere neuen 'Unerschütterlichen Lohn-Utility-Punkte' vorstellen zu können: Jedes Mal, wenn du ein Geschäft der Marke Hektar(tm) besuchen, wird unser freundliches Kundenbetreuungspersonal deinem Konto einen zusätzlichen U.W.U.-Punkt hinzufügen! Wenn du genug Punkte ssssammeln, kannst du an unserem Prämienprogramm teilnehmen! Freudigessss Einkaufen!" Die Werbung endet und ein fröhlicher Jingle ertönt über deinen Computer, gefolgt von dem Motto "Zufriedenheit garantiert, denn du bekommst dein Geld nicht zurück!"</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Nevermind, do you need something from us?</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Egal, brauchst du etwas von uns?</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Avoid the station.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Gehe der Station aus dem Weg.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ignore it and leave.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ignoriere es und gehe.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>If there's one thing you've learned in your years as a Renegade, its never to trust a mysterious ship.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Wenn du in deinen Jahren als Renegade eines gelernt hast, dann ist es, niemals einem geheimnisvollen Schiff zu trauen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You're about to leave but notice in the wreckage another strange signal. It's some kind of weapon with the same anomalous properties of that ship. You bring it on-board and cross your fingers it doesn't cause any problems.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du willst gerade aufbrechen, da bemerkst du in den Trümmern ein weiteres seltsames Signal. Es handelt sich um eine Art Waffe mit den gleichen anomalen Eigenschaften wie das Schiff. Du bringst sie an Bord und drückst die Daumen, dass sie keine Probleme verursacht.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Uncertain what you'll find at this beacon, you tread carefully but even then aren't quite enlightened on what you've found. A massive and well armed Bomber, similar but differently colored to the mysterious rainbow ships that have been reported popping up, is hiding behind an asteroid. You seem unable to scan it - something about the ship is causing unexpected glitches in your hardware.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>In der Ungewissheit, was du an diesem Signalpunkt finden wirst, gehst du vorsichtig vor, aber selbst dann weißt du nicht genau, was du gefunden hast. Ein massiver und gut bewaffneter Bomber, der den mysteriösen Regenbogenschiffen, von denen berichtet wurde, ähnlich ist, aber eine andere Farbe hat, versteckt sich hinter einem Asteroiden. Du scheinst ihn nicht scannen zu können - irgendetwas an dem Schiff verursacht unerwartete Störungen mit deiner Hardware.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hail the vessel.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Rufe das Schiff.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>This reality was destroyed, instantaneously erasing anyone and everyone inside.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Diese Realität wurde zerstört und löschte sofort jedes darin befindliche Lebewesen aus.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Agree to help her.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Stimme zu ihr zu helfen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>"Oh you make me sad. So so sad..." Ellie makes an exaggerated frown with her face momentarily then goes back to smiling. Creeped out beyond anything you've ever been before, you get up and leave as quickly as possible.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>"Oh du machst mich traurig. So so traurig..." Ellie runzelt die Stirn übertrieben und dann lächelt sie wieder. Verängstigt von dem wohl furchteinflößendsten, was du je gesehen hast, stehst du auf und gehst so schnell wie möglich wieder.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>What are you doing?</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Was machst du?</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Without Ellie there's no point in this.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ohne Ellie hat das Ganze hier keinen Sinn.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ellie didn't make it. There's no reason to track down Rigley now.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ellie hat nicht überlebt. Es gibt keinen Grund für dich, Rigley jetzt noch zu suchen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Change your mind and leave.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ändere deine Meinung und gehe wieder.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>This is where Ellie demanded that you, "superfan", escort her.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Das ist der Punkt wo Ellie verlangt, dass du "Superfan" ihre Eskorte bist.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>And so what if we are?</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Und was, wenn es so ist?</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You decide this mission isn't worth the risk.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du entscheidest dich, dass die Mission das Risiko nicht wert ist.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Find Gos again.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Finde Gos wieder.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Let Ellie continue.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Lass Ellie weitermachen.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You've defeated the hideous blue cruiser, and hopefully the last of whatever Rebel force Universe 1 sent to stop you and Ellie.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Du hast den hässlichen blauen Kreuzer besiegt und hoffentlich auch den letzten Teil der Rebellentruppe, die Universum 1 geschickt hat, um dich und Ellie aufzuhalten.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ellie didn't make it. You'll have to be satisfied with taking out the Rebels.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Ellie hat nicht überlebt. Du musst dich damit zufrieden geben, die Rebellen besiegt zu haben.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>New Order</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Neue Ordnung</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hail the ship.</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Rufe das Schiff.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Repair Drone)</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>(Reparaturdrohne)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Narrator</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term>Narrator</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>shuttles</term></tig></langSet>
+                <langSet xml:lang="de"><tig><term/></tig></langSet>
+            </termEntry>
+        </body>
+    </text>
+</martif>

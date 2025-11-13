@@ -24,6 +24,7 @@ import math
 from collections import OrderedDict
 from typing import List
 from difflib import SequenceMatcher
+from pathlib import Path
 from google import genai
 from google.genai import types
 
@@ -192,8 +193,19 @@ def build_prompt_for_batch(pairs: List[tuple]) -> str:
     sample = OrderedDict(pairs)
     return json.dumps(sample, ensure_ascii=False, indent=2)
 
+def get_additional_instructions(lang: str, origLang: str) -> str:
+    ret = ""
+    glossary_path = Path(__file__).parent / f"glossaries/{origLang}-{lang}.txt"
+    if glossary_path.exists():
+        with open(glossary_path, "r", encoding="utf-8") as f:
+            ret += f.read()
+    
+    ret = ret.strip()
+    if ret:
+        ret = "\n" + ret
+    return ret
 
-def build_config_for_batch(lang: str) -> types.GenerateContentConfig:
+def build_config_for_batch(lang: str, origLang: str) -> types.GenerateContentConfig:
     return types.GenerateContentConfig(
         system_instruction=(
             "You are a professional translator. "
@@ -201,13 +213,14 @@ def build_config_for_batch(lang: str) -> types.GenerateContentConfig:
             "All terms are from the game FTL: Faster Than Light, so translate them in the context of FTL: Faster Than Light. "
             "RETURN ONLY a valid JSON object mapping the exact same keys to the translated strings. "
             "Do not add extra commentary. Maintain the same key order."
+            + get_additional_instructions(lang, origLang)
         ),
         response_mime_type="application/json"
     )
 
 # ---- Translate one batch ----
-def translate_batch(client, model: str, batch_pairs: List[tuple], lang: str) -> OrderedDict:
-    config = build_config_for_batch(lang)
+def translate_batch(client, model: str, batch_pairs: List[tuple], lang: str, origLang: str) -> OrderedDict:
+    config = build_config_for_batch(lang, origLang)
     prompt = build_prompt_for_batch(batch_pairs)
     for attempt in range(1, MAX_RETRIES + 1):
         text = None
@@ -282,6 +295,7 @@ def translate_batch(client, model: str, batch_pairs: List[tuple], lang: str) -> 
 def translate_file(infile: str,
                    outfile: str,
                    lang: str,
+                   origLang: str,
                    batch_size: int = BATCH_SIZE):
     
     data_full = load_json_ordered(infile)
@@ -307,7 +321,7 @@ def translate_file(infile: str,
             
             batch_pairs = [(k, data[k]) for k in current_batch_keys]
             print(f"\n[INFO] Translating batch {batch_idx}: {len(batch_pairs)} entries ({processed+1} - {processed+len(batch_pairs)})...")
-            out_pairs = translate_batch(client, current_model, batch_pairs, lang)
+            out_pairs = translate_batch(client, current_model, batch_pairs, lang, origLang)
             
             output_batch_size = len(out_pairs)
             print(f"[INFO] Translated {output_batch_size} entries. Initial batch size was {optimal_batch_size}. Missing {optimal_batch_size - output_batch_size} entries.")
@@ -367,6 +381,4 @@ def translate_file(infile: str,
     print(f"\nCompleted! Saved to: {outfile} (total {len(data_full)} entries)")
 
 if __name__ == "__main__":
-    infile = "out.json"
-    outfile = "out.json"
-    translate_file(infile, outfile)
+    pass

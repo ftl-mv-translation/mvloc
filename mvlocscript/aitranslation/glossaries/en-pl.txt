@@ -1,0 +1,2 @@
+Here is a glossary mapping terms between two languages. You can use it to improve translation accuracy.
+[{"en": "Narrator", "pl": "Narrator"}, {"en": "shuttles", "pl": "Ciąg"}, {"en": "Human", "pl": "Człowiek"}]

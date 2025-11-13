@@ -1,0 +1,2503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE martif PUBLIC "ISO 12200:1999A//DTD MARTIF core (DXFcdV04)//EN" "TBXcdv04.dtd">
+<martif type="TBX" xml:lang="en">
+    <martifHeader>
+        <fileDesc>
+            <sourceDesc>
+                <p>Translate Toolkit</p>
+            </sourceDesc>
+        </fileDesc>
+    </martifHeader>
+    <text>
+        <body>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Human</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>人类</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Human Medic</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>人类医疗员</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Human Engineer</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>人类工程师</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Human Soldier</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>人类士兵</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>MFK Ace</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>MFK王牌精英 MFK精英战舰</term></tig></langSet>
+                <note from="translator">MFK是叛军座右铭  船员和舰都用的这个词组</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rebel</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>叛军</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rebel Medic</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>叛军医疗员</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rebel Soldier</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>叛军士兵</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Engi</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>半械族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Engi Defender</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>半械保卫者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Zoltan</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>超能族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Duskbringer Devotee</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>暮临投身者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Zoltan Peacekeeper</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>超能维和兵</term></tig></langSet>
+                <note from="translator">不服从牧师团统治就疯狂杀你的"和平守护者"</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mantis</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>螳螂族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Free Mantis</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>自由螳螂</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mantis Bishop</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>螳螂主教</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Free Mantis Warlord</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>自由螳螂军阀</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mantis Suzerain</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>螳螂领主</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Legendary Thief</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>传奇大盗</term></tig></langSet>
+                <descrip>指传奇螳螂大盗Kazaaakplethkilik</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Orchid Floral</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>悦心兰花</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vampweed</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>血草兰花</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Orchid Cultivator</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>血兰种植者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shell</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>甲壳族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shell Scientist</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>甲壳科学家</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shell Mechanic</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>甲壳机械师</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shell Guardian</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>甲壳守护者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shell Radiant</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>甲壳辐射体</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Morph</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>模物族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Technopath</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>模物技变者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rock</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>岩石族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rockman Outcast</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>岩石流放者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rockman Cultist</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>岩石异教徒</term></tig></langSet>
+                <descrip>崇拜水晶的不熄余烬教，有人支持有人反对，直接翻译成邪教徒或许有些武断</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rockman Paladin</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>岩石圣骑士</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rockman Elder</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>岩石长老</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Respirator</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>应急呼吸器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>suffocation</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>窒息(伤害)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>missile</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>弹药</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>missile</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>导弹</term></tig></langSet>
+                <descrip>有的时候弹药也会写作missile</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>fire</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>火焰</term></tig></langSet>
+                <descrip>船里起火</descrip>
+            </termEntry>
+            <termEntry id="2">
+                <langSet xml:lang="en"><tig><term>fire</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>起火</term></tig></langSet>
+                <descrip>武器效果</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Recon Teleporter</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>传送重构器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hacking Stun</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>神经扰乱器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Reconstructive Teleport</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>传送重构器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>crew</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>船员</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hp</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>生命值</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Battery Charger</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>快速充电器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>room</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舱室</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Defense Scrambler</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>防御扰频器</term></tig></langSet>
+                <note from="translator">原版</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>grid</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舱格</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>stun</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>击晕 眩晕</term></tig></langSet>
+                <note from="translator">他动词时为前者 状态为后者</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lifeform Scanner</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>生命扫描仪</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>bypass</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>穿透</term></tig></langSet>
+                <descrip>部件</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>mind control</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>心灵控制</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>breach</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>破舱</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>station</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>空间站</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>refuel</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>补给</term></tig></langSet>
+                <descrip>补给站</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ammunition</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>弹药</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>missiles</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>弹药</term></tig></langSet>
+                <note from="translator">3种资源之一 因为mv里有多种耗弹武器 所以从导弹改成了弹药</note>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>missiles</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>导弹</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>do nothing</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>跳过</term></tig></langSet>
+                <descrip>这个一般是一堆选项的最后一个选项</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Do something onboard the ship.</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星舰管理。</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Continue...</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>继续...</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hull</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舰体</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hazard</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>环境</term></tig></langSet>
+                <descrip>伤害类 包括但不限于窒息和灼烧</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>combat damage</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>战斗伤害</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>repair</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>维修</term></tig></langSet>
+                <note from="translator">原版</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ship drone</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舰内无人机</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>crew drone</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舰内无人机</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>ship</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>船 战舰 飞舰 飞船 舰船 艇 舰艇 机</term></tig></langSet>
+            </termEntry>
+            <termEntry id="2">
+                <langSet xml:lang="en"><tig><term>ship</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星舰</term></tig></langSet>
+                <note from="translator">(只用于玩家与重要他舰的高大上称呼)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>federation</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>联邦</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Malform</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>模物畸变者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Militia</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>盟卫</term></tig></langSet>
+                <note from="translator">平民派系 属于同盟的一个分支 由志愿者组成保卫同盟</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Harmony</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>谐合</term></tig></langSet>
+                <note from="translator">半械族通过谐合链建立连接网络，个体间组成格式塔意识(所有个体共用一个意识，类似于细胞的作用)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Prototype-Multiverse Cruisers</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>原型多元星舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Union</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>同盟</term></tig></langSet>
+                <note from="translator">平民派系 低军事性 全称银河同盟(Galactic Union)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vance Wentworth</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>万斯·温特沃斯</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Haynes</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>海因斯</term></tig></langSet>
+                <note from="translator">闻名的侦探海因斯</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Adara</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>阿达拉</term></tig></langSet>
+                <descrip>联邦海军中将</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>C.U.R.A.</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>C.U.R.A.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tuco</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>图科</term></tig></langSet>
+                <descrip>传奇海盗，岩石人</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Prototype Cruiser</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>原型星舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>cruiser</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Multiverse</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>多元</term></tig></langSet>
+                <descrip>with a capital M in both languages</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>drive</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>推进器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>harmony link</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>谐合链</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>An unvisited location.</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>未探索的信标。</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>jump</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>跃迁</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ftl</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>超光速</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hyperspeed</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>超光速</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ghost</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>魂灵族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>abyss</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>深渊</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sector</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星区</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>scrap</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>废料</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>separatist</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>半械分离者</term></tig></langSet>
+                <note from="translator">半械族通过谐合链建立连接网络，个体间组成格式塔意识(所有个体共用一个意识，类似于细胞的作用)，分离者是从网络脱离的半械族群体(原因未知)</note>
+                <descrip>船名省略半械</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ministry</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>牧师团</term></tig></langSet>
+                <descrip>超能族</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>monk</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>信道者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>depot</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>仓库</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hektar</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>赫克塔</term></tig></langSet>
+                <note from="translator">Hektar公司</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Devorak</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>德沃拉克</term></tig></langSet>
+                <descrip>Zoltan homme</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Leikonpliiinakra</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>莱孔普利纳克拉</term></tig></langSet>
+                <note from="translator">螳螂虫后</note>
+                <descrip>name of a Mantis character</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Theocracy</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>神权国</term></tig></langSet>
+                <note from="translator">岩石族高层将存在的水晶族虚构为不存在的神，建立了水晶信仰，并以此洗脑人民获得统治权，还以圣战的名义扩张。</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Coalition</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星联</term></tig></langSet>
+                <descrip>派閥、Federation（連邦）との混同を避ける</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>outpost</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>哨站</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>mine</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>开采</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>mining</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>开采</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Salt Man</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>盐人</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kleptocracy</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星盗会</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>system damage</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>系统伤害</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>door</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舱门</term></tig></langSet>
+            </termEntry>
+            <termEntry id="3">
+                <langSet xml:lang="en"><tig><term>fire</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>灼烧</term></tig></langSet>
+                <descrip>伤害类</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Imperial</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>水晶帝国</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Spectral</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>灵朝</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hive</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>母巢</term></tig></langSet>
+                <note from="translator">螳螂族的派系，由螳螂女皇主导，主要分为3个阶层，女皇及其周边人员，领主与主教，以及最底层普通螳螂。底层螳螂由于未受到良好教育，认知能力与智力开发十分有限，所以摆脱母巢控制的自由螳螂大多亦是如此，在对话中具体表现为表达比较蠢。</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Outcast</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>流放地</term></tig></langSet>
+                <descrip>Outcast can be translated as both exile or pariah. Maybe pariah is better?</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>repairs</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>维修</term></tig></langSet>
+                <descrip>系统</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>SSLG</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>姊族解放组织</term></tig></langSet>
+                <note from="translator">属水晶族 全称Sister Species Liberation Group</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Retail Cruiser</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>零售星舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sylvan</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>希尔凡</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sectors</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星区</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Leech</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>吸虫族</term></tig></langSet>
+                <descrip>раса</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Augmented Swarm</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>强铁族群</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Demon's Heart</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>恶魔之心</term></tig></langSet>
+                <note from="translator">实际上就一自动舰</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Reaper</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>大夺命灵</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ancient Cruiser</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>远古方碑星舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Spook Chasers</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>寻鬼敢死队</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kraterocracy</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>吸虫强权</term></tig></langSet>
+                <descrip>吸虫埃尔根国</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Suzerain</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>螳螂领主</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Bishop</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>螳螂主教</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>engine</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>引擎</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pheromone</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>信息素</term></tig></langSet>
+                <note from="translator">原版</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Slug</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>蛞蝓族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pleasure Barge</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>欢愉游艇</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Phantom</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>幻灵</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>medbay</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>医疗舱</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>box</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>盒装状态</term></tig></langSet>
+                <descrip>被动</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>the Limit</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>极限I号星舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>the Limit 2</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>极限II号星舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>the Limit 3</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>极限III号星舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>equinoid</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>六脚马族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Story Teller</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>说书人</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>crewser</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>特员星舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Long-Ranged Scanners</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>长距扫描仪</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>drone part</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>无人机部件</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>empty beacon</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>空信标</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>deploy</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>部署</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sabotage</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>破坏</term></tig></langSet>
+                <descrip>(系统)</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>heal</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>恢复</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>lab</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>物种实验室</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>secondary upgrades</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>次要特质</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>wreckage</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舰骸 船骸 残骸</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>asteroid field</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>小行星带</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>dock</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>停靠 对接</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mining Equipment</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>开采设备</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Scrap Arm</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>废料收集臂</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>scrap</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>搜刮</term></tig></langSet>
+                <descrip>动词</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Forged ID</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>身份伪证</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>modification</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>特质</term></tig></langSet>
+                <note from="translator">物种实验室</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>primary upgrades</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>主要特质</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>biometrics</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>生命特征</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hull damage</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舰体伤害</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>lockdown</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>封锁</term></tig></langSet>
+                <note from="translator">锁定用于吸虫能力 游戏里表现为能量格一把叉</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>laser</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>激光</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>beam</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>光束</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>kernel</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>果核</term></tig></langSet>
+                <descrip>used in Orchid-related vocabulary</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>phase</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>相位</term></tig></langSet>
+                <descrip>离子武器</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hull point</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舰体值</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>radiation</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>虚弱</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>afflict</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>虚弱</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>radius</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>着弹范围</term></tig></langSet>
+                <descrip>武器那个圈</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>chain</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>链式</term></tig></langSet>
+                <descrip>武器前缀</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>old</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>老旧</term></tig></langSet>
+                <descrip>武器前缀</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>conservative</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>集能</term></tig></langSet>
+                <descrip>武器前缀</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>pre-emptive</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>先发</term></tig></langSet>
+                <descrip>武器前缀</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>neural</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>神经</term></tig></langSet>
+                <descrip>武器前缀</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>frost</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>冰霜</term></tig></langSet>
+                <descrip>武器前缀</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>toggle</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>多效</term></tig></langSet>
+                <descrip>无人机种类</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ampflied</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>多级</term></tig></langSet>
+                <descrip>无人机种类</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>amp</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>多级</term></tig></langSet>
+                <descrip>无人机种类</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>projectile</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>弹体</term></tig></langSet>
+                <descrip>武器发射后着弹前的状态</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>beacon eater</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>信标吞噬者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>solid</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>实体(弹)</term></tig></langSet>
+                <descrip>弹体种类 导弹 防空炮等</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>notoriety</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>恶名(值)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>bomb</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>炸弹</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>particle</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>粒子</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>mine</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>空雷</term></tig></langSet>
+                <descrip>导弹类</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>pinpoint</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>光点</term></tig></langSet>
+                <descrip>光束类</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>accuracy</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>命中率</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>tile</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舱格</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Confederate</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>血兰邦</term></tig></langSet>
+                <descrip>セクター名、Federation（連邦）との混同を避ける</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>gathering</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>集议会</term></tig></langSet>
+                <note from="translator">兰花族政体 详情不明 因为兰花剧情还没扩编过</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>dynasty</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>灵朝</term></tig></langSet>
+                <descrip>ghost</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>brood</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>蛛团</term></tig></langSet>
+                <note from="translator">海盗团伙，爱用蜘蛛</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ehg</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>异种猎人协会 异猎会</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Exotic Hunters Guild</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>异种猎人协会/异猎会</term></tig></langSet>
+                <descrip>name of a group</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Magnetic Arm</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>磁性回收臂</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sealant</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>修复凝胶</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Federation Database</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>联邦数据库</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Extinguishers</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>自动灭火器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Explosive Replicator</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>弹药复制器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Electrical Insullation</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>护盾绝缘器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Emancipation Grills</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舱室能量墙</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>aether</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>以太</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Backup DNA</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>备份基因库</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>FTL Jammer</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>跃迁干扰器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hangar</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舰库</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>blueprint</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>蓝图</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>crew damage</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>船员伤害</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>universe 0</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>0号宇宙</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>reality</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>宇宙</term></tig></langSet>
+                <note from="translator">量词用元</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tracking Flares</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>追踪闪弹</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>flare</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>追踪闪弹</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>flares</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>追踪闪弹 干扰闪弹</term></tig></langSet>
+                <note from="translator">有2种闪弹 一种阻止对方隐形 一种事件中起干扰效果</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Antiquum Terrae</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>故土</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>universe</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>宇宙</term></tig></langSet>
+                <note from="translator">universe 0 和 1 的基本情况 详见 https://weblate.hyperq.be/translate/ftl-multiverse/dataeventsxmlappend/zh_Hans/?checksum=b4b39111f4cb3d4&amp;sort_by=-priority,position</note>
+                <descrip>量词用元</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>old earth</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>古代地球</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>captain</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舰长</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>lost sun</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>迷失烈阳</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>lost suns</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>迷失烈阳</term></tig></langSet>
+                <note from="translator">神国的岩石族目前信仰水晶信仰，lost sun应该是之前的旧信仰组织，崇尚火</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>renegade</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>变元者</term></tig></langSet>
+                <note from="translator">一般是他人对玩家的称呼，变元者指多元宇宙推进器普及开来之后，越来越多的船员与战舰开始利用它独自进行跨元航行，这些人就被称为变元者。主角就是这么一个雇佣兵。 玩家的背景故事 参考            https://weblate.hyperq.be/translate/ftl-multiverse/dataeventsxmlappend/zh_Hans/?checksum=b4b39111f4cb3d4&amp;sort_by=-priority,position</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>species</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>物种</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sdm</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>盟卫标卫队</term></tig></langSet>
+                <descrip>standard defense militia</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>platform</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舰台</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>renegades</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>变元者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>innovations</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>革新社</term></tig></langSet>
+                <descrip>wentworth的公司</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>asteroid</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>小行星</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>syndicate</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>佣兵团</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Drone Recovery Arm</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>无人机回收臂</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Boarding Drone</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>士兵无人机</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mare</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>蚀灵</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wraith</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>电灵</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>smuggler</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>走私船</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hail</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>呼叫</term></tig></langSet>
+                <note from="translator">看语境 联系 信号 消息 信息 传话 打招呼</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>battle drone</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>士兵无人机</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>combat drone</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>战斗无人机</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ammo</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>弹药</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>storage menu</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星舰管理菜单</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Anti-Ship Battery</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>反舰炮台</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Temporal Manipulator</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>时流系统</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Flagship</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>旗舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Senator Wright</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>参议员赖特</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>beam master</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>光束大师</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>shield</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>护盾</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Osmian</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>原能族</term></tig></langSet>
+                <note from="translator">普通zoltan是osmian zoltan飞升之后的形态，osmian zoltan仍是血肉之躯</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>inquisition</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>圣判所 圣战</term></tig></langSet>
+                <note from="translator">前者是神国内部 后者是发起的战争</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Chrysolic</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>水晶信仰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>KoN</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>七夜爵士团</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Geniocracy</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>怪才体</term></tig></langSet>
+                <note from="translator">甲壳族极端崇尚科学研究，其政体也推选最天才的科学家掌权</note>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>nebula</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星云</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>hazard</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>险要</term></tig></langSet>
+                <descrip>星区类</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ariadne</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>阿里阿德涅</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Elders</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>长老</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Orchid</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>兰花族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Chrysolism</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>水晶信仰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Spook Chaser Cruiser</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>寻鬼敢死队星舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hephaestus</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>锤神</term></tig></langSet>
+                <note from="translator">人类几个巨型企业之一</note>
+                <descrip>name of a company</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Clansmen</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>异种猎人</term></tig></langSet>
+                <note from="translator">作为船员 蛞蝓重甲兵</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Zulfiqar</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>弯剑</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>arcadia</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>桃源</term></tig></langSet>
+                <descrip>公司，希腊语世外桃源</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>improved</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>高级</term></tig></langSet>
+                <descrip>系统前缀</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Armories</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>强化军械</term></tig></langSet>
+                <descrip>部件</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>drain</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>锁定</term></tig></langSet>
+                <descrip>leech能力</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>drains</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>锁定</term></tig></langSet>
+                <descrip>leech能力</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>turban</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>图尔班</term></tig></langSet>
+                <descrip>outcast的中心</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Signal Diluter</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>信号稀释器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vanilla</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>原版</term></tig></langSet>
+                <descrip>as an adjective</descrip>
+            </termEntry>
+            <termEntry id="把船员装进去 然后对准敌方舱室，每次发射都能克隆一个船员登舰">
+                <langSet xml:lang="en"><tig><term>clone cannon</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>克隆炮</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>PHEROMONES</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>螳螂信息素</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>crew kill</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>全歼船员</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>goul</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>燃灵</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>dreadnaught</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>无畏舰</term></tig></langSet>
+                <note from="translator">可以按原翻译，游戏中可以视玩家大小的是巡洋舰，占满屏幕的是无畏舰。</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>haunt</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>游灵</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>space</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星域</term></tig></langSet>
+                <note from="translator">表示某个物种的在太空的势力范围 同 territory</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>judge</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>评判者</term></tig></langSet>
+                <descrip>黄色那玩意</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>judges</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>评判者</term></tig></langSet>
+                <descrip>最后星区黄色那玩意</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>adv.</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>先进</term></tig></langSet>
+                <descrip>系统前缀</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Obyn</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>奥宾</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Anointed</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>强选者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dianesh</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>黛安娜什</term></tig></langSet>
+                <note from="translator">克莱尔女皇(简称黛安娜什)</note>
+                <descrip>Cristalien femme impératrice</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Freddy</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>弗雷迪</term></tig></langSet>
+                <descrip>自由螳螂创始人</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Irwin</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>厄文·西尔扎(简称厄文)</term></tig></langSet>
+                <descrip>Slug male</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tyrdeo</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>泰迪奥</term></tig></langSet>
+                <descrip>Sangsue homme</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Alkram</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>阿尔克拉姆</term></tig></langSet>
+                <descrip>Sangsue homme</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Slocknog</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>斯洛克诺格</term></tig></langSet>
+                <descrip>name of a character</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tully</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>塔利</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Jerry</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>杰瑞</term></tig></langSet>
+                <descrip>叛军军官，万斯上将侄子</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Turzil</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>图尔齐尔</term></tig></langSet>
+                <descrip>name of a character</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Alkali</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>阿尔科莱</term></tig></langSet>
+                <descrip>Remplace les J par Ch et les V par f</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hard-Light</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>光质</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>aquarian</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>水生族</term></tig></langSet>
+                <descrip>开发中物种，黑市与其有关</descrip>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>black market</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>暗域黑市</term></tig></langSet>
+                <descrip>正式：暗域黑市    开发中，水生族Argeonn走私集团相关</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>angel</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>死亡使者</term></tig></langSet>
+                <descrip>佣兵团的12名精英杀手</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Federation-Mantis</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>螳螂入侵战争</term></tig></langSet>
+                <descrip>螳螂突袭人类，人类找半械帮忙，半械因为公民被螳螂绑架成奴隶答应，之后超能也参加，后面赢了。这次战争促使了同盟的形成。</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Fed-Mantis</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>详见 federation-mantis</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>phantom</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>幻灵</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>neural disruptor</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>神经扰乱器</term></tig></langSet>
+                <descrip>不知道为啥同一个东西会有2个词。。另一个是hacking stun</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>debuff</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>虚弱</term></tig></langSet>
+                <descrip>同afflict</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Clairvoyants</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>通灵会 通灵者 通灵主义</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Clairvoyant</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>通灵会 通灵者 通灵主义</term></tig></langSet>
+                <note from="translator">slug前传统政体，貌似是类似皇家骑士政体。受到同盟的影响之后星盗会的影响力增大，目前半凋落状态，但仍有一前星盗会国王的支持 能力偏精神力类似群星灵能飞升的样子</note>
+                <descrip>элитный слизень</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>system</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>系统</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Upg.</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>高级</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>advanced</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>先进</term></tig></langSet>
+                <descrip>系统前缀</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>medic</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>医疗员</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Anti-Virus</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>防护程序</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>outcast</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>流放者</term></tig></langSet>
+                <descrip>岩石</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>distress</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>求救</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>swarm</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>食铁族群</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>welder</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>熔铁者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Piloting</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>驾驶系统</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>burst missiles</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>集群导弹</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Haunts</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>游灵</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>territory</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星域</term></tig></langSet>
+                <note from="translator">表示某个物种的在太空的势力范围</note>
+                <descrip>同space</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>forefather</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>先驱</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>mines</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>空雷</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>innovation</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>革新社</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>r.u.e.s</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>racial unity elite squadron</term></tig></langSet>
+                <note from="translator">coalition 的</note>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>flak</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>破片  (单破片不好听可以加炮)</term></tig></langSet>
+                <descrip>想了一下还是感觉防空炮太烂了</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ancient</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>远古 远古物种</term></tig></langSet>
+                <descrip>猜测为完全了解方碑之前人类对方碑的暂称</descrip>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>elite</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>精英</term></tig></langSet>
+                <note from="translator">武器前缀</note>
+                <descrip>船员前缀</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>salvage</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>回收 搜罗 搜寻 收集 汇集</term></tig></langSet>
+                <note from="translator">找不到什么好词，大概意思是拿走你不拿别人迟早会拿的无归属物。 原版用的收集</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cognitive</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>认知体</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>delay</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>拖延 n 次叛军追击</term></tig></langSet>
+                <note from="translator">原版更好的话用回去也行</note>
+                <descrip>突然发现这个词很频繁 干脆统了</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Leah</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>莉娅</term></tig></langSet>
+                <descrip>あたし、あんた　ビームマスター</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>they</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>对方</term></tig></langSet>
+                <note from="translator">注意明确是单数的情况下they表性别未知，比较好的对应词是 对方</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Siren</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>异鸣族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Harpy</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>异鸣食梦者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Crystal</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>水晶族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Duskbringer</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>暮临派</term></tig></langSet>
+                <note from="translator">纲领为超能族至上主义，行为比较极端，善于利用自爆能力与克隆舱进行自杀式攻击</note>
+                <descrip>Chose not to translate. In Portuguese, some words are borrowed from English, which is called as "anglicism". Duskbringer sound way cooler than 'Crepúsculo' = Twilight (the book series, by the way).</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kasparov</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>卡斯帕罗夫</term></tig></langSet>
+                <descrip>估计是暗指国际象棋大师卡斯帕罗夫，不敌人工AI"深蓝"</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Archive</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>阿凯夫'档案馆'公司</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Zenith</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>齐尼思</term></tig></langSet>
+                <descrip>피너클 로보틱스(Pinnacle Robitics)의 관리자</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pinnacle</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>皮纳科尔机器人公司</term></tig></langSet>
+                <descrip>피너클 로보틱스 (Pinnacle Robotics)</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>EDC</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>精英护卫队</term></tig></langSet>
+                <note from="translator">盟卫派系中的精英，全称Elite Defence Cadre</note>
+                <descrip>Cadre de Défense d'élite</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Locations of Interest</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>标记点</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Stronghold</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>要塞</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Duskbringers</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>暮临派</term></tig></langSet>
+                <note from="translator">在zoltan政府掌管外的极端宗教组织，纲领为超能族至上主义，行为比较极端，善于利用自爆能力与克隆舱进行自杀式攻击</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>eargen</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>共和国</term></tig></langSet>
+                <note from="translator">不知道为什么吸虫的政体用的是原名而不像其他的用政体名，可能是因为后加的而加的与之前不是同一批人。所以按其他物种标准按其政体republic就行</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Argeonn</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>阿尔吉恩集团</term></tig></langSet>
+                <descrip>name of a clan</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Last Stand</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>最终一战</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>warpbay</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>跃迁站</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>atlas</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星区数据集</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sector 8</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>第8星区</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>interdimensional</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>跨元</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>pirate</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>海盗</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>minor</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>较少的</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>jumping</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>跃迁</term></tig></langSet>
+                <descrip>跃迁的进行时</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>officer</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>军官</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Lanius</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>食铁族</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Augmented</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>强铁族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Uncolonized</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>未占</term></tig></langSet>
+                <descrip>星区类别</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ghosts</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>魂灵族</term></tig></langSet>
+                <note from="translator">类似鬼魂的气态生物，喜欢住在废弃的地方</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Unmapped</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>未记</term></tig></langSet>
+                <descrip>星区类别</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>reroute</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>调整航径</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cayden Stimly</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>凯登·斯汀利</term></tig></langSet>
+                <descrip>name of a character</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>guard</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>守卫舰</term></tig></langSet>
+                <descrip>进星区那艘船</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Nebulae</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星云</term></tig></langSet>
+                <descrip>复数</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>blaster</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>爆裂手枪</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>augment</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>增强部件</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>augmentation</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>部件</term></tig></langSet>
+                <descrip>全称增强部件 一般简写</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Elite Defence Cadre</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>精英护卫队</term></tig></langSet>
+                <descrip>盟卫派系中的精英</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Paragon</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>典范炸弹</term></tig></langSet>
+                <descrip>бомба</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Obelisk</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>方碑族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vance</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>万斯</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Inquisitions</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>圣判所 圣战</term></tig></langSet>
+                <note from="translator">前者是神国内部 后者是发起的战争</note>
+                <descrip>石头人的权力机关</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Federation-Mantis War</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>联邦-螳螂战争</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Yeitiiik</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>耶蒂伊克语</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ellie</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>埃莉</term></tig></langSet>
+                <descrip>Femme déguisée en Cheval Equinoïd</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>shuttle</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>穿梭机</term></tig></langSet>
+                <descrip>微型载人飞船</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>schematics</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>蓝图</term></tig></langSet>
+                <descrip>无人机蓝图</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>schematic</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>蓝图</term></tig></langSet>
+                <descrip>无人机蓝图</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Fuel Conserver</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>燃料回收器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>kaz</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>卡兹</term></tig></langSet>
+                <descrip>传奇大盗卡扎卡普勒斯里克（Kazaaakplethkilik）的昵称</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kazaaakplethkilik</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>卡扎卡普勒斯里克</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Merchant</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>游商</term></tig></langSet>
+                <descrip>只有一个叫游商的 就是sylvan</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Saboteur</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>蛞蝓破坏者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Nights</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>七夜</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>irwin</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>厄文</term></tig></langSet>
+                <descrip>厄文·西尔扎的昵称</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sirens</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>异鸣(族)</term></tig></langSet>
+                <descrip>没记错的话好像挺契合的</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>C.E.L.</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>连续性执行联盟</term></tig></langSet>
+                <descrip>Ligue de l'Application de la Continuité</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>G.A.S.</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>巨大异形蜘蛛</term></tig></langSet>
+                <descrip>Гигантские инопланетные пауки</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>cluster</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星团</term></tig></langSet>
+                <note from="translator">或者集群，具体随情景</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dylan</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>希尔憨</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Syleah</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>希莉娅</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>eyestalks</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>眼柄</term></tig></langSet>
+                <descrip>蛞蝓的眼睛棒</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sylrick</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>希尔瑞克</term></tig></langSet>
+                <descrip>把自己变成一罐豆子的蛞蝓</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>stranger</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>陌生人</term></tig></langSet>
+                <descrip>蛞蝓对玩家的称呼 暂且这样</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wentworth</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>温特沃斯</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Stimly</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>斯汀利</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>reputation</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>声望(值)</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>beacon</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>信标</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cealaforming</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>天体构造技术</term></tig></langSet>
+                <descrip>蛞蝓族技术</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Morphs</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>模物族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>technician</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>革新社技工</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ellie the Equinoid</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>小马埃莉</term></tig></langSet>
+                <descrip>一个节目名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>boon</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>恩惠</term></tig></langSet>
+                <descrip>评判者三种开局buff之一</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>blessing</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>祝福</term></tig></langSet>
+                <descrip>评判者三种开局buff之一</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>grant</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>予礼</term></tig></langSet>
+                <descrip>评判者三种开局buff之一</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Zoltans</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>超能族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Separatists</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>半械分离者</term></tig></langSet>
+                <note from="translator">大部分情况其实可以直接叫分离者。&#13;
+半械族通过谐合链建立连接网络，个体间组成格式塔意识(所有个体共用一个意识，类似于细胞的作用)，分离者是从网络脱离的半械族群体(原因未知)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Monks</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>信道者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Crystals</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>水晶族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Crystalline</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>水晶族</term></tig></langSet>
+                <descrip>the material, not the race</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rockman</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>岩石族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rockmen</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>岩石族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Unfaithful Rock</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>背教岩石族</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Vagabond</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>漂浪群</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vagabonds</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>漂浪群</term></tig></langSet>
+                <note from="translator">非dynasty的ghost</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Phantoms</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>幻灵</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Leeches</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>吸虫族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Auto-ship</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>自动舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hails</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>呼叫</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>jumps</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>跃迁</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>LRS</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>长距扫描仪</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Blast Doors</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>防爆门</term></tig></langSet>
+                <note from="translator">复数</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>drone parts</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>无人机部件</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vek</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>维克虫族</term></tig></langSet>
+                <descrip>name of a species</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Stephan</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>斯蒂芬</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shellskenbry</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>谢尔斯肯布里</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Anurak</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>阿努拉克</term></tig></langSet>
+                <descrip>Zoltan non binaire</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Anti-Bio</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>反生物 辐射</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Guntput</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>冈特普特</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vortigon</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>沃蒂根</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rig</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>里格</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ruwen</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>茹文</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tintan</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>婷丹</term></tig></langSet>
+                <descrip>Zoltan femme</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>link</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>谐合链</term></tig></langSet>
+                <note from="translator">同harmony link</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>moon</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>卫星</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Toarde</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>托阿尔德</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>analyzer</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>记录分析仪</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Oertiss</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>厄尔蒂斯</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dessius</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>德修斯</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>clone bay</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>克隆舱</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Aenwithe</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>安威斯</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Metyunt</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>梅特恩特</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>CICA</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>中枢智能战斗助手</term></tig></langSet>
+                <descrip>Centrale Intelligente de Combat Assisté</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>C.I.C.A.</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>中枢智能战斗助手</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>dropship</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>运输舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>locks down</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>封锁</term></tig></langSet>
+                <note from="translator">锁定用于吸虫能力 游戏里表现为能量格一把叉</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ability</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>技能</term></tig></langSet>
+                <descrip>船员技能</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>tribute</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>贡物</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Martyr</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>暮临殉义者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>boarders</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>登舰者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>map</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>星图</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>asb</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>反舰炮台</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>militiamen</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>盟卫</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shells</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>甲壳族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>clansman</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>异种猎人</term></tig></langSet>
+                <note from="translator">作为船员类型时 蛞蝓重甲兵</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sensors</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>传感器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Orchid Children</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>幼体兰花</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>power up</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>充能</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Commonwealth</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>联合王国</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Repair Arm</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>自动维修臂</term></tig></langSet>
+                <descrip>translated as such in the original game</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>realities</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>宇宙 同universe</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Thest</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>赛斯特</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Corby</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>阔碧</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>WAKESON</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>威克森</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cloaking</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>隐形(系统)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ssstranger</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>陌生～～人</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sssstranger</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>陌生～～人</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Callie</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>凯莉</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vampweeds</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>血草兰花</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Great Eye</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>先知圣眼</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cyra</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>赛拉</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Slug</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>～～</term></tig></langSet>
+                <note from="translator">例：陌生～～～～人</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>slugs</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>～～</term></tig></langSet>
+                <note from="translator">例：陌生～～～～人</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ships</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>舰船</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ember</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>不熄余烬教</term></tig></langSet>
+                <note from="translator">一群岩石族，在水晶族起源域建立的宗教，信仰水晶族。教圣物水晶域waystone，创建者兼大祭司Vortigon，Vortigon与lost sun创建者是兄弟关系，后因意见不和(是否崇尚水晶)分道扬镳</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cultist</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>岩石异教徒 余烬教徒</term></tig></langSet>
+                <note from="translator">"异教徒"只用于蓝色选项和物种属性</note>
+                <descrip>In Portuguese, 'cult' as culto is very specific to a particular catholic or evangelical ritual. I chose to disambiguate by specifying it's a sect. However, I found no one word for the individual who adheres to a sect.</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>the Waystone Key</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>次元石钥匙</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Waystone</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>次元石</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>cultists</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>异教徒</term></tig></langSet>
+                <note from="translator">"异教徒"只用于蓝色选项和物种属性</note>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>cultists</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>余烬教徒</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sentinel</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>水晶戍卫者</term></tig></langSet>
+            </termEntry>
+            <termEntry id="2">
+                <langSet xml:lang="en"><tig><term>Cultist</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>余烬教徒</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Accept.</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>接受。</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Billy</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>比利</term></tig></langSet>
+                <descrip>僕、君、primeの兄弟（同い年）、Hektar Industries (tm)のCEO</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>universe 1</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>1号宇宙</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ranger</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>蛞蝓猎枪手</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>revolutionary</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>吸虫革命者</term></tig></langSet>
+                <descrip>推翻当前吸虫政府</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Radiant</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>甲壳辐射体</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ampere</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>电流吸虫</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ruin</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>遗迹</term></tig></langSet>
+                <descrip>ancient ruin</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ruins</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>遗迹</term></tig></langSet>
+                <descrip>ancient ruin</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Artillery</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>巨炮</term></tig></langSet>
+                <descrip>系统</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>McBash</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>麦克巴</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Telepathic Shell</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>心灵感应甲壳族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hp/s</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>生命/秒</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Crusader</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>岩石圣战者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Commando</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>烈阳突击兵</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Protectorate</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>受保护地</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Node 17</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>节点17</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vael</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>威尔</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tony Sr.</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>托尼·西尼尔</term></tig></langSet>
+                <descrip>简写</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>subsystem</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>子系统</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>reactor</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>反应堆</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>nexus</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>联结点</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>rodeo</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>牛仔竞技赛</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Gnome</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>矮人</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Papobyn</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>帕派奥宾</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cashmere Pants</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>山羊绒裤衩</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Max Health</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>最大生命值</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Weaver</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>织网异蛛</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sabotage</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>破坏伤害</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Laiiikarkapi</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>莱伊卡尔卡皮</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Clansman Lodge</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>异猎会小舍</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lodge</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>(异猎会的)小舍</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tiiikaka</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>提卡卡</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Confederacy</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>血兰邦</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tony Senior</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>托尼·西尼尔</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hektar Industries</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>赫克塔实业公司</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hacker clan</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>骇客团</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>†</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>闪电符号 无宽版 ∫</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>™</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>混沌符号 无宽版 ↑</term></tig></langSet>
+                <note from="translator">游戏内为向上箭头</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>€</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>精英符号 无宽版 ☆</term></tig></langSet>
+                <note from="translator">中文游戏内为五角星，英文游戏内为 (·)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Virgo</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>处女座</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Narrator</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>叙述者</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Reaper</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>灵割战舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>praetor</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>军政官</term></tig></langSet>
+                <note from="translator">有出入再改</note>
+                <descrip>暂译</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Caretaker</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>看护者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rt'lak Et</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>柇柆柯枙</term></tig></langSet>
+                <descrip>name of a location in Orchid gardenworlds</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ty E'Rel</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>笛艾尔</term></tig></langSet>
+                <note from="translator">集议会大使笛艾尔</note>
+                <descrip>Name of an ambassador</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ivar</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>苡瓦</term></tig></langSet>
+                <note from="translator">血草兰花联邦总理</note>
+                <descrip>흡혈초 공동체의 수상</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mayeb</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>麻椰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Preator</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>军政官</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ayr</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>埃尔</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Illesctrian</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>辉光</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ctl'Yae</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>悦心兰花</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Oro'bache</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>血草兰花</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kadahellian</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>卡达赫利安</term></tig></langSet>
+                <descrip>全称Kadahellian'ek(卡达赫利安·克)，是两个兰花族间的互不侵犯条约</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wentworth Industries</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>温特沃斯社</term></tig></langSet>
+                <descrip>温特沃斯革新社</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Floral Crew</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>悦兰船员</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Chrysolisism</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>水晶信仰</term></tig></langSet>
+                <descrip>岩石圣战的宗教信仰，认为水晶族是岩石族的神灵。</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>terraforming</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>环境改造</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cultivator</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>种植者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>meatsack</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>肉包子</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hologram</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>全息影像</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rebellion</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>叛军 神军 起义军</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Guild</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>异猎会</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Civil War</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>联邦内战</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Multiverse travel</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>跨元航行</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>shuttles</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>穿梭机</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Knight</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>夜爵士</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Infernum</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>地狱信道者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lizard</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>蜥蜴族</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Decoy Buoys</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>诱导航标</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Long-Ranged Jump</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>长距跃迁器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>empty beacons</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>空信标</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mafan</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>玛嬏</term></tig></langSet>
+                <note from="translator">超能族科学家</note>
+                <descrip>유니크 캐릭터 이름. 졸탄 과학자</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tikinakariiika</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>提基纳卡里卡</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pafinakinaaalara</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>帕菲纳基纳拉</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Warlord</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>自由螳螂军阀</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Magnet Arm</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>磁性回收臂</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ancient Activator</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>远古活化剂</term></tig></langSet>
+                <note from="translator">用于唤醒安威斯</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>LaRoache</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>螂者</term></tig></langSet>
+                <note from="translator">讨债者</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Phasing</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>无视舱门</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cyberpony</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>机械小马</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Stargrove</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>恒星森林</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>OmniDrone</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>全能无人机</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Gravastar</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>重力真空星</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Aerkae</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>爱尔凯</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sentry</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>哨卫</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Corvette</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>轻型护卫舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Bomber</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>轰炸舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Destroyer</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>驱逐舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Battleship</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>超级战舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Frigate</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>护卫舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Fighter</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>战斗舰</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Beyatch</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>小婊砸</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Powerful Beam</term></tig></langSet>
+                <langSet xml:lang="zh_Hans"><tig><term>强力光束</term></tig></langSet>
+            </termEntry>
+        </body>
+    </text>
+</martif>

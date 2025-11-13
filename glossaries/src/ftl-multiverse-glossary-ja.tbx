@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE martif PUBLIC "ISO 12200:1999A//DTD MARTIF core (DXFcdV04)//EN" "TBXcdv04.dtd">
+<martif type="TBX" xml:lang="en">
+    <martifHeader>
+        <fileDesc>
+            <sourceDesc>
+                <p>Translate Toolkit</p>
+            </sourceDesc>
+        </fileDesc>
+    </martifHeader>
+    <text>
+        <body>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Human</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>人間</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Narrator</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ナレーター</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sylvan</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>シルヴァン</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ssstranger</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>よぉそ者</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Continue...</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>次へ…</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>G-Van</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>G-ヴァン</term></tig></langSet>
+                <note from="translator">私、あなた</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Multiverse</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>マルチバース</term></tig></langSet>
+                <descrip>with a capital M in both languages</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>thest</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ゼスト</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Nexus</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ネクサス</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Renegade</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>レネゲイド</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sylvan Prime</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>シルヴァン・プライム</term></tig></langSet>
+                <note from="translator">私、君、nexusの支配者</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Obyn</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>オービン</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rebel</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>反乱軍</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pirates</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>海賊</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Duskbringer</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ダスクブリンガー</term></tig></langSet>
+                <descrip>Chose not to translate. In Portuguese, some words are borrowed from English, which is called as "anglicism". Duskbringer sound way cooler than 'Crepúsculo' = Twilight (the book series, by the way).</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Zoltan</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ゾルタン</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Duskbringers</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ダスクブリンガー</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Human Crew</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ヒューマンクルー</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>humanity</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>人類</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Billy</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ビリー</term></tig></langSet>
+                <descrip>僕、君、primeの兄弟（同い年）、Hektar Industries (tm)のCEO</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Prime</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>プライム</term></tig></langSet>
+                <descrip>私、君、nexusの支配者</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Anurak</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>アヌラック</term></tig></langSet>
+                <descrip>Zoltan non binaire</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Nexussss</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ネクサス</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dylan</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ディラン</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sylvrick</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>シルヴリック</term></tig></langSet>
+                <note from="translator">俺、お前</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hahe!</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>アハ！</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>gnome</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ノーム</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>C.E.L.</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term/></tig></langSet>
+                <note from="translator">連続性執行連盟（the Continuity Enforcement League）</note>
+                <descrip>Ligue de l'Application de la Continuité</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Humans</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>人間</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Engi</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>エンジ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mantis</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>マンティス</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Federation</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>連邦</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Slugs</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>スラッグ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Slug</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>スラッグ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rockman</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ロックマン</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Humanoid</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ヒューマノイド</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rockmen</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ロックマン</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Space</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>星系</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Capital</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>首都</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sector</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>宙域</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Settlements</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>入植地</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Outreaches</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>前哨基地</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Embassy</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>大使館</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Colonies</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>植民地</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Frontier</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>最前線</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Union</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ユニオン</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Coreworlds</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>中枢星系</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Territory</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>直轄領</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Domain</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>支配領域</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rimworlds</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>辺境星系</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Regions</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>区域</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Precinct</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>管区</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>District</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>行政区</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Turf</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>集落</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Quarter</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>特区</term></tig></langSet>
+                <note from="translator">セクター名</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Militia</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>民兵</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Harmony</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ハーモニー</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Gathering</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ギャザリング</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Free Mantis</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>フリー・マンティス</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Parts</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>地域</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shire</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>属州</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Zone</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>地域</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Excavation</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>採掘</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Quarry</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>採石</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Abandoned</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>放棄された</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dominion</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>自治領</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Outcast</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>アウトキャスト</term></tig></langSet>
+                <descrip>Outcast can be translated as both exile or pariah. Maybe pariah is better?</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mining</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>鉱業</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Region</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>区域</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Realm</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>領域</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Nebulous</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>星雲</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Prospector</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>探鉱</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Imperial</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>帝国</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wrecked</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>滅びた</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ruined</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>荒廃した</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Sale!]</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>[セール！]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Liberated</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>解放</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Confederate</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>コンフェデラシー</term></tig></langSet>
+                <descrip>セクター名、Federation（連邦）との混同を避ける</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Nebula</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>星雲</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wastelands</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>荒野</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[!]</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term/></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Republican</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>共和国</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Geniocracy</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>天才政治</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lawless</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>無法</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vagabond</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>放浪</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lost Sun</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ロスト・サン</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Clouds</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>星雲群</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Stronghold</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>拠点</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lanius</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ラニウス</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Guild</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ギルド</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Automated</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>無人船</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hive</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ハイブ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Theocracy</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>神権政治</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Homeworlds</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>主星系</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kleptocracy</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>盗賊政治</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Spectral</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>幽霊</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Coalition</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>コアリション</term></tig></langSet>
+                <descrip>派閥、Federation（連邦）との混同を避ける</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Obelisk</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>オベリスク</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ministry</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>教会</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>weapon</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>兵器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>modular weapon</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>モジュール兵器</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>onboard lab</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>船内ラボ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Firestarter Module</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>着火モジュール</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pierce Module</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>貫通モジュール</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hullbuster Module</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>対船体モジュール</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Anti-Bio Module</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>対生体モジュール</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cooldown Module</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>冷却モジュール</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Power Module</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>パワー・モジュール</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Stun Module</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>スタン・モジュール</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lockdown Module</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ロックダウン・モジュール</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Accuracy Module</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>精度モジュール</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Spider</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>クモ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ghost</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>ゴースト</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Equinoid</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>エクイノイド</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cognitive</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>コグニティブ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>shuttles</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term/></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Upg.</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>改良版</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Currently Installed:</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>現在のインストール状況：</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Syleah</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>シリア</term></tig></langSet>
+                <note from="translator">Sylvan + Leah</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Leah</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>リア</term></tig></langSet>
+                <note from="translator">あたし、あんた　ビームマスター</note>
+                <descrip>あたし、あんた　ビームマスター</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sector</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>宙域</term></tig></langSet>
+            </termEntry>
+            <termEntry id="或いは、超光速">
+                <langSet xml:lang="en"><tig><term>hyperspeed</term></tig></langSet>
+                <langSet xml:lang="ja"><tig><term>超光速航行</term></tig></langSet>
+            </termEntry>
+        </body>
+    </text>
+</martif>

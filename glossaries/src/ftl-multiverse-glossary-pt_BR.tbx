@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE martif PUBLIC "ISO 12200:1999A//DTD MARTIF core (DXFcdV04)//EN" "TBXcdv04.dtd">
+<martif type="TBX" xml:lang="en">
+    <martifHeader>
+        <fileDesc>
+            <sourceDesc>
+                <p>Translate Toolkit</p>
+            </sourceDesc>
+        </fileDesc>
+    </martifHeader>
+    <text>
+        <body>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Human</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Humano</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Narrator</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Narrador</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>shuttles</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term/></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Flak</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Flak</term></tig></langSet>
+                <note from="translator">Vanilla FTL pt-BR does not replace the term, so for consistency I chose to keep it as well.</note>
+            </termEntry>
+            <termEntry id="Rock B">
+                <langSet xml:lang="en"><tig><term>Shivan</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Shivan</term></tig></langSet>
+                <note from="translator">From ftl.fandom.com: "The name Shivan combined with the color scheme of Layout B is a reference to an alien race of the same name in the game Descent: Freespace." Unaltered for consistency (same as Flak).</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>stats</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>stats</term></tig></langSet>
+                <note from="translator">Alt: "características". In pt-BR, although there are other terms, people call "stats" as is.</note>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Leech</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Parasita</term></tig></langSet>
+                <note from="translator">In Portuguese, "leech" may be translated to "sanguessuga" - the animal (lit. - blood-sucker), or "parasita" (similar to English). Given that the crew drains power instead of blood, the latter was chosen.</note>
+            </termEntry>
+            <termEntry id="Crystal A">
+                <langSet xml:lang="en"><tig><term>Bravais</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Bravais</term></tig></langSet>
+                <note from="translator">Bravais is a homage to Auguste Bravais. Also, unaltered for consistency with Vanilla FTL pt-BR (same as Flak)</note>
+            </termEntry>
+            <termEntry id="Slug C">
+                <langSet xml:lang="en"><tig><term>Ariolimax</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Ariolimax</term></tig></langSet>
+                <note from="translator">Unaltered for consistency with Vanilla FTL pt-BR (same as Flak)</note>
+            </termEntry>
+            <termEntry id="Lanius A">
+                <langSet xml:lang="en"><tig><term>Kruos</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Kruos</term></tig></langSet>
+                <note from="translator">From ftl.fandom.com: "Kruos is Greek for icy cold, frost, probably referencing the lack of oxygen they cause and their metallic bodies." Unaltered for consistency (same as Flak)</note>
+            </termEntry>
+            <termEntry id="Vanilla FTL keyword">
+                <langSet xml:lang="en"><tig><term>Doors</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Escotilhas</term></tig></langSet>
+                <note from="translator">Portuguese is a language rich in naval terms. Such is 'escotilhas', that means, specifically, ship access openings so that crew, air, etc. can pass.</note>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>KoN</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>KoN</term></tig></langSet>
+                <note from="translator">In Portuguese, some words are borrowed from English, which is called as "anglicism". Regarding Knights of Nights in pt-BR, no cooler name was found until the moment.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Noether</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Noether</term></tig></langSet>
+                <note from="translator">From ftl.fandom.com: "Noether is possibly named after Emmy Noether(...)" Unaltered for consistency (same as Flak)</note>
+            </termEntry>
+            <termEntry id="Vanilla FTL keyword">
+                <langSet xml:lang="en"><tig><term>Scrap</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Sucata</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Vanilla FTL keyword">
+                <langSet xml:lang="en"><tig><term>Rebel</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Rebelde</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Crystal B">
+                <langSet xml:lang="en"><tig><term>Carnelian</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Cornalina</term></tig></langSet>
+                <note from="translator">Carnelian is a red round agate stone, which has translations in other languages. In Portuguese, it is only found written as its English form in one single gemstone retailer.</note>
+            </termEntry>
+            <termEntry id="Vanilla FTL race">
+                <langSet xml:lang="en"><tig><term>Zoltan</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Zoltan</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Kestrel A">
+                <langSet xml:lang="en"><tig><term>Kestrel</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Kestrel</term></tig></langSet>
+                <note from="translator">Although it has a correspondence in other languages, changing it calls for changing too many related mentions, including an entire questline. So, it is unaltered for consistency with Vanilla FTL pt-BR (same as Flak)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Drone</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Drone</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Vanilla FTL race">
+                <langSet xml:lang="en"><tig><term>Human</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Humano</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Bishop</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Epíscope</term></tig></langSet>
+                <note from="translator">In Portuguese, there is a cleric figure with the same name, which I believe to be the original inspiration. Being cleric, this is a formal way to name it - and it sounds a lot cooler and more eminent.</note>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Crusader</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Templário</term></tig></langSet>
+                <note from="translator">In pt-BR, those who fought the Crusades are called a term that is homonym to Assassin's Creed 'templars'.</note>
+            </termEntry>
+            <termEntry id="Vanilla FTL race">
+                <langSet xml:lang="en"><tig><term>Crystal Crew</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Cristaloide</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Vanilla FTL race">
+                <langSet xml:lang="en"><tig><term>Engi</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Engi</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Vanilla FTL race">
+                <langSet xml:lang="en"><tig><term>Slug</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Trópode</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Vanilla FTL keyword">
+                <langSet xml:lang="en"><tig><term>Beacon</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Sinal</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Orchid Floral</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Órquide</term></tig></langSet>
+                <note from="translator">Inspired by Rockmen, this suggestion is a word based on phonemes, it conveys a meaning both of the flower orchid, and a being orchid-like. Also, 'orkid' still works.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>fire immunity</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>imune a fogo</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Vanilla FTL keyword">
+                <langSet xml:lang="en"><tig><term>immune to mind control</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>imune a controle mental</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Lost Sun</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Sol Caído</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Vanilla FTL keyword">
+                <langSet xml:lang="en"><tig><term>lvl2</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>nvl2</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Inherited Slug stats: telepathic powers, mind control immunity</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Stats herdados dos Trópodes: poderes telepáticos, imune a controle mental</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Madness</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Loucura</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Eldritch</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Extraplanar</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Spawns</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Filhos</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>EHG</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>GCE</term></tig></langSet>
+                <note from="translator">Exotic Hunters Guilds -&gt; Grupo/Guida para Caçadas Exóticas</note>
+                <descrip>Exotic Hunters Guilds -&gt; Grupo/Guida para Caçadas Exóticas</descrip>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Songbird</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Canarinho</term></tig></langSet>
+                <note from="translator">Canarinho is one species of songbirds. I picked the one it looks like the most. Also, it is the name of an official mascot for the FIFA World Cup.</note>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Hektar Industries(tm)</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Hektar Industrial(tm)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Fed-Mantis</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Fed-Mantis</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Prime Reaper</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Ceifador-mor</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Lanius Swarm</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Enxame Lanius</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Inherited Sylvan stats: 250 HP, 1.5x combat damage, massive hazardous damage resistance</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Stats herdados de Sylvan: 250 HP, 1.5x dano de combate, enorme resistência a dano de ambiente</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Morph</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Morph</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Salt Man</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Sal</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Augmented</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Aumentado</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Lizard</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Lagarto</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Active Ability: Deploys a Breach, Lockdown, and Ion Bomb at the same time</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Habilidade Ativa: joga bombas de Ruptura, Bloqueio e Íon ao mesmo tempo</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Forefathers</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Antepassados Primordiais</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vagabond</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Andarilho</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Shell</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Shell</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Observer</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Observador</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Inherited Lizard stats: 120 HP, learns system skills 30% slower and combat/repair 30% faster</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Stats herdados dos Reptilianoides: 120 HP, aprende habilidades de sistemas 30% mais devagar e habilidades de combate/reparos 30% mais rápido</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Merchant</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Mercante</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Periodic Ability</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Habilidade Periódica</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Royal</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Real</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Mender</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Costureiro</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Anomaly Detector</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Detector de Anomalias</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Suzerain</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Suserano</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Aether</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Etéreo</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>scanners</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>sensores</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Orchid</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Órquide</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Vampweed</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Vampweed</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Hive</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Ninho</term></tig></langSet>
+                <note from="translator">Hive can be translated as both 'colmeia' = honeycomb, or 'ninho' = nest.</note>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Magnetic Arm</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Recupera-sucata Magnético</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Ghost Hunter</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Caça-Fantasmas</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Duskbringer</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Duskbringer</term></tig></langSet>
+                <note from="translator">Chose not to translate. In Portuguese, some words are borrowed from English, which is called as "anglicism". Duskbringer sound way cooler than 'Crepúsculo' = Twilight (the book series, by the way).</note>
+                <descrip>Chose not to translate. In Portuguese, some words are borrowed from English, which is called as "anglicism". Duskbringer sound way cooler than 'Crepúsculo' = Twilight (the book series, by the way).</descrip>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Coalition</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Coalizão</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Dynasty</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Dinastia</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Vanilla FTL keyword">
+                <langSet xml:lang="en"><tig><term>Rhyme</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Poeta</term></tig></langSet>
+                <note from="translator">In Portuguese, calling somebody a poet puts them closer to a rapper, while calling them a rhymer evokes something childish. Might be changed if I'm wrong.</note>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Cruiser</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Cruzador</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Gambling Cruiser</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Bet Cruzador</term></tig></langSet>
+                <note from="translator">Gambling houses and casinos, in Brazil, are called 'bets'.</note>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Ancient</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Antigo / Obelisco</term></tig></langSet>
+                <note from="translator">Obelisk when crew, Antique when equipment</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Outcast</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Exilado</term></tig></langSet>
+                <note from="translator">Outcast can be translated as both exile or pariah. Maybe pariah is better?</note>
+                <descrip>Outcast can be translated as both exile or pariah. Maybe pariah is better?</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cultist</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Seguidor de Seita</term></tig></langSet>
+                <note from="translator">In Portuguese, 'cult' as culto is very specific to a particular catholic or evangelical ritual. I chose to disambiguate by specifying it's a sect. However, I found no word for the individual who adheres to a sect other than 'follower'</note>
+                <descrip>In Portuguese, 'cult' as culto is very specific to a particular catholic or evangelical ritual. I chose to disambiguate by specifying it's a sect. However, I found no one word for the individual who adheres to a sect.</descrip>
+            </termEntry>
+            <termEntry id="Vanilla FTL keyword">
+                <langSet xml:lang="en"><tig><term>Scrap Arm</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Recupera-sucata</term></tig></langSet>
+                <note from="translator">Unaltered for consistency with Vanilla FTL pt-BR (same as Flak)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[M] - As a modular arm upgrade, it does not take up your ship's arm slot and can stack with whichever arm you choose. It cannot however be internalized like external [X] augments.</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>[M] - Sendo um upgrade modular, não gasta o slot do braço da nave e pode se acumular com outro braço a sua escolha. No entanto, não pode ser internalizado como os upgrades marcados com [X].</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Confederate</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Confederado</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Technician</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Técnico</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Great Eye</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Grande Olho</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Technopath</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Tecnópata</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Bomber</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Opressor</term></tig></langSet>
+                <note from="translator">Unaltered for consistency with Vanilla FTL pt-BR (same as Flak)</note>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Assault</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Invasor</term></tig></langSet>
+                <note from="translator">Unaltered for consistency with Vanilla FTL pt-BR (same as Flak)</note>
+            </termEntry>
+            <termEntry id="ship">
+                <langSet xml:lang="en"><tig><term>Guard</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Guarda-sinal</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Gun Platform</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Plataforma de Artilharia</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Scout</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Batedor</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Transport</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Transportador</term></tig></langSet>
+                <note from="translator">Unaltered for consistency with Vanilla FTL pt-BR (same as Flak)</note>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Corvette</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Corveta</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Enforcer</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Promotor</term></tig></langSet>
+                <note from="translator">Alt: "executor"</note>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Escort</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Escolta</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Illesctrian</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Ilescitriano</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Carryship</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Expedidor</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Outrider</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Patrulheiro</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Rigger</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Enganador</term></tig></langSet>
+                <note from="translator">Unaltered for consistency with Vanilla FTL pt-BR (same as Flak)</note>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Tugship</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Rebocador</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Unity</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>União</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Fighter</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Caçador</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Infiltrator</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Invasor</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Gathering</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Colheita</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Free Mantis</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Mantis Livre</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Geniocracy</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Geniocracia</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Siren</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Sereia</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Investigator</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Prospector</term></tig></langSet>
+                <note from="translator">Unaltered for consistency with Vanilla FTL pt-BR (same as Flak)</note>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Light Cruiser</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Cruzador-Leve</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Ministry</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Ministério</term></tig></langSet>
+                <note from="translator">Clerical organization comprised of "o ministério designa os membros do clero, a saber, o diácono, padre, bispos, o cardeal e o Papa."</note>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Cultivation</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Cultivo</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Battleship</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Couraçado</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Reaper</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Ceifador</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Wrecked</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Arruinado</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>MFK Ace</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>MFK Ace</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Kleptocracy</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Cleptocracia</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship1">
+                <langSet xml:lang="en"><tig><term>Kleptocracy</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Cleptocrata</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Legionnaire</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Legionário</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Gunboat</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Canhoneira</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Dreadnaught</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Terrornauta</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>MFK</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>MFK Ace</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Innovation</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Inovatriz</term></tig></langSet>
+                <note from="translator">The one who makes innovation be, or innovation + matrix, or the generator expression of innovation</note>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Flowers &amp; Sunshine</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Girassóis &amp; Arco-íris</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>KYA Kyle</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Caio PNB</term></tig></langSet>
+                <note from="translator">KYA (kick your ass) -&gt; (pé na bunda) PNB</note>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Syndicate</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Sindicato do Crime</term></tig></langSet>
+                <note from="translator">Alt: "Cartel"</note>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Prophet Pete</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Pete Profeta</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hektar</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>HEKTAR(tm)</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>Beacon Eater</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Devora-Sinal</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>A5540L3</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>placeHolder</term></tig></langSet>
+                <note from="translator">Alt: "V4C1L40", "C00Z40" (replaces A55 with C00, sounds accurate)</note>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>The One Who Rhymes</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Aquele Que Rima</term></tig></langSet>
+                <note from="translator">iambic pentameter works still.</note>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>The Observers</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Os Observadores</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>TOWR</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>AQR</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship1">
+                <langSet xml:lang="en"><tig><term>Fighter</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Caça</term></tig></langSet>
+                <note from="translator">Alt: "Caça". In Portuguese, the fighter jet category is called as "caça" - shorter, shounds nicer, two syllables just like fighter</note>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Drive</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Drive</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Wentworthless</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Wentworthless</term></tig></langSet>
+                <note from="translator">No better word was found as of now.</note>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Rebellion</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Rebelião</term></tig></langSet>
+                <note from="translator">Alt: "Insurreição, revolta"</note>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Flagship</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Capitânia</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Captain</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Comandante</term></tig></langSet>
+                <note from="translator">Gender neutral substitution, as "capitão/capitã" is gendered.</note>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Paragon</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Parágono</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Homeworld</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Origem</term></tig></langSet>
+                <note from="translator">Alt: "Terra-Mãe, Mundo Natal"</note>
+            </termEntry>
+            <termEntry id="FTL MV augment">
+                <langSet xml:lang="en"><tig><term>Fuel Conserver</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Conserva-Fuel</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Return.</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Voltar.</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword1">
+                <langSet xml:lang="en"><tig><term>Homeworld</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Terra-Mãe</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Nevermind.</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Deixar pra lá.</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Chain</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Chain</term></tig></langSet>
+                <note from="translator">Chose not to translate. In Portuguese, some words are borrowed from English. Weapons are no exception. For consistency, Chain was kept as is.</note>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Kernel</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Grão</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Hacking</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Hacking</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Vanilla FTL keyword">
+                <langSet xml:lang="en"><tig><term>Life Support</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Suporte a Vida/Oxigênio</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>NEURAL DISRUPTOR</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>NEURO-DISRUPTOR</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Vanilla FTL keyword">
+                <langSet xml:lang="en"><tig><term>SHADOW WEAPONRY</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>ARMAS FURTIVAS</term></tig></langSet>
+                <note from="translator">Unaltered for consistency with Vanilla FTL pt-BR (same as Flak)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Taurus</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>placeholder</term></tig></langSet>
+                <note from="translator">Alt: "Tiago". What if we put Biblical names on Angels of Death?</note>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Medbay</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Medbay</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Clone Bay</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Clonebay</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Vanilla FTL keyword">
+                <langSet xml:lang="en"><tig><term>Mind Control</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Controle Mental</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Door Control</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Escotilhas</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Vanilla FTL keyword">
+                <langSet xml:lang="en"><tig><term>Breach</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Ruptura</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kayla</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Keila</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Montgomery</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Montes Gomes</term></tig></langSet>
+                <note from="translator">In Portuguese, pt-BR, it is cultural to dunk on Portugal and their Portuguese colonialist shite. "Belo e Moral". So it was chosen to Portuga-fy a couple villain names.</note>
+            </termEntry>
+            <termEntry id="FTL MV button">
+                <langSet xml:lang="en"><tig><term>RAMPAGE</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>FÚRIA</term></tig></langSet>
+                <note from="translator">Alt: "BARRIL". Essa tal de Ellie é barril dobrado!</note>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>NANITE GAS</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>GÁS DE NANITES</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Amber Launcher</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Lança-Brasas</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Common sentence">
+                <langSet xml:lang="en"><tig><term>aboard any layout of the \1</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>a bordo de qualquer layout de \1</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Horrible Demon</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Horripilante Demônio</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Common sentence">
+                <langSet xml:lang="en"><tig><term>Renegade Defeated</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Renegado Desconfigurado</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>reactor meltdown</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>fusão do reator</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Node 17</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Nódulo 17</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>Ellie the Equinoid</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Ellie A Equinoide Show</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV race">
+                <langSet xml:lang="en"><tig><term>the Anointed</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>a Anointed</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV keyword">
+                <langSet xml:lang="en"><tig><term>G.A.S.</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>A.G.A.</term></tig></langSet>
+                <note from="translator">Giant Alien Spider -&gt; Aranha Gigante Alienígena</note>
+            </termEntry>
+            <termEntry id="Common sentence">
+                <langSet xml:lang="en"><tig><term>Active Ability</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Habilidade Ativa</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Cerenkov</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Cerenkov</term></tig></langSet>
+            </termEntry>
+            <termEntry id="FTL MV ship">
+                <langSet xml:lang="en"><tig><term>Bombard</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Bombardeiro</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>your heroic actions</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>seus feitos heroicos</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Anti-Ship Battery</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Bateria Antinaves</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Crew</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>Tripulação</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>A.S.B.</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>B.A.N.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Bonus Power Crew)</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>(Tripulação de Energia Bônus)</term></tig></langSet>
+            </termEntry>
+            <termEntry id="ftl mv keyword">
+                <langSet xml:lang="en"><tig><term>loyalist</term></tig></langSet>
+                <langSet xml:lang="pt_BR"><tig><term>lealista</term></tig></langSet>
+            </termEntry>
+        </body>
+    </text>
+</martif>

@@ -1,0 +1,2012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE martif PUBLIC "ISO 12200:1999A//DTD MARTIF core (DXFcdV04)//EN" "TBXcdv04.dtd">
+<martif type="TBX" xml:lang="en">
+    <martifHeader>
+        <fileDesc>
+            <sourceDesc>
+                <p>Translate Toolkit</p>
+            </sourceDesc>
+        </fileDesc>
+    </martifHeader>
+    <text>
+        <body>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Human</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>человек</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Militia</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ополчение</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Duskbringer</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Вестник Заката</term></tig></langSet>
+                <descrip>Chose not to translate. In Portuguese, some words are borrowed from English, which is called as "anglicism". Duskbringer sound way cooler than 'Crepúsculo' = Twilight (the book series, by the way).</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>scrap</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>лом</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Duskbringers</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Вестники Заката</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Repair Drone</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Дрон-ремонтник</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Auto-ship</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>автоматический корабль</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Arm</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>кран</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Envoy</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Эмиссар</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Engi</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>энджи</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rockman</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>валун</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Zoltan</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>золтан</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vampweed</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Вампсорняк</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Picket</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>дозор</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Outrider</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>конвоир</term></tig></langSet>
+                <descrip>(could be translated to :(tête de flotte) but i feel like that would be a bit too much</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Enforcer</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>силовик</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Assault</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>штурмовик</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Trapper</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>минер</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Guard</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>сторожевой корабль</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Infiltrator</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>лазутчик</term></tig></langSet>
+                <descrip>тип корабля</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Instigator</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>подстрекатель</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dropship</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>челнок</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Warlord</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Полководец</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Skirmisher</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>застрельщик</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shell</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ракушка</term></tig></langSet>
+                <descrip>раса</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Carryship</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>курьер</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>breach</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>пробоина</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>intruder</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>посторонний</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>drone part</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>дрон-комплект</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lost Sun</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Затерянное Солнце</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cult of the Eternal Ember</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Культ Вечного Жара</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Bombard</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>бомбардир</term></tig></langSet>
+                <note from="translator">тип корабля</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Radiant</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Лучезарный</term></tig></langSet>
+                <note from="translator">элитные ракушки</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Bomber</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>бомбардировщик</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rigger</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>такелажник</term></tig></langSet>
+                <note from="translator">тип корабля</note>
+                <descrip>(feel free to change all if a better translation is found, as this is not stylish)</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Minelayer</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>минер</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Separatist</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Сепаратист</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sentinel</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Часовой</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cealaforming</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>цеалаформирование</term></tig></langSet>
+                <descrip>蛞蝓族技术</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Clairvoyant</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ясновидец</term></tig></langSet>
+                <descrip>элитный слизень</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Surveyor</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>исследователь</term></tig></langSet>
+                <descrip>(could be translated as géomètre, but would be boring)</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Crystal</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>кристаллин</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ampere</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ампер</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lanius</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ланиус</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Leech</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>пиявка</term></tig></langSet>
+                <descrip>раса</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sister-Species Liberation Group</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Группа Освобождения Сестринского Вида</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>SSLG</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ГОСВ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Swarm</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Рой</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Thest</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Сест</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dixie</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Дейзи</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>MFK</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>МФК</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Carrier</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>авианосец</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lift-Ship</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Перевозчик</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Strike Fighter</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ударный истребитель</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>R.U.E.S.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ЭЭРЕ</term></tig></langSet>
+                <descrip>R.U.E.S = Racial Unity Elite Squadron</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Elite Defense Cadre</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Элитный Оборонный Корпус</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>EDC</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ЭОК</term></tig></langSet>
+                <descrip>Cadre de Défense d'élite</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Outcast</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Изгой</term></tig></langSet>
+                <note from="translator">Если фракция с большой</note>
+                <descrip>Outcast can be translated as both exile or pariah. Maybe pariah is better?</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Racial Unity Elite Squadron</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Элитная Эскадрилья Расового Единства</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Dixie</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Дикси</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Node-Setter</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>установщик узлов</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>KYA</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>НТЗ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kick your Ass</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Надеру Тебе Зад</term></tig></langSet>
+                <descrip>титул Кайла</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sammy</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Пейден</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Sammy</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Сэмми</term></tig></langSet>
+                <descrip>не начинается на П (Паук [ ])</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Custodial Utilitarian Robotic Assistant</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Кастодиальный Утилитарный Робо-Ассистент</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Argeonn</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Арджонн</term></tig></langSet>
+                <note from="translator">без кавычек</note>
+                <descrip>name of a clan</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Disruptor</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>саботажник</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Augmented</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Возвышенный</term></tig></langSet>
+                <descrip>тип ланиусов</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>C.U.R.A.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>К.У.Р.А.</term></tig></langSet>
+                <note from="translator">Кастодиальный Утилитарный Робо-Ассистент</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Piloting</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Рулевая рубка</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Engines</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Двигатели</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>KoN</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>АТ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Knights of Nights</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Атаманы Тумана</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wraith</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Видение</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Nights</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Туман</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Exotic Hunters Guild</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Гильдия Охотников на Экзотику</term></tig></langSet>
+                <descrip>name of a group</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>EHG</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ГОЭ</term></tig></langSet>
+                <descrip>Exotic Hunters Guilds -&gt; Grupo/Guida para Caçadas Exóticas</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Prime Reaper</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Старший Жнец</term></tig></langSet>
+                <descrip>Faucheur Souverain</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Observers</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Наблюдатели</term></tig></langSet>
+                <descrip>Marquent des pauses dans leurs phrases</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Thing</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Нечто</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Archive Inc.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>корпорация "Архив"</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Continuity Enforcement League</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Лига Борьбы за Постоянство</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>C.E.L.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ЛБП</term></tig></langSet>
+                <descrip>Ligue de l'Application de la Continuité</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>beyatch</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>сцука</term></tig></langSet>
+                <descrip>catchphrase Лии</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Haunt</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Терзатель</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Intruder</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>абордажник</term></tig></langSet>
+                <descrip>вид дрона</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>power surge</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>выброс энергии</term></tig></langSet>
+                <descrip>прикол флагмана</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[M]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[М]</term></tig></langSet>
+                <descrip>модульное улучшение</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[X]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[В]</term></tig></langSet>
+                <descrip>внешнее улучшение</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Director</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>дрон-руководитель</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mender</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>дрон-наладчик</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Combat Drone</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>боевой дрон</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Battle Drone</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>дрон-солдат</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Battle Drone</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>боевой дрон</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>augment</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>модуль</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[L]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Л]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Backup Battery</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Резервная батарея</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Medium-Low</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ниже среднего</term></tig></langSet>
+                <descrip>об уровне угрозы повстанцев</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Friendly</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Союзный</term></tig></langSet>
+                <descrip>тип сектора</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Gathering</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Соцветие</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>notoriety</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>дурная слава</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>reputation</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>репутация</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Inquisition</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Инквизиция</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Loot Transport</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>транспорт с прототипами</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ASB</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ПКБ</term></tig></langSet>
+                <descrip>ASB = Anti-Ship Battery</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Provides helpful blue options during relevant events.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Предоставляет полезные синие варианты действий в подходящих ситуациях.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cooldown gets quicker with each volley.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Это орудие заряжается быстрее с каждым выстрелом.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Also has additional stun properties.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Оглушает экипаж в пораженной комнате.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ion weapons can disable systems without causing hull damage.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ионное оружие может выводить из строя системы, не нанося повреждений корпусу.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pinpoint</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>точечный луч</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>This terrifying Beam does no physical damage but ignites fires.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Этот ужасающий луч не наносит физического урона, но начинает пожары.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Can target your own ship.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Можно нацелить на собственный корабль.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pre-emptive</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>упреждающий</term></tig></langSet>
+                <descrip>характеристика оружия</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Brood</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Выводок</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Name:</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Название:</term></tig></langSet>
+                <descrip>атлас</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Type:</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Тип:</term></tig></langSet>
+                <descrip>атлас</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Turban</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Тюрбан</term></tig></langSet>
+                <descrip>name of a location in Theocracy badlands</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Unique:</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Уникальный:</term></tig></langSet>
+                <descrip>атлас</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rebellion</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Восстание</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dominant Faction:</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Доминирующая фракция:</term></tig></langSet>
+                <descrip>атлас</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sky-Drifter</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>"Небесный бродяга"</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rebel Threat Level:</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Уровень угрозы повстанцев:</term></tig></langSet>
+                <descrip>атлас</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Locations of Interest:</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Места, представляющие интерес:</term></tig></langSet>
+                <descrip>атлас</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Energy weapons can disable systems while also causing hull damage.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Энергетическое оружие отключает системы и повреждает корпус.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Fires a blast of debris across a random area doing up to</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Стреляет осколками по отсеку и зоне вокруг него, нанося до</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Energy weapons can disable systems and cause hull damage.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Энергетическое оружие отключает системы и повреждает корпус.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>damage. Good at taking down shields but hard to aim.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>урона. Неплохо подходит для снятия щитов, но прицеливание затруднено.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>continuity</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>постоянство</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>warpbay</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>варп-ангар</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cognitive</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>когнитив</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Flagship</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Флагман</term></tig></langSet>
+                <note from="translator">С большой буквы</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>CICA</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ЦРБА</term></tig></langSet>
+                <note from="translator">Центральный разведывательный боевой ассистент</note>
+                <descrip>Centrale Intelligente de Combat Assisté</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>PROFILE:</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ПРОФИЛЬ:</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Title:</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Титул:</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Species:</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Вид:</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Slug</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>слизень</term></tig></langSet>
+                <note from="translator">не слизняк!</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Detergent</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Чистящее средство</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Gnome</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>гном</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>FTL</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ССД</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vance</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Вэнс</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>jumps away</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>уходит в прыжок</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tully</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Талли</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wallace</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Уоллес</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wentworth</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Вентворт</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Brodric</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Бродрик</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Equinoid</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>эквиноид</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Paragon</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>"Парагон"</term></tig></langSet>
+                <descrip>бомба</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Aenwithe</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Аэнвитэ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wither</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Витэр</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hephaestus</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>"Гефест"</term></tig></langSet>
+                <descrip>name of a company</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Union</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Союз</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Sale!]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Акция!]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hive</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Улей</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Free Mantis</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Свободные Богомолы</term></tig></langSet>
+                <note from="translator">Если фракция</note>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Free Mantis</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>свободный богомол</term></tig></langSet>
+                <note from="translator">Если о нескольких её представителях</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Eargen Republic</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Иргенская Республика</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Eargen</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ирген</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mine Launcher</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>миномет</term></tig></langSet>
+                <descrip>type of weapon</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lost Suns</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Затерянное Солнце</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Proton Pack">
+                <langSet xml:lang="en"><tig><term>Proton Pack</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Протонный блок</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Hektar">
+                <langSet xml:lang="en"><tig><term>Hektar</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>"Гектар Индастриз"</term></tig></langSet>
+                <note from="translator">или Гектар, может употребляться как сокращенное название Hektar Industries или в отношении директора этой компании</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mare</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Мар</term></tig></langSet>
+                <note from="translator">Разновидность экипажа призраков</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Suzerain</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Сюзерен</term></tig></langSet>
+                <note from="translator">Элита</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Weaver</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ткач</term></tig></langSet>
+                <note from="translator">Вид члена экипажа, развитая форма паука</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ember</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Вечный Жар</term></tig></langSet>
+                <note from="translator">Сокращенное от Eternal Ember Cult</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Spook Chasers</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ловцы призраков</term></tig></langSet>
+                <note from="translator">Местный аналог "Охотников за привидениями"</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Theocracy</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Теократия</term></tig></langSet>
+                <note from="translator">Государство валунов</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sodium</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Натриевый</term></tig></langSet>
+                <note from="translator">Название крейсера</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Limit</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>"Предел"</term></tig></langSet>
+                <note from="translator">Корабль</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hard-light</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>твердый свет</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>G.A.S.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Г.И.П.</term></tig></langSet>
+                <descrip>Гигантские инопланетные пауки</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Knighted</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Атаманский</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shells</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ракушки</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>onboard lab</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>бортовая лаборатория</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>internal upgrades</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>внутреннее улучшение</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Adv.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Продв.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Upg.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Улучш.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Renegade</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ренегат</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rebel</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>повстанец</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hacking</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Взломщик</term></tig></langSet>
+                <note from="translator">Название системы</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Elders</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Старейшин</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Bishop</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Епископ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Fed-Mantis War</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Война Федерации с богомолами</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>One Who Rhymes</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Тот, Кто Рифмует</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sentry</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Страж</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Power Module</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Модуль мощности</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hullbuster Module</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Противокорпусный модуль</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Firestarter Module</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Модуль поджога</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Stun Module</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Модуль оглушения</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pierce Module</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Модуль пронзания</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cooldown Module</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Модуль перезарядки</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Anti-Bio Module</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Анти-био модуль</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lockdown Module</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Модуль изоляции</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Accuracy Module</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Модуль точности</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Neural</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Нейрон(ный)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Zoltans</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>золтаны</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kernel</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>зерномет</term></tig></langSet>
+                <note from="translator">Не "ядра"</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hp</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ОЗ</term></tig></langSet>
+                <note from="translator">Очки Здоровья</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Obelisk</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>обелиск</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Royal</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Дворянин</term></tig></langSet>
+                <note from="translator">Элитный обелиск</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Effects:</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Эффекты:</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Warning: After installing this, you will not be able to install any more primary upgrades for</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Предупреждение: После ее добавления вы больше не сможете применять основные модификации к экипажу расы .... Вы также не сможете деактивировать эту модификацию]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pri:</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Осн:</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sec</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Всп</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[An upgrade is already installed]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Улучшение уже добавлено]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>only. You will be able to install other secondary mods and primary mods afterwards.]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Предупреждение: Эффекты от этой модификации распространяются только на .... После ее добавления вы сможете добавить другие вспомогательные и основные модификации]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>COOLDOWN</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ПЕРЕЗАРЯДКА</term></tig></langSet>
+                <note from="translator">Для способностей экипажа</note>
+            </termEntry>
+            <termEntry id="Для способностей экипажа">
+                <langSet xml:lang="en"><tig><term>DURATION</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ДЛИТЕЛЬНОСТЬ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vagabond</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>бродяга</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kleptocracy</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Клептократия</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Geniocracy</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Гениократия</term></tig></langSet>
+                <descrip>セクター名</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Osmian</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>осмианец</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Malform</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Деформ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Crew drones</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>пехотные дроны</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Cost:</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Цена:</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ssstranger</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ссстранник</term></tig></langSet>
+                <note from="translator">Речь у слизней удлиняем ссс/щщщ/шшш</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sssstranger</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>сссстранник</term></tig></langSet>
+                <note from="translator">Речь у слизней удлиняем ссс/щщщ/шшш</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[ALREADY INSTALLED]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[УЖЕ УСТАНОВЛЕНО]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Boon</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>благо</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hardlight</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>твердый свет</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Grant</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>дар</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Blessing</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>благословение</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>blue options</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>синие варианты</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Travelling Merchant</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>странствующий торговец</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Reconstructive Teleporter</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Восстанавливающий телепортатор</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Drone Booster</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Стимулятор дронов</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Electrical Insulation</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Электроизоляция</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Чем не решетки https://images.gamebanana.com/img/ss/mods/623da447ad7b4.jpg">
+                <langSet xml:lang="en"><tig><term>Emancipation Grills</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Поля антиэкспроприации</term></tig></langSet>
+                <note from="translator">Первый же поиск по интернету выдает картинки похожие на поле в виде решеток из Портала</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You are about to upgrade</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Вы собираетесь улучшить</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>You are about to install</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Вы собираетесь установить</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>This upgrade is unavailable.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Улучшение недоступно.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vanilla</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ванила</term></tig></langSet>
+                <descrip>as an adjective</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>droneparts</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>дрон-комплекты</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Prime</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Первый</term></tig></langSet>
+                <descrip>私、君、nexusの支配者</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wakeson</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Уэйксон</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>A strange vessel approaches, and on your screen appears three aliens dressed in long robes and their faces covered with ornate masks.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Приближается странное судно, и на экране появляются три пришельца, одетые в длинные мантии, а их лица закрыты богато украшенными масками.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ion storm</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ионный шторм</term></tig></langSet>
+                <note from="translator">опасность в FTL</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Clansman</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Клановец</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Liberator</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Освободитель</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Commando</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Коммандос</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Crusader</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Крестоносец</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Devotee</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Приверженец</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Peacekeeper</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Миротворец</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Beans</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>бобы</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Bean Sylvan</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>бобовый Сильван</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sensors</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Сенсоры</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Drone Control</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>(блок) Контроля дронов</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Spider Queen</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Королева пауков</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Flowers and Sunshine</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>"Цветочки и Солнышко"</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Flower and Sunshine</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>"Цветочек и Солнышко"</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hails</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>связывается</term></tig></langSet>
+                <note from="translator">Или вызывает</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hailed</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>связывается</term></tig></langSet>
+                <note from="translator">Или вызывает</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>drone parts</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>дрон-комплекты</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Scrap Arm</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Кран сбора лома</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Drone Arm</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Кран сбора дронов</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Magnet Arm</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Магнитный кран</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Repair Arm</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ремонтный кран</term></tig></langSet>
+                <descrip>translated as such in the original game</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Antiquum Terrae</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Антикум Терра</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Harmony link</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Канал связи Гармонии</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Chieftain</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Вождь</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Welder</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Сварщик</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ranger</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Рейнджер</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Harpy</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Гарпия</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Clone Bay</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Клон-отсек</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ignore</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Не обращать внимания</term></tig></langSet>
+                <note from="translator">Использовать в выборах событий</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Commonwealth</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Содружество</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Slavers</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>работорговцы</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Saltman</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Соляной</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ammunition</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>боеголовки</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Metyunt</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Метьюнт</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>distress beacon</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>маяк/сигнал бедствия</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Martyr</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Мученик</term></tig></langSet>
+                <note from="translator">элита</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Gardenworlds</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Сады орхидей</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>tribute</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>подношение (для судей), а иногда дань</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Paladin</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Паладин</term></tig></langSet>
+                <descrip>Заглавная буква</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Improved</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Улучшенный</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>C.I.C.A.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ц.Р.Б.А.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Medbay</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Медотсек</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Corby</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Корби</term></tig></langSet>
+                <note from="translator">Это женщина</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>transport loot</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>транспортная добыча</term></tig></langSet>
+                <note from="translator">не путать с loot transport - транспорт с прототипами</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Deployment Cannon</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Установочное орудие</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Task Loot</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>добыча заданий</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Clone Cannon</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Клонопульта</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Modular Weapon</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Модульное оружие</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Gatling Gun</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>орудие Гатлинга</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Seuss' Beam</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>луч "Сьюсс"</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rift Waker</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Пробудитель разломов</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>forefathers</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>предки</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>STONEWALL</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Камнестен</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Obadann</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Обаданн</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Map Data</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>картографические данные</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>OOJ MAJOO</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>УДЖ МАДЖУ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Signal Diluter)</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>(Глушитель сигналов)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Callie</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Кэлли</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>peace-keeper</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Миротворец</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Waystone</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Путеводный камень</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Narrator</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Рассказчик (с большой буквы)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Zulfiqar</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>"Зульфикар"</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Long-Ranged Scanners</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Сканеры дальнего действия</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Smuggler Clan</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>клан Контрабандистов (с большой буквы)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Healing Bomb</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Исцеляющая бомба</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Mind control)</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Контроль разума</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Teleporter</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Телепортатор</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>supplies</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>припасы</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Prepare for a fight</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>приготовьтесь к бою</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hail</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>связаться/связываются</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tintan</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Тинтана</term></tig></langSet>
+                <note from="translator">Это женщина</note>
+                <descrip>Zoltan femme</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>wench</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>чертовка</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dianesh</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Дианеш</term></tig></langSet>
+                <descrip>Cristalien femme impératrice</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Repair Burst</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ремонтная бомба</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Local sensors</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Локальные сенсоры</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Florals</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Флоралы</term></tig></langSet>
+                <descrip>Species</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>floral</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Флорал</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>foreigners</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>чужаки</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Forged ID)</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>(Поддельные документы)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Boarding Drone</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Абордажный дрон</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Anointed</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Помазанница</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cultist</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Культист</term></tig></langSet>
+                <descrip>In Portuguese, 'cult' as culto is very specific to a particular catholic or evangelical ritual. I chose to disambiguate by specifying it's a sect. However, I found no one word for the individual who adheres to a sect.</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>alien</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>чужак/пришелец/инопланетянин</term></tig></langSet>
+                <note from="translator">"Чужак" употребляется в основном в речи валунов и кристаллинов, остальные варианты для общего применения</note>
+                <descrip>Так валуны обращаются к другим расам</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Alkali</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Алькали</term></tig></langSet>
+                <note from="translator">Если говорит Алькали, во всех его словах с буквой "ч" дописывать "чш", например "ограничшен"</note>
+                <descrip>Remplace les J par Ch et les V par f</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>wandering hero</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>путешествующий герой</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>rolls away</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>укатывается</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>OOJ</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>УДЖ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>rolls up</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>подкатывается</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Leik</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Лейк (Лейконплииинакра)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Toarde</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Тоард</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Alkram</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Алькрам</term></tig></langSet>
+                <descrip>Sangsue homme</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vampweeds</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Вампсорняки</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tony's</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>"У Тони"</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dessius</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Дессиус</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>A55</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>34С</term></tig></langSet>
+                <descrip>Parle comme un pirate, Arr</descrip>
+            </termEntry>
+            <termEntry id="Название системы">
+                <langSet xml:lang="en"><tig><term>Cloaking</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Маскировка</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>moves in to attack</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>переходит в атаку</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Smuggler</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>контрабандист</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Telepathic Shell</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ракушка-Телепат</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Door System</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Система дверей</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>airlock</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>шлюз</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Saboteur</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Диверсант</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>civilians</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>гражданские</term></tig></langSet>
+                <descrip>не мирные жители</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Defender</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Защитник</term></tig></langSet>
+                <descrip>элита энджи</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>the Knight</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Атаман(ы) Тумана</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>The Knights</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Атаманы Тумана</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Clairvoyants</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ясновидцев</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Eek</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ой</term></tig></langSet>
+                <note from="translator">Или аааа! в случае удивления и т.п.</note>
+                <descrip>Междометие</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Gah</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>уф, тьфу, ой, блин, черт</term></tig></langSet>
+                <descrip>Междометие</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>LRS</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Сканеры дальнего действия</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Bah</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Пфф</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>pah</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>фу</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>gibberish</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>тарабарщина</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hmph</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Хмм</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Uhm</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Эм</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Gouls</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Гули</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>delivery ship</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>грузовое судно</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Central Teleport</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Центр. Телепортатор</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>oh</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>о</term></tig></langSet>
+                <descrip>Междометие, или исп. оу/ох в случае других эмоций</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Blast Doors</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Укрепленные Двери</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Phasing Crew</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Бестелесный экипаж</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Angel</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ангел</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>lizard</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ящер</term></tig></langSet>
+                <note from="translator">в основном ящер, ящерица редкий вид</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Guntput</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Гантпут</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>U.W.U. point</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Б.Н.З. балл</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>windows</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>иллюминаторы</term></tig></langSet>
+                <note from="translator">Если речь о корабле</note>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>window</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>иллюминатор</term></tig></langSet>
+                <note from="translator">Если речь о корабле</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lifeform Scanner</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Сканер форм жизни</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ugh</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>фее/фу</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mhm</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>угу/ммм</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>shoo</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>кыш/брысь</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>employee</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>сотрудник</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>breather</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>дышащий</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hark</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Слышащий</term></tig></langSet>
+                <note from="translator">Призраки нас обзывают то "дышащим", то "слышащим".</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Coreworlds</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>центральные миры</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>plating</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>обшивка</term></tig></langSet>
+                <note from="translator">Внешняя часть корабля</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hull</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>корпус</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>hail</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>оклик</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hangs up</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>отключает связь</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hang up</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>отключает связь</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>cealaformer</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>цеалаформер</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>scrap the remains</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>собрать все полезное с обломков/собрать с корабля все полезное</term></tig></langSet>
+                <note from="translator">Уничтожение/Нейтрализация экипажа</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pleasure Barge</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Баржа удовольствий</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Story Teller</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Сказочник</term></tig></langSet>
+                <note from="translator">Облако энджи, не тот Рассказчик</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>weapon system</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>система оружия</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>By the crypt</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Черт возьми</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>special loot</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>особый прототип</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Saboteurs</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Диверсанты</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>raise the weapons</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>активировать оружие/включить орудия</term></tig></langSet>
+                <descrip>Не "поднять"!</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>drone</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Дрон/беспилотник</term></tig></langSet>
+                <descrip>Первый вариант, если это про используемых дронов (пехотных, защитных, атакующих и т.п.), второй, если в контексте корабля (аналог Auto/autoship)</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Eh</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>а/чего</term></tig></langSet>
+                <descrip>недопонимание</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Huh</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>чего/э/что</term></tig></langSet>
+                <descrip>(удивление)</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Federation scum</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>федеративная мразь</term></tig></langSet>
+                <descrip>отродье/мерзкий федерал</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>MFK Ace</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ас МФК</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>uh</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>эм</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shellskenbry</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Шеллскенбри</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Leikonpliiinakra</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Лейконплииинакра</term></tig></langSet>
+                <descrip>name of a Mantis character</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Artillery:</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Артиллерия:</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Confederacy</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Конфедерация</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>smugglers</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>контрабандисты</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Eldritch</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Жуткий</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>TAR'EYL</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ТАР'ЭЙЛ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>crew slot</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ячейка экипажа</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Locks down</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>изолирует</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Emergency Generator</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Аварийный генератор</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Confederate</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Конфедерация</term></tig></langSet>
+                <descrip>セクター名、Federation（連邦）との混同を避ける</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Praetor</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Претор</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sss</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>ссс/шшш/щщщ</term></tig></langSet>
+                <note from="translator">Речь слизней</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ivar</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ивар</term></tig></langSet>
+                <descrip>흡혈초 공동체의 수상</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ty E'rel</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Тай Э'Рел</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Caretaker</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Смотритель</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mayeb</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Майев</term></tig></langSet>
+                <note from="translator">Она</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ctl'Yae</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ктл'Яэ</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dread Pirate</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Грозный пират</term></tig></langSet>
+                <descrip>Туко</descrip>
+            </termEntry>
+            <termEntry id="Kat'ar Lek">
+                <langSet xml:lang="en"><tig><term>Kat'ar Lek</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Кат'ар-Лэк</term></tig></langSet>
+            </termEntry>
+            <termEntry id="New Order">
+                <langSet xml:lang="en"><tig><term>New Order</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Новый порядок</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Ayr">
+                <langSet xml:lang="en"><tig><term>Ayr</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Эйр</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Карцер на кораблях и гауптвахта на суше">
+                <langSet xml:lang="en"><tig><term>the brig</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>карцер</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>P'erpah</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>П'Ерпа</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>drifting</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>плавающий в космическом пространстве</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kazaaakplethkilik</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Казааакплеткилик</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Doctor Drone</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Доктор дрон</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>shuttles</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>шаттлы</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Harmony Crew)</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>(Член экипажа из Гармонии)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>The Stargrove</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Звездная роща</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hacking Weapon</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Оружие взлома</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mind Control Weapon</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Оружие контроля разума</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Expanded Circuitry</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Расширенная схемотехника</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Targeting Override</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Перехват управления наведением</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Mind Affecting Weapon)</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>(Воздействующее на разум оружие)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mind Affecting Weapon</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>воздействующее на разум оружие</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Lanius Crew)</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>(Член экипажа-ланиус)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mining Drone</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Шахтерский дрон</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Peacekeeper Crew)</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>(Член экипажа-Миротворец)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Temporal)</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Временной манипулятор)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Slug Crew)</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>(Член экипажа-слизень)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Crystal Crew)</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>(Член экипажа-кристаллин)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Temporal Manipulator</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Временной манипулятор</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Engi Defender)</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>(Член экипажа-энджи Защитник)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Unity</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Единство</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Flamberge</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Фламберг</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Repair Drone</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Ремонтник</term></tig></langSet>
+                <note from="translator">Или Ремотный дрон</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Magic Hat</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Волшебная шляпа</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>breach chance</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>вероятность пробоины</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Telepathic Shell)</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>(Член экипажа-ракушка-Телепат)</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Duskbringer</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Вестники Заката</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Foreman</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Прораб</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>jumping away</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>уходят в прыжок</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>highwayman</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>бандиты</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Fuel Conserver</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Переработчик топлива</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Hull Armor)</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>(Бронированный корпус)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Installed]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Установлено]</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Inherited</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Наследуют характеристики</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Inherited</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Наследует характеристики</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Not Installed]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Не установлено]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>----CURRENTLY INSTALLED MODULES----</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>----УСТАНОВЛЕННЫЕ МОДУЛИ----</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Incompatible with the pierce module.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Несовместима с модулем проникновения щитов.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[D]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Д]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Anti-Pers]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Охрана]</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>[M]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Р]</term></tig></langSet>
+                <note from="translator">Если дрон. Противоракетный режим.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[B]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[П]</term></tig></langSet>
+                <note from="translator">Если дрон</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[F]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[З]</term></tig></langSet>
+                <note from="translator">Если дрон. Зажигательный</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Hull]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Противокорпусный]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[H]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[П]</term></tig></langSet>
+                <note from="translator">Дрон. Противокорпусный</note>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>[B]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Л]</term></tig></langSet>
+                <note from="translator">Если дрон. Лучевой</note>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>You are about to install</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Вы хотите добавить</term></tig></langSet>
+                <note from="translator">Если улучшение экипажа</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Anti-Hull]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Противокорпусный]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Anti-Missile]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Противоракетный]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>[Anti-Drone]</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>[Противодронный]</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Reality Manipulator.</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>Манипулятор реальностью</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Враги в into the breach">
+                <langSet xml:lang="en"><tig><term>Vek</term></tig></langSet>
+                <langSet xml:lang="ru"><tig><term>векки</term></tig></langSet>
+                <note from="translator">Враги из Into the Breach</note>
+            </termEntry>
+        </body>
+    </text>
+</martif>

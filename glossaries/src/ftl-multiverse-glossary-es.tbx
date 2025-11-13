@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE martif PUBLIC "ISO 12200:1999A//DTD MARTIF core (DXFcdV04)//EN" "TBXcdv04.dtd">
+<martif type="TBX" xml:lang="en">
+    <martifHeader>
+        <fileDesc>
+            <sourceDesc>
+                <p>Translate Toolkit</p>
+            </sourceDesc>
+        </fileDesc>
+    </martifHeader>
+    <text>
+        <body>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Human</term></tig></langSet>
+                <langSet xml:lang="es"><tig><term>Humano</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Narrator</term></tig></langSet>
+                <langSet xml:lang="es"><tig><term/></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>shuttles</term></tig></langSet>
+                <langSet xml:lang="es"><tig><term/></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>FTL Drive </term></tig></langSet>
+                <langSet xml:lang="es"><tig><term>Motor Hiperluz</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pinpoint</term></tig></langSet>
+                <langSet xml:lang="es"><tig><term>Destello</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Brood</term></tig></langSet>
+                <langSet xml:lang="es"><tig><term>La Nidada</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shuttle</term></tig></langSet>
+                <langSet xml:lang="es"><tig><term>Transbordador</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ssstranger</term></tig></langSet>
+                <langSet xml:lang="es"><tig><term>Desssconocido</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Augment </term></tig></langSet>
+                <langSet xml:lang="es"><tig><term>Aumento</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Outcast</term></tig></langSet>
+                <langSet xml:lang="es"><tig><term>Marginado</term></tig></langSet>
+                <descrip>Outcast can be translated as both exile or pariah. Maybe pariah is better?</descrip>
+            </termEntry>
+            <termEntry id="Hace referencia al evento en el cual se le pregunta al jugador a que piensa cuando suena el nombre de &quot;Duskbringer&quot; y una de las opciones es algo parecido a una banda de rock o algo así. En ese sentido, el material base de la traducción reconoce que el nombre de &quot;Duskbringer&quot; tiene dichas &quot;vibras&quot;.">
+                <langSet xml:lang="en"><tig><term>Duskbringer</term></tig></langSet>
+                <langSet xml:lang="es"><tig><term>Portadores del Atardecer</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Active Ability</term></tig></langSet>
+                <langSet xml:lang="es"><tig><term>Habilidad Activa</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Generalmente el Hp o Health Points se traduce a Puntos de Vida (PV)">
+                <langSet xml:lang="en"><tig><term>HP</term></tig></langSet>
+                <langSet xml:lang="es"><tig><term>PV</term></tig></langSet>
+            </termEntry>
+            <termEntry id="Es una referencia a una frase dicha durante la batalla de la estrella de la muerte en el episodio 4 de Star Wars">
+                <langSet xml:lang="en"><tig><term>The guns... They've stopped</term></tig></langSet>
+                <langSet xml:lang="es"><tig><term>¡Las armas... han dejado de disparar!</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Crew</term></tig></langSet>
+                <langSet xml:lang="es"><tig><term>Tripulación</term></tig></langSet>
+            </termEntry>
+        </body>
+    </text>
+</martif>

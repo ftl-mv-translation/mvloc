@@ -1,0 +1,1635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE martif PUBLIC "ISO 12200:1999A//DTD MARTIF core (DXFcdV04)//EN" "TBXcdv04.dtd">
+<martif type="TBX" xml:lang="en">
+    <martifHeader>
+        <fileDesc>
+            <sourceDesc>
+                <p>Translate Toolkit</p>
+            </sourceDesc>
+        </fileDesc>
+    </martifHeader>
+    <text>
+        <body>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sector</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>구역</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>beacon</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>송신소</term></tig></langSet>
+                <note from="translator">신호. 신호소, 구역, 유도신호 (의역 시)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>system</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>(성계) 행성계, (장치) 시스템</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>solar system</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>항성계</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>solar flare</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>항성 폭발</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>distress call</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>구조 신호</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>homeworld</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>고향 성단</term></tig></langSet>
+                <note from="translator">성운 따위로 번역하지 말 것</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>nebula</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>성운</term></tig></langSet>
+                <note from="translator">뒤에 섹터가 붙으면 성운지대로 사용</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hyperspeed</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>한계속도</term></tig></langSet>
+                <note from="translator">의역 단어: 한계속도 도약</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>jump</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>도약</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>swarmland</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>라니우스 출몰지</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vrachos IV</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>브라코스 제4계</term></tig></langSet>
+                <descrip>岩石族母星</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>scrap</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>스크랩</term></tig></langSet>
+                <note from="translator">명사 한정 (고유명사임). 동사의 경우 스크랩을 모으다, 쓸만한걸 모으다 등등 의역.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>special</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>스페셜</term></tig></langSet>
+                <note from="translator">의역 단어: 특별한, 의미있는</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>scan</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>탐색, 스캔</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>scanner</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>탐지기, 스캐너</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>military</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>군사, 군</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>military supply</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>군수품</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>civilian</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>민간, 민간인</term></tig></langSet>
+                <note from="translator">세력을 말하는거면 민간인으로 써야 함</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>level</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>레벨, 단계</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>nanite</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>나나이트</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>grid</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>그리드</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>cybernetics</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>사이버네틱</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>vault</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>볼트</term></tig></langSet>
+                <note from="translator">의역 단어: 금고</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>upg.</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>고급</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>upgraded</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>고급</term></tig></langSet>
+                <note from="translator">(장치실 앞에 붙는 경우)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>adv.</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>최고급</term></tig></langSet>
+                <descrip>系统前缀</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>advanced</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>최고급</term></tig></langSet>
+                <note from="translator">(장치실 앞에 붙는 경우)</note>
+                <descrip>系统前缀</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>chrysolism</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>크리솔리즘</term></tig></langSet>
+                <note from="translator">락맨 신정의 국교. 이름 그대로 크리스탈을 숭배.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>anti-bio</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>안티 바이오</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>station</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>정거장</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hard-light</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>고형 광선</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Illesctrian</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>일레스크트리안</term></tig></langSet>
+                <note from="translator">졸탄 수도승들의 종교</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Do something onboard the ship.</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>함선에서 무언가를 한다.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Check the storage.</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>창고를 확인한다.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hail</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>부르다, 맞이하다, 교신을 보내다, 메시지를 보내다, 통신하다</term></tig></langSet>
+                <note from="translator">적절히 의역</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Do nothing.</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>아무것도 하지 않는다.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>carrier</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>항공모함</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hull</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>선체</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>drone</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>드론</term></tig></langSet>
+                <note from="translator">boarding drone - 강습 드론, shipboard drone - 승선 드론</note>
+                <descrip>Первый вариант, если это про используемых дронов (пехотных, защитных, атакующих и т.п.), второй, если в контексте корабля (аналог Auto/autoship)</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>FTL</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>초광속</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>crew member</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>선원</term></tig></langSet>
+                <note from="translator">'아군 선원'은 '아군'으로만 표기</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>dock</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>도킹</term></tig></langSet>
+                <note from="translator">의역 단어: 정박, 도크, 접근</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>power</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>전력</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>augmentation</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>보조장비</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>augment</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>보조장비</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>vessel</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>선박</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ship</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>함선</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>reactor</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>반응로</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>renegade</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>배회자</term></tig></langSet>
+                <note from="translator">멀티버스를 배회하는 자들을 칭함</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>merchant</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>상인, 무역상</term></tig></langSet>
+                <note from="translator">특수 npc인 실반을 칭할 경우만 행상인으로 번역</note>
+                <descrip>sylvan</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>scavenger</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>고물상</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>tech</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>병기, 장비</term></tig></langSet>
+                <note from="translator">기술의 뜻으로 쓰이는 경우는 거의 없음</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>automated vessel</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>무인기</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>automated</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>무인, 자동화</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>refueling</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>연료 보급</term></tig></langSet>
+                <note from="translator">주유 아님. 함선은 석유 안씀.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>payload</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>페이로드</term></tig></langSet>
+                <note from="translator">또는 폭발물</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>kernel</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>낱알</term></tig></langSet>
+                <descrip>used in Orchid-related vocabulary</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>teleporter</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>텔레포터</term></tig></langSet>
+                <note from="translator">teleport는 그냥 순간이동</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>shields</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>방어막 제어실</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>upgrade</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>업그레이드</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>clocking</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>은폐장</term></tig></langSet>
+                <note from="translator">상황에 따라서 은폐 장치</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>oxygen system</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>산소실, 산소 시스템</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>life support system</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>산소실, 산소 시스템</term></tig></langSet>
+                <note from="translator">oxygen system과 마찬가지로 산소실을 말하는 단어</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>weapon control</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>무기 관제실</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>drone control</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>드론 관제실</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>mind control</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>정신 지배 장비</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hacking</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>해킹 장비</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>medbay</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>의료실</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>clonebay</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>클론 배양실</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>piloting</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>조타실</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>auto pilot</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>자동 항해 장치</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>door system</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>문 제어실</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>backup battery</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>비상용 배터리</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>engines</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>엔진실</term></tig></langSet>
+                <note from="translator">의역 단어: 엔진</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sensor</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>센서실, 센서</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>federation</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>연방</term></tig></langSet>
+                <note from="translator">(세력)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>rebel</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>반군</term></tig></langSet>
+                <note from="translator">(세력) s 붙으면 반군들 혹은 반군 함대</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>rebel engineer corps</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>반군 공병대</term></tig></langSet>
+                <note from="translator">(세력) AI 반란 사건 이후 무인기를 관리하기 위해 반군이 설립한 병과 (무인기를 건조하는건 아님)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>MFK Aces</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>MFK 에이스</term></tig></langSet>
+                <note from="translator">(세력) 반군 엘리트</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>legion</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>군단</term></tig></langSet>
+                <note from="translator">(세력) 제 1우주에서 훈련된 초일류 반군 병사들</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>coalition</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>연합</term></tig></langSet>
+                <note from="translator">(세력) 인간(연방 + 반군)을 타도할 목적으로 도둑정(슬러그), 신정(락맨), 공화국(리치), 하이브(맨티스)가 뭉친 연정</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>galactic union</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>은하 협회</term></tig></langSet>
+                <note from="translator">(세력) 여러 기업 국가의 연맹. 주 구성원은 인간이지만 외계인도 수용함.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>militia</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>민병대</term></tig></langSet>
+                <note from="translator">(세력) 멀티버스 전쟁 발발 이후 연방의 군사력이 약해지면서 인간을 포함한 여러 종 족인 조직한 대형 자경 조직</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>harmony</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>하모니</term></tig></langSet>
+                <note from="translator">(지명, 세력, AI 이름 등) 주요 엔지 세력. 구성원 모두가 서로의 데이터를 하모니라 는 프로그램을 통해 공유하는 전체주의적 사회.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>separatist</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>분리주의자</term></tig></langSet>
+                <note from="translator">(세력, 선원) 하모니에 반발해 떨어져 나온 엔지들. 개인의 사생활을 중시.</note>
+                <descrip>船名省略半械</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ministry</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>내각</term></tig></langSet>
+                <note from="translator">(세력) 주요 졸탄 세력</note>
+                <descrip>超能族</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>duskbringer</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>더스크브링어</term></tig></langSet>
+                <note from="translator">(세력) 자신들과 뜻이 다른 세력은 모조리 죽여버려 이상적인 우주를 만들려 하는 파 시스트 졸탄 집단</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>prophets of the great eye</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>위대한 눈의 선지자</term></tig></langSet>
+                <note from="translator">(세력) 위대한 눈에 감복에 (종교적으로) 비폭력적인 삶을 사는 졸탄들. 사이비 종교 같은 면모도 보임.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>gathering</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>군락</term></tig></langSet>
+                <note from="translator">(세력) 주요 오키드 세력. 연방에 우호적. 함선과 무기를 자신들의 고향 성단에 있는 정원에서 길러 생산함.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>confederacy</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>공동체</term></tig></langSet>
+                <note from="translator">(세력) 주요 뱀프위드 세력</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hive</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>하이브</term></tig></langSet>
+                <note from="translator">(지명, 세력) 주요 맨티스 세력. 봉건 사회. 타종족을 잡아다 노예로 씀 (주로 엔지).</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>free mantis</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>독립 맨티스</term></tig></langSet>
+                <note from="translator">(세력, 선원) 봉건적인 하이브 사회에 불만을 느껴 이탈한 맨티스들. 평화적/연방을  매우매우 좋아함(거의 찬양함).</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>theocracy</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>락맨 신정</term></tig></langSet>
+                <note from="translator">(세력) 강압적인 종교국가. 크리스탈이 신이라는 종교인 '크리스탈교'(chrysolism)를 믿음. 제정일치 사회.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>inquisition</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>이단 심문, 이단 심문관, 성전</term></tig></langSet>
+                <note from="translator">상황에 따라 다양한 뜻으로 쓰임</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>outcasts</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>망명자들</term></tig></langSet>
+                <note from="translator">(세력) 문제 일으켜서 망명당한 신정의 구성원들</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>lost suns</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>로스트선</term></tig></langSet>
+                <note from="translator">(세력) 신정의 지도자들이 그저 권력을 위해 종교를 만들었다는 사실을 깨달은 자들. 신정을 무너뜨리는게 목표.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>crystalline empire</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>크리스탈 제국</term></tig></langSet>
+                <note from="translator">(세력) 전체주의적 사회.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sister species liberation group</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>자매종 해방 그룹</term></tig></langSet>
+                <note from="translator">(세력) 크리스탈 제국이 우매한 락맨들을 탈신정시키기 위해 조직한 세력</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>SSLG</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>자매종 해방 그룹</term></tig></langSet>
+                <note from="translator">(세력) sister species liberation group 설명 참고</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>kleptocracy</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>도둑정</term></tig></langSet>
+                <note from="translator">(세력) 주요 슬러그 세력</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>clairvoyant</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>투시자</term></tig></langSet>
+                <note from="translator">(함선) 도둑정 소속 함선들</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>knights of nights</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>나이트의 기사들, 나이트 친위대</term></tig></langSet>
+                <note from="translator">(세력) 나이트 대장 휘하 군사들</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>KoN</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>나이트의 기사들</term></tig></langSet>
+                <note from="translator">(세력) knights of nights 설명 참고</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>exotic hunters guild</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>외계 생명체 사냥꾼 길드</term></tig></langSet>
+                <note from="translator">(세력) 슬러그 세력. 이름 그대로 외계종 사냥꾼들의 연합.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>EHG</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>외계 생명체 사냥꾼 길드</term></tig></langSet>
+                <note from="translator">(세력) exotic hunters guild 설명 참고</note>
+                <descrip>Exotic Hunters Guilds -&gt; Grupo/Guida para Caçadas Exóticas</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>clan</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>클랜</term></tig></langSet>
+                <note from="translator">세력 관련으로 사용시 전부 음차</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>guild</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>길드</term></tig></langSet>
+                <note from="translator">세력 관련으로 사용시 전부 음차</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>geniocracy</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>천재정</term></tig></langSet>
+                <note from="translator">(세력) 셸 주요 세력. 셸들의 사회는 과학을 맹신함. 딱 매드 사이언티스트 생각하면 됨.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>swarm</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>라니우스 무리</term></tig></langSet>
+                <note from="translator">(세력) 얘네는 국가가 없어서 걍 무리 생활을 함. 종족 전체가 오랜 동면을 거쳐 최근에 깨어났는데, 그 사이에 파괴된 자기네들 구역을 복구하려고 금속 모으는 것에만 관심을 가짐.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>dynasty</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>왕조</term></tig></langSet>
+                <note from="translator">(세력) 고스트 주요 세력. 반군과 전쟁중. 연방에 적대적. 과거에는 전 우주를 지배했으나 모종의 이유로 현재는 몰락함. 이분법으로 번식</note>
+                <descrip>ghost</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>vagabond clans</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>떠돌이들</term></tig></langSet>
+                <note from="translator">(세력) 반군과 왕조의 전쟁에 참여를 원하지 않아 왕조로부터 이탈한 고스트들. 난파 선에 무리를 트는 이상한 습성을 지님.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>vagabond</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>떠돌이들</term></tig></langSet>
+                <note from="translator">(세력) vagabond clans 설명 참고</note>
+                <descrip>ghost</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Eargen Republic</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>이어젠 공화국</term></tig></langSet>
+                <note from="translator">(세력) 주요 리치 세력. 내전이 일어나고 있으며, 여기에 신정(락맨)과 흡혈초가 개입중. 리치들은 삶에 의지가 없고 자기네 종족에 대한 자부심이 떨어짐. 걸핏하면 살기 싫다고 말할 정도</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Eargen</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>이어젠</term></tig></langSet>
+                <note from="translator">(세력) Eargen Republic 설명 참고</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Free Roamers</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>프리 로머</term></tig></langSet>
+                <note from="translator">(세력) AI 반란 사태 당시 반군으로부터 이탈한 무인기들</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Slug Hackers</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>슬러그 해커</term></tig></langSet>
+                <note from="translator">(세력)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tiiikaka</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>티카카</term></tig></langSet>
+                <note from="translator">(세력) 노예상 집단의 명칭</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Syndicate</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>신디케이트</term></tig></langSet>
+                <note from="translator">(세력) 용병 집단의 명칭</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Argeonn</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>알게온</term></tig></langSet>
+                <note from="translator">(세력) 밀수꾼 집단의 명칭</note>
+                <descrip>name of a clan</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>McCloudCorp</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>맥클라우드 사</term></tig></langSet>
+                <note from="translator">(세력)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Arcadia Research and Development</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>아카디아 연구개발</term></tig></langSet>
+                <note from="translator">(세력) 반군 기함의 AI인 CICA를 개발한 기업. 현재는 연방에 우호적.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Arcadia</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>아카디아</term></tig></langSet>
+                <note from="translator">(세력) Arcadia Research and Development 설명 참고</note>
+                <descrip>name of a company</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Arcadian</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>아카디아</term></tig></langSet>
+                <note from="translator">(세력) Arcadia Research and Development 설명 참고</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Zulfiqar Armaments</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>줄피카르 군사기업</term></tig></langSet>
+                <note from="translator">(세력) 락맨들이 창립한 무기 제조 기업</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Zulfiqar</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>줄피카르</term></tig></langSet>
+                <note from="translator">(세력) Zulfiqar Armaments 설명 참고</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hephaestus Shipyards</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>헤파이스토스 조선소</term></tig></langSet>
+                <note from="translator">(세력) 주로 반군의 함선을 건조하는 기업</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hephaestus</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>헤파이스토스 사</term></tig></langSet>
+                <note from="translator">(세력) Hephaestus Shipyards 설명 참고</note>
+                <descrip>name of a company</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hektar Corporation</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>헥타르 사</term></tig></langSet>
+                <note from="translator">(세력) 슬러그가 창립한 군사기업</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hektar Corporation(tm)</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>헥타르 사(tm)</term></tig></langSet>
+                <note from="translator">(세력) Hektar Corporation 설명 참고</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hektar</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>헥타르, 헥타르 사</term></tig></langSet>
+                <note from="translator">(세력) Hektar Corporation 설명 참고</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wentworth Innovations</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>웬트워스 이노베이션</term></tig></langSet>
+                <note from="translator">(세력) 반군 소속 무인기 건조 기업</note>
+                <descrip>company name</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Augmented</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>증강자, 증강자들</term></tig></langSet>
+                <note from="translator">(세력) 오벨리스크가 만든 금속을 먹고 기이하게 변이한 라니우스들. 마땅한 국가 없이 그냥 무리생활을 함.</note>
+                <descrip>тип ланиусов</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cult of the Eternal Ember</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>영원한 불씨의 교단</term></tig></langSet>
+                <note from="translator">(세력) 사이비 + 광신도 (락맨)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Eternal Ember</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>영원한 불씨의 교단</term></tig></langSet>
+                <note from="translator">(세력) Cult of the Eternal Ember 설명 참고</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Brood</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>브루드</term></tig></langSet>
+                <note from="translator">(세력) 우주 외계 거미를 이용하는 해적 집단</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Obelisk</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>오벨리스크</term></tig></langSet>
+                <note from="translator">(세력) 고대 종족.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>human</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>인간</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>medic</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>의무병</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>engineer</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>기술자</term></tig></langSet>
+                <note from="translator">선원명인 경우 공병으로 번역</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>soldier</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>병사</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>MFK Ace</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>MFK 에이스</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>legionnaire operative</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>(선원) 군단 첩보원</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>legionnaire pyrotechnic</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>(선원) 군단 화염방사병</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>wentworth technician</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>웬트워스 기술자</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>angel</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>천사</term></tig></langSet>
+                <note from="translator">(선원)</note>
+                <descrip>佣兵团的12名精英杀手</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>engi</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>엔지</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>engi defender</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>엔지 수비대</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>zoltan</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>졸탄</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>monk</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>수도승</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>duskbringer devotee</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>더스크브링어 추종자</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>osmian zoltan</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>오스미안 졸탄</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>peacekeeper</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>평화 유지군</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>martyr</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>순교자</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>orchid floral</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>오키드 화초</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>vampweed</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>흡혈초</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>chieftain</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>추장</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>cultivator</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>경작자</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>shell</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>셸</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>scientist</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>과학자</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>mechanic</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>정비공</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>guardian</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>수호자</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>shell radiant</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>방사성 셸</term></tig></langSet>
+                <note from="translator">(선원) 임시 번역문인 찬란한 셸로 된 경우 바꿀 것</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>mantis</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>맨티스</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>suzerain</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>영주</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>warlord</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>장군</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>bishop</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>주교</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>rockman</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>락맨</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>outcast</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>망명자</term></tig></langSet>
+                <note from="translator">(선원)</note>
+                <descrip>岩石</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>lost sun commando</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>로스트선 특공대</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>cultist</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>이교도</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>crusader</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>크루세이더</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>paladin</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>성기사</term></tig></langSet>
+                <note from="translator">(선원)</note>
+                <descrip>slug</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>crystal</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>크리스탈</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>liberator</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>해방자</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sentinel</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>감시병</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>slug</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>슬러그</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hektar employee</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>헥타르 직원</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>clansman</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>클랜즈맨</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>saboteur</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>공작원</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>KoN knight</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>KoN 기사 / 나이트 친위대</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ranger</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>레인저</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>leech</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>리치</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ampere</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>암페어</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>siren</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>세이렌</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>harpy</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>하피</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>lanius</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>라니우스</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>augmented</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>증강자</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>welder</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>용접공</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>giant alien spider</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>거대 외계 거미</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>G.A.S.</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>거대 외계 거미</term></tig></langSet>
+                <note from="translator">(선원) giant alien spider 설명 참고</note>
+                <descrip>Гигантские инопланетные пауки</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>spider weaver</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>직공 거미</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>G.A.S.W.</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>직공 거미</term></tig></langSet>
+                <note from="translator">(선원) spider weaver 설명 참고</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>hatchling</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>새끼 거미</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>six-legged equinoid</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>여섯발 에퀴노이드</term></tig></langSet>
+                <note from="translator">(선원) 포니</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>crystalline equinoid</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>크리스탈 에퀴노이드</term></tig></langSet>
+                <note from="translator">(선원) 포니</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>tree lizard thing</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>나무 도마뱀, 도마뱀</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>cognitive</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>코그니티브</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>obelisk</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>오벨리스크</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>ghost</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>고스트</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>alpha ghost</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>알파 고스트</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>phantom</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>팬텀</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>alpha phantom</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>알파 팬텀</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>goul</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>구울</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>alpha goul</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>알파 구울</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>mare</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>메어</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>alpha mare</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>알파 메어</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>wraith</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>레이스</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>alpha wraith</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>알파 레이스</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>morph</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>모프</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>technopath</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>태크노패스</term></tig></langSet>
+                <note from="translator">(선원)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Abductor</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>약취선</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Assault</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>강습함</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Battleship</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>전함</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Bomber</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>폭격기</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Corvette</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>초계함</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Destroyer</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>구축함</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dreadnought</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>드레드노트</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Drone Mothership</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>드론 모함</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dropship</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>강하선</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Enforcer</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>집행선</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Escort</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>호위함</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Explorer</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>탐사정</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Fighter</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>전투기</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Freighter</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>화물선</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Frigate</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>프리깃</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Guard</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>경비정</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Gunboat</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>포함</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Harvester</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>채집선</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Instigator</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>선전함</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Interceptor</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>요격기</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Jailer</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>수감선</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Light Cruiser</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>경순양함</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Node-Settler</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>노드 개척자</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Outrider</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>선도함</term></tig></langSet>
+                <note from="translator">(함종)</note>
+                <descrip>(could be translated to :(tête de flotte) but i feel like that would be a bit too much</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Picket</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>감시정</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Predator</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>포식자</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Protector</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>방호선</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rigger</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>정비선</term></tig></langSet>
+                <note from="translator">(함종)</note>
+                <descrip>(feel free to change all if a better translation is found, as this is not stylish)</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Scout</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>정찰기</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shuttle</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>우주 왕복선, 왕복선</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Skirmisher</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>척후기</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Station</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>정거장</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Support Ship</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>지원함</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Transport</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>수송선</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Trapper</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>기뢰함</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wayfinder</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>길잡이</term></tig></langSet>
+                <note from="translator">(함종)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>teleport</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>순간이동</term></tig></langSet>
+                <note from="translator">teleporter는 텔레포터</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tully</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>툴리</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Haynes</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>헤인즈</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Jerry</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>제리</term></tig></langSet>
+                <descrip>叛军军官，万斯上将侄子</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Cyra</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>시라</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vance</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>밴스</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Leah</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>레아</term></tig></langSet>
+                <descrip>あたし、あんた　ビームマスター</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Turzil</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>투르질</term></tig></langSet>
+                <descrip>name of a character</descrip>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Turzil</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>투르질</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Devorak</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>데보락</term></tig></langSet>
+                <descrip>Zoltan homme</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Freddy</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>프레디</term></tig></langSet>
+                <descrip>自由螳螂创始人</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kazaaakplethkilik</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>카자앜플레쓰킬맄</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Symbiote</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>공생체</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vortigon</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>보티곤</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ariadne</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>아리아드네</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tuco</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>투코</term></tig></langSet>
+                <descrip>传奇海盗，岩石人</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ruwen</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>루웬</term></tig></langSet>
+                <note from="translator">풀네임은 '루웬 아고트 경 (Sir Ruwen Argote)'. 크리스탈 제국의 대사(Foreign Ambassador)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dianesh</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>디아내시</term></tig></langSet>
+                <note from="translator">풀네임은 '디아내시 크리엘 (Dianesh Kryel)'. 크리스탈 제국의 여제 (Empress)</note>
+                <descrip>Cristalien femme impératrice</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Obyn</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>오빈</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Nights</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>나이트</term></tig></langSet>
+                <note from="translator">유니크 선원 Captain Nights</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Slocknog</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>슬럭노그</term></tig></langSet>
+                <descrip>name of a character</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sylvan</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>실반</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Billy</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>빌리</term></tig></langSet>
+                <descrip>僕、君、primeの兄弟（同い年）、Hektar Industries (tm)のCEO</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Irwin</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>어윈</term></tig></langSet>
+                <descrip>Slug male</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tyrdeo</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>티르데오</term></tig></langSet>
+                <descrip>Sangsue homme</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wealsey</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>웰시</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Alkram</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>알크람</term></tig></langSet>
+                <descrip>Sangsue homme</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tony</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>토니</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Alkali</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>알칼리</term></tig></langSet>
+                <descrip>Remplace les J par Ch et les V par f</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>OOJ MAJOO</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>우즈 마주</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Anointed</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>영세자</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Beacon Eater</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>송신소 탐식자</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Reaper</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>리퍼</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Guntput</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>건트풋</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Metyunt</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>메튠트</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Aenwithe</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>Aenwithe</term></tig></langSet>
+                <note from="translator">설정상 인간이 발음하기 어려운 단어인데, 한글로 쓰면 너무 쉽게 읽히므로 그냥 그대로 씀</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>outpost</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>전초기지</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Radiant</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>방사성 셸</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>utopian</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>유토피아의, 유토피안 (세력명)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Continue...</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>계속...</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Refuse.</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>거절한다.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>titanwood</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>타이탄우드</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pulsar</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>펄서</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Human</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>인간</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>FTL drive</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>FTL 드라이브</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Do something on-board the ship.</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>함선에서 무언가를 한다.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Duskbringers</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>더스크브링어</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Clone Bay</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>클론 배양실</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>crew</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>선원</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>elite</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>엘리트</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Badlands</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>불모지</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Crystalline Origins</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>크리스탈 기원지</term></tig></langSet>
+                <descrip>(지명) 크리스탈 기원지</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Turban</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>터번</term></tig></langSet>
+                <descrip>name of a location in Theocracy badlands</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Numa V</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>누마 제5계</term></tig></langSet>
+                <descrip>락맨 성기사(Paladin)의 고향</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>cloaking</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>은폐장</term></tig></langSet>
+                <descrip>상황에 따라 은폐 장치</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Decline.</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>거절한다.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Orchid</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>오키드</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>"A good choice. May it serve you well in your travels!"</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>"좋은 선택입니다. 당신의 여정에 도움이 되길!"</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Renegades</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>배회자</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>civilians</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>민간인들</term></tig></langSet>
+                <descrip>не мирные жители</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Waystone</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>길잡이돌</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>cultists</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>이교도</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>(Telepathic Shell)</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>(진화적 재분기점)</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Gnome</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>노움</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>eldritch</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>이물</term></tig></langSet>
+                <note from="translator">eldritch가 명사처럼 쓰였을 때, 또는 eldritch being으로 쓰였을 때 사용. 닼던에서 차용한 표현.</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>New order</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>신졸탄주의</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Aerkae</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>에어케이</term></tig></langSet>
+                <note from="translator">(전)(전) 이어젠 공화국 대통령</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tiet III</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>티엣 3세</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Leikonpliiinakra</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>레이콘플리이나크라</term></tig></langSet>
+                <note from="translator">맨티스 하이브 여왕</note>
+                <descrip>name of a Mantis character</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Zenith</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>제니스</term></tig></langSet>
+                <descrip>피너클 로보틱스(Pinnacle Robitics)의 관리자</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dewey Alms</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>듀이 앨름스</term></tig></langSet>
+                <descrip>아카이브 주식회사(Archive Incorporated)의 CEO</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Pinnacle</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>피너클</term></tig></langSet>
+                <descrip>피너클 로보틱스 (Pinnacle Robotics)</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Orchid Children</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>오키드 아이들</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Confederate</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>공동체</term></tig></langSet>
+                <note from="translator">오키드 흡혈초의 세력명</note>
+                <descrip>セクター名、Federation（連邦）との混同を避ける</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Anurak</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>아누락</term></tig></langSet>
+                <descrip>Zoltan non binaire</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>quarter</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>선실</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>quarters</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>선실</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ycathine</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>이카틴</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>sethnian</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>세테니안</term></tig></langSet>
+                <descrip>슬러그의 토착명</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vael</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>바엘</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>cycle</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>사이클</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Thek</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>태크</term></tig></langSet>
+                <descrip>나무 도마뱀의 여왕</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Aether</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>아이테르</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Super Shield</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>에너지 방어막</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ty E'Rel</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>타이 이'렐</term></tig></langSet>
+                <descrip>Name of an ambassador</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mayeb</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>마예브</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Floral</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>화초</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Ivar</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>이바르</term></tig></langSet>
+                <descrip>흡혈초 공동체의 수상</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Narrator</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term/></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>shuttles</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term/></tig></langSet>
+            </termEntry>
+            <termEntry id="세력">
+                <langSet xml:lang="en"><tig><term>Infernum</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>인페르눔</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mafan</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>마판</term></tig></langSet>
+                <note from="translator">유니크 캐릭터 이름. 졸탄 과학자</note>
+                <descrip>유니크 캐릭터 이름. 졸탄 과학자</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Union</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>협회</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Detritus</term></tig></langSet>
+                <langSet xml:lang="ko"><tig><term>디트라이터스</term></tig></langSet>
+                <note from="translator">인투 더 브리치 4번째 섬의 기업. Detritus Disposal - 디트라이터스 폐기물 처리</note>
+            </termEntry>
+        </body>
+    </text>
+</martif>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE martif PUBLIC "ISO 12200:1999A//DTD MARTIF core (DXFcdV04)//EN" "TBXcdv04.dtd">
+<martif type="TBX" xml:lang="en">
+    <martifHeader>
+        <fileDesc>
+            <sourceDesc>
+                <p>Translate Toolkit</p>
+            </sourceDesc>
+        </fileDesc>
+    </martifHeader>
+    <text>
+        <body>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Narrator</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Narratore</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>shuttles</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>navicelle</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Human</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Umano</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kernel</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Lanciasemi</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rock</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Rockman</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Orchid</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term/></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Orchid</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term/></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shell</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Shellman</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Slug</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Slugman</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Phantom</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Fatuo</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Goul</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Ghoul</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Wraith</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Spettro</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mare</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Incubo</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Haunt</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Spirito</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>A5540L3</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>57R0NZ0</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>A55</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>57R</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Nevermiss</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Mancamai</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Engine Disabler</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Sabota-motore</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rock plating</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Corazza rockman</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Signal Diluter</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Dispersore di segnale</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Proton Pack</term></tig></langSet>
+                <langSet xml:lang="it"><tig><term>Zaino protonico</term></tig></langSet>
+            </termEntry>
+        </body>
+    </text>
+</martif>

@@ -121,7 +121,7 @@ def translate(MTjsonPath: str, model = None):
         with open(queryFilePath, 'wt', encoding='utf8') as f:
             json.dump(out, f, ensure_ascii=False, indent=2)
 
-    gemini.translate_file(str(queryFilePath), str(queryFilePath), target_lang)
+    gemini.translate_file(str(queryFilePath), str(queryFilePath), target_lang, data_dict["originalLang"])
     
     with open(queryFilePath, encoding='utf8') as f:
         result_dict = json.load(f)

@@ -1269,7 +1269,7 @@ def major_update(ctx, first_pass, second_pass, do_mt):
 )
 @click.option(
     '--force', '-f', is_flag=True, default=False,
-    help='Perform update even if the json file is up-to-date.'
+    help='Delete existing ai translations and re-translate them.'
 )
 @click.argument('targetlang')
 @click.pass_context
@@ -1292,7 +1292,7 @@ def machine(ctx, targetlang, force, model):
         MTjosnPath = makeMTjson(targetlang, base_version, originalLang)
     
     print('start translating...')
-    translate(MTjosnPath, model)
+    translate(MTjosnPath, model, force)
     print('making po files from MT...')
     makePOfromMTjson(MTjosnPath)
     print('all process successfully done.')

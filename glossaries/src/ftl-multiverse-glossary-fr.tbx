@@ -5327,6 +5327,26 @@
                 <langSet xml:lang="en"><tig><term>Tide</term></tig></langSet>
                 <langSet xml:lang="fr"><tig><term>Vague</term></tig></langSet>
             </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Miracle Seekers</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Chercheurs de Miracles</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Swarm</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Essaim</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lesser Guardian</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Gardien Inférieur</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Children of the Stars</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Enfants des Étoiles</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Eschaton</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Eschaton</term></tig></langSet>
+            </termEntry>
         </body>
     </text>
 </martif>

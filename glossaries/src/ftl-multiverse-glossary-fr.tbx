@@ -5347,6 +5347,10 @@
                 <langSet xml:lang="en"><tig><term>Eschaton</term></tig></langSet>
                 <langSet xml:lang="fr"><tig><term>Eschaton</term></tig></langSet>
             </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Crystal Shards</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Éclat Cristalien</term></tig></langSet>
+            </termEntry>
         </body>
     </text>
 </martif>

@@ -95,7 +95,7 @@ def getMTjson(lang: str = None, version: str = None):
         info_dict = {key: value for key, value in info_dict.items() if value['version'] == version}
     return [key for key in info_dict.keys()]
 
-def translate(MTjsonPath: str, model = None):
+def translate(MTjsonPath: str, model = None, force: bool = False):
     from mvlocscript.aitranslation import gemini
     
     if model is not None:
@@ -111,8 +111,12 @@ def translate(MTjsonPath: str, model = None):
         ensureparent(queryFilePath)
         out = {}
         for key, text_dict in data_dict['translation'].items():
-            if text_dict['done'] or (text_dict['advanced'] != {} and max([int(i) for i in text_dict['advanced'].keys()]) >= gemini.get_model_id()):
+            if text_dict['done']:
                 continue
+            
+            if not force and (text_dict['advanced'] != {} and max([int(i) for i in text_dict['advanced'].keys()]) >= gemini.get_model_id()):
+                continue
+            
             out[key] = ''
         
         if out == {}:

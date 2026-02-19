@@ -5351,6 +5351,22 @@
                 <langSet xml:lang="en"><tig><term>Crystal Shards</term></tig></langSet>
                 <langSet xml:lang="fr"><tig><term>Éclat Cristalien</term></tig></langSet>
             </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Stalker</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Traqueur</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Juggernaut</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Mastodonte</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Erudite</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Erudite</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Neostar</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Neostar</term></tig></langSet>
+            </termEntry>
         </body>
     </text>
 </martif>

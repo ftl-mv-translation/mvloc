@@ -49,7 +49,7 @@ def parse_ftlxml(path, use_dummyroot=False):
         it's directly serialized. Instead it MUST be serialized with the write_ftlxml() to make it readable from FTL.
     '''
     if use_dummyroot:
-        with open(path, 'rt', encoding='utf8') as f:
+        with open(path, 'rt', encoding='utf-8-sig') as f:
             xmlstring = f.read()
         newstring = sub(r'(^\s*)((<\?xml.*?\?>)?)', r'\2<dummyroot>\1', xmlstring) + '</dummyroot>'
         

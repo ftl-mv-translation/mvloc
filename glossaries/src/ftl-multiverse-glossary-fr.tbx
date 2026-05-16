@@ -5367,6 +5367,190 @@
                 <langSet xml:lang="en"><tig><term>Neostar</term></tig></langSet>
                 <langSet xml:lang="fr"><tig><term>Neostar</term></tig></langSet>
             </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>RadiKal</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>RadiKal</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Attempt to mine the asteroids.</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Tenter de miner les astéroïdes.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Deconstructor</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Deconstructeur</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shipvore Ram</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Bélier Vorace</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Scorched Earth</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Terre Calcinée</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Plasma Teleporter</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Téléporteur Plasmatique</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Flammabilizer</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Flammabilisateur</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Charged Belts</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Ceintures Chargées</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Vulnerabilizer</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Vulnérabilisateur </term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Lead Titans</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Titans de Plomb</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Enigmashin</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Énigmachine</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Oxygenizer</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Oxygéniseur</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Offense Disabler</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Neutraliseur offensif</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Punk Harmony</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Harmonie de Fortune</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Defense Kits</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Kits de défense</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>A.E.R.A. Second Wind</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Second Souffle A.E.R.A.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mind Heater</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Chauffeur Mental</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Demicloners</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Demicloneurs</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Fissure Beams</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Rayons Fissurant</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rain of Ions</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Pluie d’ions</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rain of Fire</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Pluie de feu</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Uptors</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Uptors</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Rammer</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Éperonneur</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Scorcher</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Calcinateur</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Punker</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Anarcheur</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mind Cooler</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Refroidisseur mental</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Scorch</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Calcineur</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Currently Enabled</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Actuellement activé</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Click to see more info.</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Cliquez pour plus d'informations.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>go to the Multiverse Forums and visit the addon section</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>rendez-vous sur les forums Multiverse et visitez la section des addons</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>REPUTATION INCREASED</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>RÉPUTATION AUGMENTÉE</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Beam Master</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Maître des rayons</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>The infamous Beam Master</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>La tristement célèbre maître des rayons</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Singularity Projectors</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Projecteurs de singularité</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Flaks</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Flaks</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Scrapper</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Ferrailleur</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Protogen Project</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Protogen Project</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Avali</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Avali</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Extraelite </term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Extraélite </term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Echelon Shipyards</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Hangars Echelon</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Protogens</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Protogens</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sergals</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Sergals</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Kivies</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Kivies</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Tabaxis</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Tabaxis</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Sentient Robots</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Robots Conscients</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Trash Compactor Collection</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Trash Compactor Collection</term></tig></langSet>
+            </termEntry>
         </body>
     </text>
 </martif>

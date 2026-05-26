@@ -8,6 +8,7 @@ import tempfile
 import click
 import zipfile
 import json5
+import json
 import requests
 from collections import defaultdict, Counter
 from functools import reduce
@@ -1400,6 +1401,36 @@ def open_project(ctx):
                 dict_newtranslated = relocate_strings(dict_neworiginal, dict_emptytranslated, tm[lang], False)
                 entries_newtranslated = sorted(dict_newtranslated.values(), key=lambda entry: entry.lineno)
                 writepo(filepath_po, entries_newtranslated, sourcelocation)
+
+@main.command()
+@click.argument('targetlang')
+@click.pass_context
+def extract_json(ctx, targetlang):
+    '''Extract target language translation into a json file (extracted-<TARGETLANG>.json) as a series of "original text": "translation". You can use this json file to feed in the `--dictionary` option of `add-lang` command when adding a new language.'''
+    
+    originalLang = ctx.obj['config'].get('originalLanguage', 'en')
+    dict_extracted = {}
+    for filepath_po_target in glob_posix(f'locale/**/{targetlang}.po'):
+        filepath_po_orig = Path(filepath_po_target).parent / f'{originalLang}.po'
+        if not filepath_po_orig.exists():
+            raise RuntimeError(f'Original language po file not found for {filepath_po_target}. Make sure the original language po files are properly generated before running this command. Missing file: {filepath_po_orig}')
+        
+        dict_entries_target, _, _ = readpo(filepath_po_target)
+        dict_entries_orig, _, _ = readpo(filepath_po_orig)
+        for target_entry in dict_entries_target.values():
+            if target_entry.obsolete or target_entry.value == '':
+                continue
+            original_entry = dict_entries_orig.get(target_entry.key, None)
+            if original_entry is None:
+                raise RuntimeError(f'Original entry not found for key {target_entry.key} in {filepath_po_orig}. Make sure the original language po files are properly generated before running this command. Missing entry: {target_entry.key} in file: {filepath_po_orig}')
+            
+            if original_entry.obsolete or original_entry.value == '':
+                continue
+            
+            dict_extracted[original_entry.value] = target_entry.value
+
+    with open(f'extracted-{targetlang}.json', 'w', encoding='utf-8') as f:
+        json.dump(dict_extracted, f, indent=2, ensure_ascii=False, sort_keys=True)
 
 @main.command()
 @click.argument('newlang')

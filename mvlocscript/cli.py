@@ -1404,11 +1404,12 @@ def open_project(ctx):
 
 @main.command()
 @click.argument('targetlang')
+@click.option('--originallang', '-o', type=str, default=None, help='Original language code to extract. If not specified, the original language specified in config file will be used.')
 @click.pass_context
-def extract_json(ctx, targetlang):
+def extract_json(ctx, targetlang, originallang):
     '''Extract target language translation into a json file (extracted-<TARGETLANG>.json) as a series of "original text": "translation". You can use this json file to feed in the `--dictionary` option of `add-lang` command when adding a new language.'''
     
-    originalLang = ctx.obj['config'].get('originalLanguage', 'en')
+    originalLang = originallang or ctx.obj['config'].get('originalLanguage', 'en')
     dict_extracted = {}
     for filepath_po_target in glob_posix(f'locale/**/{targetlang}.po'):
         filepath_po_orig = Path(filepath_po_target).parent / f'{originalLang}.po'

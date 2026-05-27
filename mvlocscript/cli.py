@@ -970,6 +970,13 @@ def stats(ctx, targetlang):
     print('*' + '-' * 42 + '*')
     print('| {:>20} | {:<7} ({:5.1f} %) |'.format("Total", total, 100))
     print('*' + '-' * 42 + '*')
+    
+    MTjsonPathes = getMTjson(targetlang)
+    assert len(MTjsonPathes) <= 1, "Multiple MT json files found. This should not happen."
+    if len(MTjsonPathes) == 0:
+        return
+    
+    measureMT(MTjsonPathes[0])
 
 @main.command()
 @click.argument('targetlang')

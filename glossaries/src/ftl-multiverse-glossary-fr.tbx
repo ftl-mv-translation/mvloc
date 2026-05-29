@@ -5421,7 +5421,7 @@
             </termEntry>
             <termEntry>
                 <langSet xml:lang="en"><tig><term>Punk Harmony</term></tig></langSet>
-                <langSet xml:lang="fr"><tig><term>Harmonie de Fortune</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Punk Harmonie</term></tig></langSet>
             </termEntry>
             <termEntry>
                 <langSet xml:lang="en"><tig><term>Defense Kits</term></tig></langSet>
@@ -5550,6 +5550,50 @@
             <termEntry>
                 <langSet xml:lang="en"><tig><term>Trash Compactor Collection</term></tig></langSet>
                 <langSet xml:lang="fr"><tig><term>Trash Compactor Collection</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Withered</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Flétri</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Uptor</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Uptor</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Dread Deck</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Dread Deck</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Choking F.I.N.E.</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Asphyxie F.I.N.E.</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Unloader</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Déchargeur</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Shotphaser</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Shotphaser</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Squyrt</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Squyrt</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>"Weapons On Fire"</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>"Armes en feu"</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Blazing Earth</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Terre du brasier</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Re-loader</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Rechargeur</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Punk</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Punk</term></tig></langSet>
             </termEntry>
         </body>
     </text>

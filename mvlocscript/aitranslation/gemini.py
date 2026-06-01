@@ -33,6 +33,7 @@ from google.genai import types
 current_model = os.environ.get("GEMINI_MODEL", "gemini-2.5-pro")
 API_KEY = os.environ.get("GEMINI_API_KEY", None)  # Recommended to set via environment variable
 BATCH_SIZE = 600          # Initial batch size
+RETRIES_START_DECREASE_BATCH_SIZE = 6  # After this many retries, start decreasing batch size to try to succeed faster
 MAX_RETRIES = 10          # Maximum retry attempts when a single batch fails
 RETRY_DELAY = 2           # Retry wait time in seconds
 
@@ -220,6 +221,7 @@ def build_config_for_batch(lang: str, origLang: str) -> types.GenerateContentCon
 
 # ---- Translate one batch ----
 def translate_batch(client, model: str, batch_pairs: List[tuple], lang: str, origLang: str) -> OrderedDict:
+    original_batch_size = len(batch_pairs)
     config = build_config_for_batch(lang, origLang)
     prompt = build_prompt_for_batch(batch_pairs)
     for attempt in range(1, MAX_RETRIES + 1):
@@ -284,6 +286,13 @@ def translate_batch(client, model: str, batch_pairs: List[tuple], lang: str, ori
                 with open("last_invalid_response.log", "w", encoding="utf-8") as f:
                     f.write(text)
             if attempt < MAX_RETRIES:
+                if attempt >= RETRIES_START_DECREASE_BATCH_SIZE:
+                    # Decrease batch size more aggressively after certain retries
+                    new_batch_size = original_batch_size // (attempt - RETRIES_START_DECREASE_BATCH_SIZE + 2)  # Decrease more as attempts increase
+                    new_batch_size = max(1, new_batch_size)
+                    print(f"[INFO] Decreasing batch size for next attempt due to repeated failures. New batch size: {new_batch_size}")
+                    batch_pairs = batch_pairs[:new_batch_size]
+                    prompt = build_prompt_for_batch(batch_pairs)  # Try the reduced batch size
                 time.sleep(RETRY_DELAY * attempt)
                 continue
             else:

@@ -30,10 +30,10 @@ from google.genai import types
 
 
 # ---- Configuration ----
-current_model = os.environ.get("GEMINI_MODEL", "gemini-2.5-pro")
+current_model = os.environ.get("GEMINI_MODEL", "gemini-3.1-flash-lite")
 API_KEY = os.environ.get("GEMINI_API_KEY", None)  # Recommended to set via environment variable
 BATCH_SIZE = 600          # Initial batch size
-RETRIES_START_DECREASE_BATCH_SIZE = 6  # After this many retries, start decreasing batch size to try to succeed faster
+RETRIES_START_DECREASE_BATCH_SIZE = 1  # After this many retries, start decreasing batch size to try to succeed faster
 MAX_RETRIES = 10          # Maximum retry attempts when a single batch fails
 RETRY_DELAY = 2           # Retry wait time in seconds
 
@@ -44,6 +44,10 @@ input_token_limit = None
 output_token_limit = None
 
 MODEL_IDS = {
+    "gemini-3.5-flash": 14,
+    "gemini-3.1-pro-preview": 13,
+    "gemini-3.1-flash-lite": 12,
+    "gemini-3-flash-preview": 11,
     "gemini-2.5-pro": 10,
     "gemini-2.5-flash": 9,
 }

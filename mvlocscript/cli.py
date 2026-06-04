@@ -957,19 +957,18 @@ def stats(ctx, targetlang):
     
     total = sum(stats.values())
     if total == 0:
-        print('No translation found.')
-        return
-    
-    print('*' + '-' * 42 + '*')
-    for i in range(8):
-        columnname = ('Obsolete' if i & 4 else '') + ('Empty' if i & 2 else '') + ('Fuzzy' if i & 1 else '')
-        if columnname == '': columnname = 'Translated'
-        
-        count = stats[(bool(i & 4), bool(i & 2), bool(i & 1))]
-        print('| {:>20} | {:<7} ({:5.1f} %) |'.format(columnname, count, count / total * 100))
-    print('*' + '-' * 42 + '*')
-    print('| {:>20} | {:<7} ({:5.1f} %) |'.format("Total", total, 100))
-    print('*' + '-' * 42 + '*')
+        print('No hand translation found.')
+    else:
+        print('*' + '-' * 42 + '*')
+        for i in range(8):
+            columnname = ('Obsolete' if i & 4 else '') + ('Empty' if i & 2 else '') + ('Fuzzy' if i & 1 else '')
+            if columnname == '': columnname = 'Translated'
+            
+            count = stats[(bool(i & 4), bool(i & 2), bool(i & 1))]
+            print('| {:>20} | {:<7} ({:5.1f} %) |'.format(columnname, count, count / total * 100))
+        print('*' + '-' * 42 + '*')
+        print('| {:>20} | {:<7} ({:5.1f} %) |'.format("Total", total, 100))
+        print('*' + '-' * 42 + '*')
     
     MTjsonPathes = getMTjson(targetlang)
     assert len(MTjsonPathes) <= 1, "Multiple MT json files found. This should not happen."

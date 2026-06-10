@@ -77,7 +77,7 @@ def save_json_ordered(obj: OrderedDict, path: str):
 
 def extract_json_from_text(t: str):
     """Try to extract the first JSON object from the model's returned text (from first { to last })."""
-    t = t.strip().replace('\\": "', '\\"": "')
+    t = t.strip()
     if t.find("{") != 0:
         raise ValueError("Response does not start with '{'")
     

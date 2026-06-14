@@ -5595,6 +5595,14 @@
                 <langSet xml:lang="en"><tig><term>Punk</term></tig></langSet>
                 <langSet xml:lang="fr"><tig><term>Punk</term></tig></langSet>
             </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Miracle Seeker</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Chercheur de Miracles</term></tig></langSet>
+            </termEntry>
+            <termEntry id="1">
+                <langSet xml:lang="en"><tig><term>Miracle Seeker</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Le Chercheur de Miracles</term></tig></langSet>
+            </termEntry>
         </body>
     </text>
 </martif>

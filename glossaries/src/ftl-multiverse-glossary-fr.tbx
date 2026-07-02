@@ -5611,6 +5611,22 @@
                 <langSet xml:lang="en"><tig><term>Emperor White</term></tig></langSet>
                 <langSet xml:lang="fr"><tig><term>Empereur Blanc</term></tig></langSet>
             </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Trash Compactor</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Compacteurs à déchets</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Trash Eater</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Mangeur de déchets</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Garbage Compactor</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Compacteur à ordures</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Scrapper lab</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Laboratoire du ferrailleur</term></tig></langSet>
+            </termEntry>
         </body>
     </text>
 </martif>

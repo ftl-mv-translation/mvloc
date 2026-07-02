@@ -5603,6 +5603,14 @@
                 <langSet xml:lang="en"><tig><term>Miracle Seeker</term></tig></langSet>
                 <langSet xml:lang="fr"><tig><term>Le Chercheur de Miracles</term></tig></langSet>
             </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Reapers</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Moissonneurs</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Emperor White</term></tig></langSet>
+                <langSet xml:lang="fr"><tig><term>Empereur Blanc</term></tig></langSet>
+            </termEntry>
         </body>
     </text>
 </martif>
